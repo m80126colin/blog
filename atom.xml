@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[天然呆]]></title>
+  <subtitle><![CDATA[我的呆毛可以覆蓋全台灣 XD]]></subtitle>
+  <link href="/blog/atom.xml" rel="self"/>
+  <link href="http://m80126colin.github.io/blog/"/>
+  <updated>2014-10-14T13:27:41.581Z</updated>
+  <id>http://m80126colin.github.io/blog/</id>
+  
+  <author>
+    <name><![CDATA[許胖]]></name>
+    <email><![CDATA[m80126colin@gmail.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[梅塔特隆立方體 (Metatron)]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/metatron/"/>
+    <id>http://m80126colin.github.io/blog/articles/metatron/</id>
+    <published>2014-08-02T06:27:15.000Z</published>
+    <updated>2014-08-02T08:01:34.000Z</updated>
+    <content type="html"><![CDATA[<ul>
+<li><a href="http://blog.yam.com/RedPapaya/article/28452055" target="_blank" rel="external">梅塔特隆立方體 (Metatron)</a></li>
+<li><a href="http://baike.baidu.com/view/3384756.htm" target="_blank" rel="external">梅塔特隆立方體 - Baidu</a></li>
+<li><a href="http://baike.baidu.com/view/3531370.htm" target="_blank" rel="external">梅爾卡巴場 - Baidu</a></li>
+<li><a href="http://baike.baidu.com/view/8553074.htm" target="_blank" rel="external">神聖幾何學 - Baidu</a></li>
+</ul>
+]]></content>
+    
+    
+      <category term="創作" scheme="http://m80126colin.github.io/blog/categories/%E5%89%B5%E4%BD%9C/"/>
+    
+      <category term="設定" scheme="http://m80126colin.github.io/blog/categories/%E5%89%B5%E4%BD%9C/%E8%A8%AD%E5%AE%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[20140730 近況]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/20140730-024300/"/>
+    <id>http://m80126colin.github.io/blog/articles/20140730-024300/</id>
+    <published>2014-07-29T18:43:19.000Z</published>
+    <updated>2014-07-29T18:53:38.000Z</updated>
+    <content type="html"><![CDATA[<p>最近都在架部落格 …</p>
+<a id="more"></a>
+
+<p>兩百多篇文章基本上還有 30 多篇沒有收進來</p>
+<p>目前寫了 <code>hexo-tag-owl</code> 這個外掛來快速插入和排版影音<br>接下來把之前收進去的文章修改一下大概就好了<br>約估還要再四五天的光景</p>
+<p>話說回來<br>土製 blog 系統的 bug 多少還是有 …<br>但至少是開源作者反應夠快都會修</p>
+<p>只是對於他對圖片連結的設定有點異議<br>只好自己寫外掛</p>
+<p><code>hexo-tag-owl</code> 在圖片只支援本地圖片插入<br>解決了當 blog 的根目錄是在 <code>m80126colin.github.io/blog</code> 時<br>圖片卻是從 <code>m80126colin.github.io</code> 來搜尋</p>
+<p>至少有個整理的地方<br>部落格很多部份也想翻新<br>比如 Archive, Tag Cloud 等等<br>這又是另一段故事了</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>最近都在架部落格 …</p>
+]]></summary>
+    
+      <category term="hexo" scheme="http://m80126colin.github.io/blog/tags/hexo/"/>
+    
+      <category term="hexo-tag-owl" scheme="http://m80126colin.github.io/blog/tags/hexo-tag-owl/"/>
+    
+      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
+    
+      <category term="後日談" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E5%BE%8C%E6%97%A5%E8%AB%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[推薦 ACGN 列表]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/acgn-list/"/>
+    <id>http://m80126colin.github.io/blog/articles/acgn-list/</id>
+    <published>2014-07-21T14:08:10.000Z</published>
+    <updated>2014-07-29T18:55:10.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="小說">小說</h1>
+<ul>
+<li><a href="https://docs.google.com/document/d/1qDgn52fOZfIrlWjy-4LPeFq7b7CBaO1XUXPkdk992DI/edit" target="_blank" rel="external">18 歲的野比大雄</a></li>
+</ul>
+]]></content>
+    
+    
+      <category term="ACGN" scheme="http://m80126colin.github.io/blog/tags/ACGN/"/>
+    
+      <category term="公告" scheme="http://m80126colin.github.io/blog/categories/%E5%85%AC%E5%91%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[「天然呆」部落史]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/history/"/>
+    <id>http://m80126colin.github.io/blog/articles/history/</id>
+    <published>2014-07-12T19:25:39.000Z</published>
+    <updated>2014-07-16T13:12:08.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="yahoo,_pchome_(2005-11-21_-_2008-03-09)">yahoo, pchome (2005.11.21 - 2008.03.09)</h1>
+<p>國中時代 blog 盛行，在一開始國一時班上使用 pchome 佔多數，進團班後使用 yahoo 部落格較為主流，因此開始使用 yahoo 部落格來紀錄心情。</p>
+<h2 id="pchome_(2005-11-21_-_2007-04-05)">pchome (2005.11.21 - 2007.04.05)</h2>
+<p>pchome 有 4 篇廢文。</p>
+<h2 id="yahoo_(2006?_-_2008-03-09)">yahoo (2006? - 2008.03.09)</h2>
+<p>由於 yahoo 沒有備份到，因此當時的資料都已流失，使用日期已不可考。</p>
+<h1 id="天空部落_(2008-03-09_-_2011-05-22)">天空部落 (2008.03.09 - 2011.05.22)</h1>
+<p>高中後部落格停滯一段時間，最終決定在 yam 的天空部落撰寫，經營了 3 ~ 4 年，最終因為 FB 的興起加上時間的關係最後沒有活動。</p>
+<h1 id="FC2_(2011-06-03_-_2012-06-01)">FC2 (2011.06.03 - 2012.06.01)</h1>
+<p>大學有一段時間輾轉來到 FC2，寫了約一年的筆記後因為課業繁忙而停止活動。</p>
+<h1 id="hexo_(2014-07_-)">hexo (2014.07 -)</h1>
+<p>大學畢業後，利用 hexo 系統重新建構部落格。</p>
+]]></content>
+    
+    
+      <category term="天然呆" scheme="http://m80126colin.github.io/blog/tags/%E5%A4%A9%E7%84%B6%E5%91%86/"/>
+    
+      <category term="部落格" scheme="http://m80126colin.github.io/blog/tags/%E9%83%A8%E8%90%BD%E6%A0%BC/"/>
+    
+      <category term="公告" scheme="http://m80126colin.github.io/blog/categories/%E5%85%AC%E5%91%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[[心得] 穿梭時空旅]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/review-2/"/>
+    <id>http://m80126colin.github.io/blog/articles/review-2/</id>
+    <published>2014-07-12T16:30:59.000Z</published>
+    <updated>2014-07-12T17:24:47.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="相關書訊">相關書訊</h1>
+<ul>
+<li>書籍ISBN: 9577336035</li>
+<li>中文書名: 時間機器</li>
+<li>原文書名: the Time Machine</li>
+<li>書籍作者: H.G.威爾斯</li>
+<li>書籍編譯者: 蔡伸章</li>
+<li>出版單位: 新雨出版社</li>
+<li>出版年月: 2001 年 10 月</li>
+<li>版次: 初版</li>
+</ul>
+<a id="more"></a>
+
+<p>愛因斯坦的狹義相對論認為時間旅行並非絕不可能的事，若這個說法屬實，踏上時空之旅的人們將會看到怎樣的未來？本書作者H.G.威爾斯以科學的概念以及天馬行空的想像力，為我們描述西元802700年的未來世界，對時空旅行有興趣的讀者絕對不能錯過這部精采絕倫的科幻小說。</p>
+<p>蟲洞可以讓物質以光速在通道內前進，若再加上愛因斯坦「光速前進的物體時間靜止」的理論，時間之旅將不再是個空洞的夢想。問題是時間之旅真的可行嗎？</p>
+<p>宇宙學家霍金（Steven Hawking）的說法或許可以為這個議題下一個註解：「時間之旅是不可能的，因為並沒有大批來自未來的觀光客，造訪我們的世界。」</p>
+<p>或許吧。不過世事難料，未來的事情誰知道呢？</p>
+<h1 id="內容摘錄">內容摘錄</h1>
+<p>以下就是我的新看法。非常簡單，第一種人類是在地上生活的，第二種人類是過地下生活的。有三個特殊的情況使我認為他們之所以很少在地面上出現，是由於大部分動物都有群居黑暗的習性使然。舉例來說，肯塔基洞穴的那種白魚便是如此。第二、那些有反光能力的大眼睛，是生活在夜間的動物一個共同特性，例如貓頭鷹、貓等都是。最後一點，那些太陽下清楚可見的亮光，那些面對黑暗就亂成一團嗆惶跳竄，那種在亮處頭部下垂的特殊姿勢，再再強而有力地說明了一個事實：他們的視網膜是極端敏感的。(p.098)</p>
+<h1 id="我的觀點">我的觀點</h1>
+<p>作者威爾斯是出生於英國的小說家。作品分成前後兩期：前期的作品屬科幻小說，他預言了科學發明提供的機會，提出關於其危險性的警告，此時的著名的作品有《時間機器》以及《星際大戰》。而威爾斯第二個時期的作品從預言未來轉向改造事實，《基普斯》、《波里先生的歷史》等曾為他企圖喚起人們重視世界秩序不穩定的媒介。在《時間機器》裡，作者以第三視角紀錄「時間旅客」不可思議的行為－－研發製作時間機器並作了一趟時間旅行。故事中提到時間旅客造訪了八十萬年後的世界，並詳盡描述當時的情形。</p>
+<p>其實在早期的著作中，隱約可見威爾斯後期作品理念的萌芽。《時間機器》：「所以照我的觀察，這些上層世界的人們，由於長時間生存於安逸之中，逐漸退化成一種美麗而柔弱的體形；相反地，生活於地下的人們，由於長時間的苦役，鍛鍊成了他們機械般的體形，一種進化上的分歧便開始了，就這樣原本十全十美的情況被打破了，這時候人們才開始領悟到任何一種完美的平衡都缺乏了持久的特性。時光不斷地流轉，居住在下層的人們，逐漸發生糧食不足的問題。當然這種饑荒是如何來的，我並不知道。於是『求生』的本能又回到他們的身上，他們到處去尋找可供食用的東西，他們平日與機器為伍，而機器這東西不管有多麼完美，除了操作方法之外，是多多少少地需要一點思考的，因為這種需要，可能使他們比上層世界的人們保留了更多的創造力，但也無庸否認的，人性其他的特質已由他們身上消失了，所以當其他各種肉類都無法滿足他們時，吃人的惡習便開始了。雖然早在數千年以前，人類便停止了這種習慣，但這是我在公元八零二七零零年所親眼見的，這些解釋也許是我有限的智慧所能提出的一個錯誤的說法，但這些猜測，是根據於我眼見的事實，在此我僅是轉述於你們！」(p.134)其實威爾斯當時早已對社會有所認識並提出警告，藉由時間機器，闡明了勞資對立以及社會階級差異的不合理。</p>
+<p>「四周陳列著一些破爛燒焦的東西，仔細辨認之下，依稀仍可看出是些書籍，它們早已一頁頁地肢解分離，上面印的字也已模糊不清了，但由書殼的硬紙板及釘書針來判斷，他們應該是裝訂成冊的書，如果我是一個文學家，再這副景象下不免要為時光易逝而嘆息！可惜我不是，我只為這些爛紙上曾經花費的勞力可惜，當年多少才子野心勃勃地著書立說，而今安在？那時，我不得不承認，我主要是在想著『哲學會板』和我在物理光學上所寫的十七篇論文。」除了批判當時的社會現象外，作者也產生了「逝者如斯夫」的感慨，當時光流轉，現在所做的努力到當時會是如何模樣我們不知，但是我們只要努力，未來就有無限可能！</p>
+<h1 id="討論議題">討論議題</h1>
+<p>在《時間機器》中，作者提出了對當時社會現象的見解，而現在的社會與當時有無極大的差距？現代社會是否也存有許多致命的危機？</p>
+]]></content>
+    <summary type="html"><![CDATA[<h1 id="相關書訊">相關書訊</h1>
+<ul>
+<li>書籍ISBN: 9577336035</li>
+<li>中文書名: 時間機器</li>
+<li>原文書名: the Time Machine</li>
+<li>書籍作者: H.G.威爾斯</li>
+<li>書籍編譯者: 蔡伸章</li>
+<li>出版單位: 新雨出版社</li>
+<li>出版年月: 2001 年 10 月</li>
+<li>版次: 初版</li>
+</ul>
+]]></summary>
+    
+      <category term="時間機器" scheme="http://m80126colin.github.io/blog/tags/%E6%99%82%E9%96%93%E6%A9%9F%E5%99%A8/"/>
+    
+      <category term="H.G.威爾斯" scheme="http://m80126colin.github.io/blog/tags/H-G-%E5%A8%81%E7%88%BE%E6%96%AF/"/>
+    
+      <category term="創作" scheme="http://m80126colin.github.io/blog/categories/%E5%89%B5%E4%BD%9C/"/>
+    
+      <category term="心得" scheme="http://m80126colin.github.io/blog/categories/%E5%89%B5%E4%BD%9C/%E5%BF%83%E5%BE%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Kohctpyktop: Engineer of the People 記錄]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/kohctpyktop-engineer-of-the-people/"/>
+    <id>http://m80126colin.github.io/blog/articles/kohctpyktop-engineer-of-the-people/</id>
+    <published>2014-05-26T16:36:01.000Z</published>
+    <updated>2014-07-28T08:01:36.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://www.kongregate.com/games/krispykrem/kohctpyktop-engineer-of-the-people" target="_blank" rel="external">Kohctpyktop</a></p>
+<a id="more"></a>
+
+<h1 id="Level_1:_KT411I_–_QUAD_INVERTER_GATE">Level 1: KT411I – QUAD INVERTER GATE</h1>
+<h2 id="PNP_和_NPN">PNP 和 NPN</h2>
+<h2 id="結果">結果</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">eNrtmVsOgjAQRe1Mf1iDW/Dftbj/jVgqwRr7UApY7KEpJTn3UgjkMqT2Ys/DzQxX</div><div class="line">Y09LWo9GSbai0WTHjDE/dv04MGLEiBEjRozO6Ms5SW+eqmq011PRx3W4wR3Ls89z</div><div class="line">j2L1qgQfndkTzDP4U7zsApW3raNwk/UnkT9V+NcGCZJlkg2jMxnZH2V6u1TlPcnl</div><div class="line"><span class="number">0</span>HcEhUJbpAePSigUCiUqw1ox7o2VldScUCi0x6hMxx1hCIVCiUqZlp+m7dsg5RFD</div><div class="line">odA<span class="keyword">do</span>7JuMT77m6yln+gC3awihUKhrdJt1rhXicp4r6eFyw4rSb53UCj0V4l0B7uO</div><div class="line">yPI=</div></pre></td></tr></table></figure>
+
+<h1 id="Level_2:_KT221A_–_DUAL_2-INPUT_AND_GATE">Level 2: KT221A – DUAL 2-INPUT AND GATE</h1>
+<h1 id="AND_Gate">AND Gate</h1>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">eNrtmkEOgyAQRQvDxjP0Ct33LL3/R<span class="keyword">do</span>QEhkEJCKa0Cdh9fgSceY7BN3LPZePWd7G</div><div class="line">PY40hAeE9tcOCE1orCpChAgRIrxMWPn47M1Y/NyxqkOEvpyz5ctTEcn2fmol6Wre</div><div class="line">Fir+ZjkqgYURmlafFwqFNlFZL5Vpa4baTJYmNMnwBjrQkYrP22SVUCgU+t90eqtU</div><div class="line">FSUBAIUOorPv3SawyqoZit6bE9JQ6BCqM21CI53dKglpKJSqEqvcpYKRQqFXVJVY</div><div class="line"><span class="number">5</span>e1n3FUalf8ELRR6MU0LkdPOuMedgA+<span class="number">2</span>ynzvp90vcVs16t8YtkMIeCj0NKuM/hWK</div><div class="line">M01r0yztnvcGR/oCkpXGuQ==</div></pre></td></tr></table></figure>
+
+<h2 id="簡單版">簡單版</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">eNrt2U0OgyAQhmFg2HiGXsF9z9L7X6Qp7UInUKnU8PdqWD0ZjMp8avSrvy0Pu9yt</div><div class="line"><span class="constant">N2f2uQvduUIbdq4qhRRSSCGFQxcmH3fHR3Rc1d8Lw+ucS29BRSQ6yjVsshm74+bo</span></div><div class="line">Z764Js8IRdE/qzdJfnWoN5s+Vax6PEMvzqToGWeFJYqi6Nw6QlQKtxhFG9fuv/z6</div><div class="line">iMqvYSiaWZYo2pjuurTLIB0gKlmWKMpbJVF5qEKQomjrb5VzRGXdv9yjPJVQdFLV</div><div class="line">PVz1D/jFURkf5Vp8I+Q9n7AsUbTZqFRdWjxzhUR6AhTIxnc=</div></pre></td></tr></table></figure>
+
+<h1 id="Level_3:_KT141AO_–_4-INPUT_AND/OR_GATE">Level 3: KT141AO – 4-INPUT AND/OR GATE</h1>
+<h2 id="OR_Gate">OR Gate</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">eNrtmUsSgjAQBeUNG87gFdx7Fu9/ES3KTwJJGAigJW2KhXSPJCH1AmV7ac/d<span class="comment">remu</span></div><div class="line">TXta0iikkMLdC5tnm1mooC0sXDhGjTvrLWQBUEghhRQ6C/vHOeU/PTWz5FFPPX0M</div><div class="line">e/I68zimZfVfZ6hSqkcDLz49ee23pV2kQdcDbzVRLk8jLXvfYrO4ECz+UbnFhJuz</div><div class="line"><span class="number">4</span>ps8Gm8saTjcBZImncKcZT3ltI/qU1QyVBZUzZOLaVUhs2AjQ3XCVjO5XTDnNwTX</div><div class="line">jgGFOqkxG9D/pEQlNM66foNlNqBQopIwzIehKf167r6u8cwJJSqhx4jKildswhBK</div><div class="line">VEIPQK0cpCEkKqFE5aB8m3+UoL9KrYIyk9Dt6TcSyRmV6aOesgCgUOj8qNw9ke4j</div><div class="line"><span class="number">6</span>Mhz</div></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">eNrtmV2SgyAQhOO0LznDXmHf9yy5/0WyElB+BkQMMVody4Tym0YyYDuW4+/4c38M</div><div class="line">979hvLVsFH5GOChb5RmrpPpQK6S5/7gq5QLYJBS7pRkuCtMJEG9rFDb+RwkHu0XI</div><div class="line">BUAhhRRSWCE05ZzkP4YCUPf9dLzhNRD9xx+EOTp9y0qgQLaEeWOAEhShqQm9J5iD</div><div class="line">pgGdw/C52RKwTN2xMf9TIebo1JCYL4o5GfDlL5XrR1Ju82DnLh/iloWkSQ8D/H66</div><div class="line">hMTrdzVKMkEyr8iaCCkFSJHLTrxcBV24fy0mAWIWXjsuJ0/KuRM1N/1MMm/OVe5N</div><div class="line">SlpNwWyQXpHSKkmtxblKUS0ZmStSWuWVL/+41Am1cABqzwiD4vPibHVU0QztE7xr</div><div class="line">7DgvWHOS0ipJr1o3pveFRrujGZLSKk9pDv47iLiqTHFQVSY4rCpjfOpcIXk3lFCE</div><div class="line">LkurJKVVRvJdb5Sg7MvAPkShUsw+oFKIXoOhWKF9L11fHig+RFfSbM8gJX0P7fOO</div><div class="line"><span class="addition">+y1Wqe/7Ke9ZX0H920K/816mAic9mh7gSE/J1slE</span></div></pre></td></tr></table></figure>
+
+<h1 id="Level_4:_KO229_–_POWER_ON_RESET_GENERATOR">Level 4: KO229 – POWER ON RESET GENERATOR</h1>
+<h2 id="Delayer">Delayer</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">eNrtmVGSgyAQRAPtT86QK+R/z7L3v8gmkIDCMBApDa4NRVX0TQ9qTNcQpvt0u/<span class="number">6</span><span class="operator">a</span></div><div class="line"><span class="number">64</span>+ZLms6hRRSSCGFFB5LaJLxgdAuRqPQCL1JaNfO2HGPebeurxKanYVefN6X3JVz</div><div class="line">ttwcBSCOfhradJEmJv4Gll+Vcp4s1ROnIilBwueHUoBLOM9bCkou+h32OvQf/EGc</div><div class="line">VQgKUI6S5hIj4wVXgkKeclwyYXtC5bkgtuw7egZHBvE7hO+QcDhVoO9usXhBXjhe</div><div class="line">loofTcLxhIb9HSoBLju+<span class="number">4</span>ImZFzeZNSkp6dg0uN7O2kaKihbjP2daJSnpWSj4NGiV</div><div class="line"><span class="variable">pKTnrhtlnC3ErboQ76g5K3UjVC0OUHPSKklJ</span>/<span class="number">4</span>FVNtE+M6xZJVZTLsBJSUkHMFJx</div><div class="line"><span class="number">4</span>yirKjutElvVnEeyym12lEhJSZd2p1pHMDTNWPSdcFvbCf9c20i1vwVEI8WMYQRH</div><div class="line">arRKefRT/lhISYNVytVfZpVKZmxh4C31KvoW78odYQxH+<span class="variable">gMZ3Mgu</span></div></pre></td></tr></table></figure>
+
+<h1 id="Level_5:_KO223_–_DUAL_FIXED_FREQUENCY_OSCILLATOR">Level 5: KO223 – DUAL FIXED FREQUENCY OSCILLATOR</h1>
+<h2 id="Repeater">Repeater</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">eNrtml1uwyAQhDHDS87QK/S9Z+n9L9KGHxswrLa2k9pmIEiRvh0Q2LPYIe7TfTy+</div><div class="line">p8fX5MyWOqpw8tUUTSG0MdgWTSlsVYXQVqMpR0zz/PMceedQSCGFFJ5k0zFbNx3D</div><div class="line"><span class="constant">TeeKQv84Z/vFUwDNtp9axJYK8nFnCl+6NFRUNIlixyV9FmeS1NcWTqWB7ULRop21</span></div><div class="line">JB2Byq7rdhWQdqSls26AlbhXawNKN1UBPubXJM48PyhmGgOjUeqlwDztFFfY0ncY</div><div class="line">OlqCbIiZ+0Q7xoakkFl0wS/MaN1rpkq156ZlqnyflpR0HEqX3SBVqihaFLQDKSld</div><div class="line">dqdU2d2V0Ni0ipfs1ZdcC1HLZ07Soah4tw/vsgukSkiLCSVlMiQl3eoyLb21y66Q</div><div class="line">KrHjl5D64KZMpCsprUQ6aKqky45IlW84I5dpWuo1zaXyOXbzDFw4QM/75wk56f2p</div><div class="line">KqFVr9gQe4b4Ap6opO349zVn3IekynbbTw+8iKsLUf07YsPNo9tJQaORjpIqT+Ky</div><div class="line">f8hIP494yGI=</div></pre></td></tr></table></figure>
+
+<h1 id="Level_6:_KL2S1_–_DUAL_SET-RESET_LATCH">Level 6: KL2S1 – DUAL SET-RESET LATCH</h1>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">eNrtWUGShCAM1LSXecN+Ye/<span class="number">7</span>lv3/R3YWHSFIAshYKpOxrJqiOwGV7qBM39PX43d8</div><div class="line">/IzTsOe4ZSBFR1WPPolPVdSj/z8+D1pTVPRYGThE1zvuDaTawF5njgVaoAVa4FmB</div><div class="line">uw25ugTsKjpvKnOVhXV3Ke905rjlHMk/hwJInu0ogRzlv2F9IAj7JkwDOSIWZgr2</div><div class="line">gf7aYhoWksuwRHHOK/<span class="number">3</span>zFNLwsFSSEkacXOyskEgReSYIxM2ozsHZ6EQGNRESU7kH</div><div class="line"><span class="constant">OHUwYl73PG+OFw5hwyglxpMzPc9zgw5E5gNdw9wWsrieaTUKzRUWPKQ5OBwF2JPw</span></div><div class="line">V+0MyDUFZhXc66Un3yEzPfZQDnRc0emLSsFlUcwn7jRmQw39HLQjhZ5vlTjzhgCZ</div><div class="line">WNiEN/RjUDQopTNnuJ5VgtJ3JYzFhsFiCVpFA6BmhpmhoYbmUFkpmspyCi1QN8wq</div><div class="line">C2vHuoBHPbpWQ2iPCTA5GGpoRguijloUijvdq9NXlWwnSoxNVrS5EQ2vBnrsdmQm</div><div class="line">NEO7tUp1tu9TWaFCBXUXOcPFrLJ9Dz+xGA+X2VBRaQGPzKs9TA6GGtr8iQz5D2gZ</div><div class="line">VNOvpn3RN47Z436LVabPdvRVVPJfJFiJqXmtgLKaJds9N9TQgvc+XSmgxk0fQd2i</div><div class="line">MxzsSKnfH1/8yWE=</div></pre></td></tr></table></figure>
+
+<h1 id="Level_7:_KL2T1_–_DUAL_TOGGLE_LATCH">Level 7: KL2T1 – DUAL TOGGLE LATCH</h1>
+<h1 id="Level_8:_KO224X_–_DUAL_FREQUENCY_OSCILLATOR">Level 8: KO224X – DUAL FREQUENCY OSCILLATOR</h1>
+<h1 id="LEVEL_9:_KD124_–_2-TO-4_LINE_DECODER">LEVEL 9: KD124 – 2-TO-4 LINE DECODER</h1>
+<h1 id="LEVEL_10:_KA180_–_2-BIT_ADDER_WITH_CARRY">LEVEL 10: KA180 – 2-BIT ADDER WITH CARRY</h1>
+]]></content>
+    <summary type="html"><![CDATA[<p><a href="http://www.kongregate.com/games/krispykrem/kohctpyktop-engineer-of-the-people" target="_blank" rel="external">Kohctpyktop</a></p>
+]]></summary>
+    
+      <category term="小遊戲" scheme="http://m80126colin.github.io/blog/tags/%E5%B0%8F%E9%81%8A%E6%88%B2/"/>
+    
+      <category term="電晶體" scheme="http://m80126colin.github.io/blog/tags/%E9%9B%BB%E6%99%B6%E9%AB%94/"/>
+    
+      <category term="Transistor" scheme="http://m80126colin.github.io/blog/tags/Transistor/"/>
+    
+      <category term="遊戲" scheme="http://m80126colin.github.io/blog/categories/%E9%81%8A%E6%88%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Markdown 檔格式]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/md-file-format/"/>
+    <id>http://m80126colin.github.io/blog/articles/md-file-format/</id>
+    <published>2014-05-13T19:03:12.000Z</published>
+    <updated>2014-07-12T09:57:03.000Z</updated>
+    <content type="html"><![CDATA[<a id="more"></a>
+
+<h1 id="標題">標題</h1>
+<h2 id="大標題">大標題</h2>
+<p>標題有分 <code>&lt;h1&gt;</code>、<code>&lt;h2&gt;</code>、<code>&lt;h3&gt;</code>、<code>&lt;h4&gt;</code>、<code>&lt;h5&gt;</code>、<code>&lt;h6&gt;</code> 六種<br>其中 <code>&lt;h1&gt;</code> 的寫法有兩種，第一種是在標題下畫等號：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="header">我是大標題 &lt;h1&gt;</span></div><div class="line">====</div></pre></td></tr></table></figure>
+
+<p>或是</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor"># 我是 &lt;h1&gt;</span></div></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="中標題">中標題</h2>
+<p><code>&lt;h2&gt;</code> 屬於中標題，亦有兩種寫法：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="header">我是中標題 &lt;h2&gt;</span></div><div class="line">----</div></pre></td></tr></table></figure>
+
+<p>或者是</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">## 我是 &lt;h2&gt;</span></div></pre></td></tr></table></figure>
+
+<h2 id="其他標題">其他標題</h2>
+<p>其他級數的標題只有一種寫法，就是由前面的<code>#</code>號來決定：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">### 我是 h3</span></div><div class="line"><span class="preprocessor">#### 我是 h4</span></div><div class="line"><span class="preprocessor">##### 我是 h5</span></div><div class="line"><span class="preprocessor">###### 我是 h6</span></div></pre></td></tr></table></figure>
+
+<h1 id="原始碼">原始碼</h1>
+<h2 id="行內式">行內式</h2>
+<p>如果要在字句間呈現原始碼 <code>code</code>，那麼可以用兩個<code>` </code>包住文字，如下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="code">`code`</span></div></pre></td></tr></table></figure>
+
+<p>如果要 <code>`插入反引號` </code>，就用多個反引號來包：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="escape">``</span> <span class="escape">`插</span>入反引號<span class="escape">` </span><span class="escape">``</span></div></pre></td></tr></table></figure>
+
+<h2 id="單行式">單行式</h2>
+<p>單行原始碼也可以在每一行前面使用 <code>&lt;tab&gt;</code> 或四個空格：</p>
+<pre><code>單行註解
+</code></pre><h2 id="段落式">段落式</h2>
+<p>有兩種，第一種是由前後連續三個 <code>` </code> 包圍段落：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">我是段落註解</div><div class="line">第二行</div><div class="line">第三行</div></pre></td></tr></table></figure>
+
+<p>另外一種，則是在每一行前面都加上 <code>&lt;tab&gt;</code>：</p>
+<pre><code>我是段落註解
+第二行
+第三行
+</code></pre><h1 id="列表">列表</h1>
+<h2 id="無序列表">無序列表</h2>
+<p>使用無序列表很簡單，就在每一項前面加 <code>*</code> 號、<code>+</code> 號、或是 <code>-</code> 號：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="bullet">* </span>祭止兀</div><div class="line"><span class="bullet">* </span>祭央乂</div><div class="line"><span class="bullet">* </span>騜央丸</div><div class="line"></div><div class="line"><span class="bullet">+ </span>祭止兀</div><div class="line"><span class="bullet">+ </span>祭央乂</div><div class="line"><span class="bullet">+ </span>騜央丸</div><div class="line"></div><div class="line"><span class="bullet">- </span>祭止兀</div><div class="line"><span class="bullet">- </span>祭央乂</div><div class="line"><span class="bullet">- </span>騜央丸</div></pre></td></tr></table></figure>
+
+<p>結果如下：</p>
+<ul>
+<li>祭止兀</li>
+<li>祭央乂</li>
+<li>騜央丸</li>
+</ul>
+<h2 id="有序列表">有序列表</h2>
+<p>有序列表則以標號來表示：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="bullet">1. </span>祭止兀</div><div class="line"><span class="bullet">2. </span>祭央乂</div><div class="line"><span class="bullet">3. </span>騜央丸</div></pre></td></tr></table></figure>
+
+<p>結果如下：</p>
+<ol>
+<li>祭止兀</li>
+<li>祭央乂</li>
+<li>騜央丸</li>
+</ol>
+<h2 id="巢狀列表">巢狀列表</h2>
+<p>巢狀列表和前面的規則大同小異，只要在前面加上<code>&lt;tab&gt;</code> 或四個空格：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">*</span> A</div><div class="line">    A1</div><div class="line">    A2</div><div class="line"><span class="keyword">*</span> B</div><div class="line">	<span class="keyword">*</span> BA</div><div class="line">	<span class="keyword">*</span> BB</div><div class="line">		<span class="keyword">*</span> BBA</div><div class="line">		<span class="keyword">*</span> BBB</div><div class="line">		<span class="keyword">*</span> BBC</div><div class="line">	<span class="keyword">*</span> BC</div><div class="line"><span class="keyword">*</span> C</div></pre></td></tr></table></figure>
+
+<ul>
+<li>A<ul>
+<li>A1</li>
+<li>A2</li>
+</ul>
+</li>
+<li>B<ul>
+<li>BA</li>
+<li>BB<ul>
+<li>BBA<br>凱因斯</li>
+<li>BBB</li>
+<li>BBC</li>
+</ul>
+</li>
+<li>BC</li>
+</ul>
+</li>
+<li>C</li>
+</ul>
+<ol>
+<li>A<ol>
+<li>AA</li>
+<li>AB</li>
+</ol>
+</li>
+<li>B<ol>
+<li>BA</li>
+</ol>
+</li>
+<li>C<ol>
+<li>CA</li>
+<li>CB</li>
+<li>CC</li>
+</ol>
+</li>
+</ol>
+<h1 id="連結">連結</h1>
+<h2 id="基本語法">基本語法</h2>
+<p>連結的語法如下：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="link_label">內容</span>](<span class="link_url">網址</span>)</div></pre></td></tr></table></figure>
+
+<ul>
+<li>範例：<br><a href="https://www.google.com" target="_blank" rel="external">google 首頁</a></li>
+</ul>
+<h2 id="提示文字">提示文字</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="link_label">內容</span>](<span class="link_url">網址 "提示文字"</span>)</div></pre></td></tr></table></figure>
+
+<ul>
+<li>範例：<br><a href="https://www.google.com" title="google 首頁" target="_blank" rel="external">估狗</a></li>
+</ul>
+<h1 id="插圖">插圖</h1>
+<h1 id="語意標籤">語意標籤</h1>
+<h2 id="段落">段落</h2>
+<h2 id="強調">強調</h2>
+<p>用 <code>**</code> 夾住要 <strong> 強調的文字 </strong>：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">*</span><span class="keyword">*</span> 強調的文字 <span class="keyword">*</span><span class="keyword">*</span></div></pre></td></tr></table></figure>
+
+<h2 id="引用">引用</h2>
+<h3 id="單純引用">單純引用</h3>
+<blockquote>
+<p>不要因為有配著偉人照片，就隨便相信網路上流傳的名言佳句。──胡適</p>
+</blockquote>
+<h3 id="巢狀引用">巢狀引用</h3>
+<blockquote>
+<p>從前有座山，山裡有座廟，廟裡有個老和尚講故事，講的什麼呢？</p>
+<blockquote>
+<p>講的是從前有座山，山裡有座廟，廟裡有個老和尚講故事，講的什麼呢？</p>
+<blockquote>
+<p>講的是從前有座山，山裡有座廟，廟裡有個老和尚講故事，講的什麼呢？</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="參考連結">參考連結</h1>
+<p><a href="http://markdown.tw" target="_blank" rel="external">Markdown 語法說明</a></p>
+]]></content>
+    <summary type="html"><![CDATA[<!-- more -->
+
+<h1 id="標題">標題</h1>
+<h2 id="大標題">大標題</h2>
+<p>標題有分 <code>&lt;h1&gt;</code>、<code>&lt;h2&gt;</code>、<code>&lt;h3&gt;</code>、<code>&lt;h4&gt;</code>、<code>&lt;h5&gt;</code>、<code>&lt;h6&gt;</code> 六種<br>其中 <code>&lt;h1&gt;</code> 的寫法有兩種，第一種是在標題下畫等號：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="header">我是大標題 &lt;h1&gt;</span></div><div class="line">====</div></pre></td></tr></table></figure>
+
+<p>或是</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor"># 我是 &lt;h1&gt;</span></div></pre></td></tr></table></figure>
+
+]]></summary>
+    
+      <category term="md" scheme="http://m80126colin.github.io/blog/tags/md/"/>
+    
+      <category term="markdown" scheme="http://m80126colin.github.io/blog/tags/markdown/"/>
+    
+      <category term="md檔" scheme="http://m80126colin.github.io/blog/tags/md%E6%AA%94/"/>
+    
+      <category term="格式" scheme="http://m80126colin.github.io/blog/tags/%E6%A0%BC%E5%BC%8F/"/>
+    
+      <category term="format" scheme="http://m80126colin.github.io/blog/tags/format/"/>
+    
+      <category term="使用說明" scheme="http://m80126colin.github.io/blog/tags/%E4%BD%BF%E7%94%A8%E8%AA%AA%E6%98%8E/"/>
+    
+      <category term="usage" scheme="http://m80126colin.github.io/blog/tags/usage/"/>
+    
+      <category term="筆記" scheme="http://m80126colin.github.io/blog/categories/%E7%AD%86%E8%A8%98/"/>
+    
+      <category term="使用說明" scheme="http://m80126colin.github.io/blog/categories/%E7%AD%86%E8%A8%98/%E4%BD%BF%E7%94%A8%E8%AA%AA%E6%98%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[數與大數]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/number-and-bignumber/"/>
+    <id>http://m80126colin.github.io/blog/articles/number-and-bignumber/</id>
+    <published>2014-05-13T18:53:44.000Z</published>
+    <updated>2014-07-15T09:31:58.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="數的單位">數的單位</h2>
+<a id="more"></a>
+
+<p>1 googol = <span>$10^{100}$</span></p>
+<p>1 googolplex = <span>$10^{10^{100}}$</span></p>
+<h2 id="指數">指數</h2>
+<h3 id="指數律">指數律</h3>
+<h3 id="指數運算">指數運算</h3>
+<h2 id="英文數字">英文數字</h2>
+<h2 id="德文數字">德文數字</h2>
+<h2 id="中文數字">中文數字</h2>
+<h1 id="超大數">超大數</h1>
+<h2 id="高德納箭號表示法_(Knuth’s_Up-arrow_Notation)">高德納箭號表示法 (Knuth’s Up-arrow Notation)</h2>
+<h2 id="Hyper運算符_(Hyperoperation)">Hyper運算符 (Hyperoperation)</h2>
+<h2 id="施坦因豪斯-莫澤表示法_(Steinhaus–Moser_Notation)">施坦因豪斯-莫澤表示法 (Steinhaus–Moser Notation)</h2>
+<h2 id="阿克曼函數_(Ackermann_Function)">阿克曼函數 (Ackermann Function)</h2>
+<h2 id="康威鏈式箭號表示法_(Conway_Chained_Arrow_Notation)">康威鏈式箭號表示法 (Conway Chained Arrow Notation)</h2>
+<h3 id="葛立恆數_(Graham’s_Number)">葛立恆數 (Graham’s Number)</h3>
+<h1 id="參考資料">參考資料</h1>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Knuth%27s_up-arrow_notation" target="_blank" rel="external">Wikipedia - 高德納箭號表示法</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Hyperoperation" target="_blank" rel="external">Wikipedia - Hyper運算符</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Steinhaus%E2%80%93Moser_notation" target="_blank" rel="external">Wikipedia - 施坦因豪斯-莫澤表示法</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ackermann_function" target="_blank" rel="external">Wikipedia - 阿克曼函數</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Conway_chained_arrow_notation" target="_blank" rel="external">Wikipedia - 康威鏈式箭號表示法</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Graham%27s_number" target="_blank" rel="external">Wikipedia - 葛立恆數</a></li>
+</ul>
+]]></content>
+    <summary type="html"><![CDATA[<h2 id="數的單位">數的單位</h2>
+]]></summary>
+    
+      <category term="數字" scheme="http://m80126colin.github.io/blog/tags/%E6%95%B8%E5%AD%97/"/>
+    
+      <category term="大數" scheme="http://m80126colin.github.io/blog/tags/%E5%A4%A7%E6%95%B8/"/>
+    
+      <category term="英文" scheme="http://m80126colin.github.io/blog/tags/%E8%8B%B1%E6%96%87/"/>
+    
+      <category term="德文" scheme="http://m80126colin.github.io/blog/tags/%E5%BE%B7%E6%96%87/"/>
+    
+      <category term="中文" scheme="http://m80126colin.github.io/blog/tags/%E4%B8%AD%E6%96%87/"/>
+    
+      <category term="高德納記號" scheme="http://m80126colin.github.io/blog/tags/%E9%AB%98%E5%BE%B7%E7%B4%8D%E8%A8%98%E8%99%9F/"/>
+    
+      <category term="筆記" scheme="http://m80126colin.github.io/blog/categories/%E7%AD%86%E8%A8%98/"/>
+    
+      <category term="文章" scheme="http://m80126colin.github.io/blog/categories/%E7%AD%86%E8%A8%98/%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[120601 CPE 夏番]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/20120602-011600/"/>
+    <id>http://m80126colin.github.io/blog/articles/20120602-011600/</id>
+    <published>2012-06-01T17:16:00.000Z</published>
+    <updated>2014-07-21T09:39:47.000Z</updated>
+    <content type="html"><![CDATA[<p>下雷</p>
+<a id="more"></a>
+
+<p>根據歷年解題報告<br>一二三四星題為 3 / 2 / 1 / 1 題</p>
+<p>23621(UVa 11063): 2081 / 130 / 8<br>7 (37 + 120)<br>一星題無誤，只是看題沒看清楚就亂傳<br>Bug 一堆就炸了 QAQ</p>
+<p>23631(UVa 12149): 1491 / 424 / 3<br>1 (3 + 0)<br>這題看名稱就 AC 了，開場首殺，一星題無誤</p>
+<p>23641(UVa 118): 176 / 40 / 54<br>3 (118 + 40)<br>Lucky 貓二星題，機器人模擬題，苦工</p>
+<p>23651(UVa 10684): 439 / 77 / 15<br>1 (23 + 0)<br>Lucky 貓二星題，簡單 DP 題 O(<span>$n^2$</span>)<br>可用 Greedy 加速至 O(<span>$n$</span>)</p>
+<p>23661(UVa 10718): 73 / 2 / 134<br>1<br>Greedy 我罩門 QAQ<br>一開始太早開這題就卡到機器人題了<br>讓需要 1 的盡量多，不需要 1 的盡量少</p>
+<p>23671(UVa 10700): 105 / 20 / 44<br>2 (65 + 20)<br>Lucky 貓三星題，DP 暴搜 O(<span>$n^3$</span>) 解決</p>
+<p>23681(UVa 10404): 23 / 6 / 67<br>2<br>Lucky 貓三星題，之前誤以為要求 Grundy Number<br>然後 DP 誤判為 O(<span>$n^2$</span>) 然後就炸了 QAQ<br>後來 DP 應為 O(<span>$nm$</span>) 就過了</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>下雷</p>
+]]></summary>
+    
+      <category term="CPE" scheme="http://m80126colin.github.io/blog/tags/CPE/"/>
+    
+      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
+    
+      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[[解題報告][UVa][10718] Bit Mask]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/uva-10718-code/"/>
+    <id>http://m80126colin.github.io/blog/articles/uva-10718-code/</id>
+    <published>2012-05-30T02:09:00.000Z</published>
+    <updated>2014-07-15T07:12:49.000Z</updated>
+    <content type="html"><![CDATA[<p>題目大意：給你一個 N，再給下限 L，上限 U，問從 [L, U] 區間中取得最小一個數 M，使得 N or M 最大。</p>
+<p>下有雷 ………..</p>
+<a id="more"></a>
+
+<p>解法：Greedy</p>
+<p>儘量讓 N 中為 0 的位元，M 為 1；N 為 1 的位元， M 為 0。<br>因此從高位往低位檢查，<br>如果 N 為 1（M 儘量為 0），若 M 不能為 0，則必是因為 M 為 1 仍小於 L；<br>如果 N 為 0（M 儘量為 1），若 M 不能為 1，則必是因為 M 為 0 仍大於 U（此時不可能），<br>換句話說，M 為 1 時，M 需不大於 U。</p>
+<p>Code：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#<span class="keyword">define</span> BIT(i) (1LL &lt;&lt; i)</span></div><div class="line"><span class="preprocessor">#<span class="keyword">define</span> OR(x,i) (x | BIT(i))</span></div><div class="line"><span class="preprocessor">#<span class="keyword">define</span> AND(x,i) (x & BIT(i))</span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">int</span> main()</div><div class="line">{</div><div class="line">	<span class="keyword">long</span> <span class="keyword">long</span> n, L, U, ans, i;</div><div class="line">	<span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%lld%lld%lld"</span>, &n, &L, &U) != EOF)</div><div class="line">	{</div><div class="line">		ans = <span class="number">0</span>;</div><div class="line">		<span class="keyword">for</span> (i = <span class="number">31</span>; i &gt;= <span class="number">0</span>; i--)</div><div class="line">			<span class="keyword">if</span> ( OR(ans, i) &lt;= (AND(n, i) ? L: U) ) ans |= BIT(i);</div><div class="line">		<span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, ans);</div><div class="line">	}</div><div class="line">}</div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html"><![CDATA[<p>題目大意：給你一個 N，再給下限 L，上限 U，問從 [L, U] 區間中取得最小一個數 M，使得 N or M 最大。</p>
+<p>下有雷 ………..</p>
+]]></summary>
+    
+      <category term="C++" scheme="http://m80126colin.github.io/blog/tags/C/"/>
+    
+      <category term="Greedy" scheme="http://m80126colin.github.io/blog/tags/Greedy/"/>
+    
+      <category term="程式碼" scheme="http://m80126colin.github.io/blog/categories/%E7%A8%8B%E5%BC%8F%E7%A2%BC/"/>
+    
+      <category term="UVa" scheme="http://m80126colin.github.io/blog/categories/%E7%A8%8B%E5%BC%8F%E7%A2%BC/UVa/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[120521 只是朋友]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/20120521-013400/"/>
+    <id>http://m80126colin.github.io/blog/articles/20120521-013400/</id>
+    <published>2012-05-20T17:34:00.000Z</published>
+    <updated>2014-07-28T07:46:31.000Z</updated>
+    <content type="html"><![CDATA[<p>半夜無事來Po首歌<br>最近都沒啥在聽音樂<br>Youtube 在這</p>
+<div class="owl-media owl-video owl-youtube"><iframe src="//www.youtube.com/embed/RhvQkDj4ic0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+
+<a id="more"></a>
+
+<p>好朋友只是朋友 歌詞<br>作詞：黃婷<br>作曲：徐偉銘</p>
+<p>聽你說什麼我都很快樂<br>接近你連影子都微笑著<br>幾千隻紙鶴你都耐心地陪著我折<br>卻怎麼都折不掉那道無形的隔閡</p>
+<p>越懂你陪著你就越寂寞<br>靈魂那麼美我卻碰不得<br>感覺再熾熱也不能讓飛蛾去撲火<br>靠近你的夢難道就能不失落</p>
+<p>好朋友只是朋友 還是朋友 不能夠佔有<br>好朋友瘋狂以後 就一個人走 無所求<br>好朋友只是朋友 只能保留 一點點溫柔<br>我知道什麽時候回頭 不打擾你的自由</p>
+<p>認識你也許我就足夠了<br>緣分的深淺我都不管了<br>可能你感動也看不見我心如刀割<br>哪怕很痛過 至少就不算錯過</p>
+<p>好朋友只是朋友 還是朋友 不能夠佔有<br>好朋友瘋狂以後 就一個人走 無所求<br>好朋友只是朋友 只能保留 一點點溫柔<br>我知道什麽時候回頭 不打擾你的自由</p>
+<p>愛人不是最好的朋友<br>朋友再好也不能牽手<br>感情在天平兩頭 誰都怕太沈重</p>
+<p>好朋友只是朋友 還是朋友 不能夠佔有<br>好朋友瘋狂以後 還是一個人走 無所求<br>好朋友只是朋友 只能保留 一點點溫柔<br>我知道什麽時候回頭 不打擾你的自由</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>半夜無事來Po首歌<br>最近都沒啥在聽音樂<br>Youtube 在這</p>
+<div class="owl-media owl-video owl-youtube"><iframe src="//www.youtube.com/embed/RhvQkDj4ic0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+
+]]></summary>
+    
+      <category term="中文歌" scheme="http://m80126colin.github.io/blog/tags/%E4%B8%AD%E6%96%87%E6%AD%8C/"/>
+    
+      <category term="郁可唯" scheme="http://m80126colin.github.io/blog/tags/%E9%83%81%E5%8F%AF%E5%94%AF/"/>
+    
+      <category term="分享" scheme="http://m80126colin.github.io/blog/categories/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="中文歌" scheme="http://m80126colin.github.io/blog/categories/%E5%88%86%E4%BA%AB/%E4%B8%AD%E6%96%87%E6%AD%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[120514 2012 年 CPE 春番]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/20120514-052900/"/>
+    <id>http://m80126colin.github.io/blog/articles/20120514-052900/</id>
+    <published>2012-05-13T21:29:00.000Z</published>
+    <updated>2014-07-21T09:39:50.000Z</updated>
+    <content type="html"><![CDATA[<p>又是一篇遲到文 ….</p>
+<a id="more"></a>
+
+<p>…………… 不過終於破台了！！<br>(」・ω・)」うー！(／・ω・)／にゃー！！<br>(」・ω・)」うー！(／・ω・)／にゃー！！<br>除了白值有點高 +code 亂傳一通之外 (倒地)</p>
+<p>寫得大致上都滿順的 ……<br>Rank 1 的學長根本神 (worship)<br>鋼琴、裝呆、茵可也超神 (worship)<br>另外某 rank 32 的神猜題實在太恐怖了 ……….</p>
+<p>好吧其實沒什麼很高興<br>因為手速變慢了<br>等 夏番 吧</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>又是一篇遲到文 ….</p>
+]]></summary>
+    
+      <category term="CPE" scheme="http://m80126colin.github.io/blog/tags/CPE/"/>
+    
+      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
+    
+      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[120514 清雜草]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/20120514-051400/"/>
+    <id>http://m80126colin.github.io/blog/articles/20120514-051400/</id>
+    <published>2012-05-13T21:14:00.000Z</published>
+    <updated>2014-07-21T09:39:35.000Z</updated>
+    <content type="html"><![CDATA[<p>來清個雜草</p>
+<p>之後有時間在更新</p>
+]]></content>
+    
+    
+      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
+    
+      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[120302 ご結婚おめでとう！！]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/20120302-002700/"/>
+    <id>http://m80126colin.github.io/blog/articles/20120302-002700/</id>
+    <published>2012-03-01T16:27:00.000Z</published>
+    <updated>2014-07-21T09:39:32.000Z</updated>
+    <content type="html"><![CDATA[<p>一起床就聽到 ZUN 要結婚的消息 …..</p>
+<p><span style="font-size: 200%; color: red;"><strong>終於要結婚啦!!!!!!!!!!!</strong></span></p>
+<a id="more"></a>
+
+<p><a href="http://bopbeer.no-blog.jp/blog/2009/09/post_c54b.html" target="_blank" rel="external">木内酒造の手造りビール工房</a></p>
+<p>…… 不管裡面是裝啥我都一概認為是啤酒 (笑)</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>一起床就聽到 ZUN 要結婚的消息 …..</p>
+<p><span style="font-size: 200%; color: red;"><strong>終於要結婚啦!!!!!!!!!!!</strong></span></p>
+]]></summary>
+    
+      <category term="ZUN" scheme="http://m80126colin.github.io/blog/tags/ZUN/"/>
+    
+      <category term="結婚" scheme="http://m80126colin.github.io/blog/tags/%E7%B5%90%E5%A9%9A/"/>
+    
+      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
+    
+      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[120301 變月記了？成就廢文]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/20120301-100600/"/>
+    <id>http://m80126colin.github.io/blog/articles/20120301-100600/</id>
+    <published>2012-03-01T02:06:00.000Z</published>
+    <updated>2014-07-21T09:39:28.000Z</updated>
+    <content type="html"><![CDATA[<p>成就：</p>
+<p>120220 艾依 R1</p>
+<p>QQQQQ 升 R 好難 QQQQ<br>之後再更加努力吧QQQQQQQ</p>
+<a id="more"></a>
+
+<p>最近都在寫 UVa<br>沒啥時間打月記 CPE 和 Code果醬 也快開始了<br>新希望是：明年能比大甲賽<br>目前暫定目標：UVa 500 AC</p>
+<p>我是廢文～</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>成就：</p>
+<p>120220 艾依 R1</p>
+<p>QQQQQ 升 R 好難 QQQQ<br>之後再更加努力吧QQQQQQQ</p>
+]]></summary>
+    
+      <category term="UVa" scheme="http://m80126colin.github.io/blog/tags/UVa/"/>
+    
+      <category term="UL" scheme="http://m80126colin.github.io/blog/tags/UL/"/>
+    
+      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
+    
+      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[[解題報告][UVa][11012] Cosmic Cabbages]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/uva-11012-code/"/>
+    <id>http://m80126colin.github.io/blog/articles/uva-11012-code/</id>
+    <published>2012-02-29T18:05:00.000Z</published>
+    <updated>2014-07-15T07:22:30.000Z</updated>
+    <content type="html"><![CDATA[<p>題目大意：給你三維中 n 個座標，求這 n 個點中最大的曼哈頓距離？（<span>$2\leq{n}\leq{10 ^ 5}$</span>，多組測資）</p>
+<p>這題我擠了好久都想不出來，沒想到神 Inker Kuo 居然連證明都不用，一個數學算法就這樣丟出來，然後留下其他人幫他證明他是對的，根本就是計算界的愛因斯坦你真是神 WORSHIP &lt;(<em> </em>)&gt;</p>
+<p>果然這是現世報吧晚上才戳過學弟最遠點對，結果馬上就遇到這題被戳爆 ……. Orz</p>
+<p>看來沒有神的資質去冒充神果然下場都很淒慘，冒出旋轉卡尺的想法卻因為是三維空間而沒有做 (隨機增量的凸包還是會爆炸 ……)</p>
+<p>看來我還是太弱了，揮一揮衣袖，我帶不走任何電影票 (拭淚 + 嘴砲)</p>
+<p>下有雷</p>
+<a id="more"></a>
+
+<p>曼哈頓距離有很強的性質：</p>
+<p>| x | + | y | + | z | = d (定值)</p>
+<p>因此我們將絕對值解開可以得到 8 個平面：</p>
+<ul>
+<li>x + y + z = d</li>
+<li>x + y - z = d</li>
+<li>x - y + z = d</li>
+</ul>
+<ul>
+<li>x + y + z = d</li>
+</ul>
+<ul>
+<li>x - y - z = d</li>
+</ul>
+<ul>
+<li>x + y - z = d</li>
+<li>x - y + z = d</li>
+<li>x - y - z = d</li>
+</ul>
+<p>取其法向量，扣除重複，可以得到 4 個不重複的法向量：</p>
+<p>(+1, +1, +1)<br>(+1, +1, -1)<br>(+1, -1, +1)<br>(-1, +1, +1)</p>
+<p>將所有點投影到法向量上，可以得到一條一維，類似「距離表」的關係，在這四條法向量中，各取最大值和最小值，相減後得到 4 個在該法向量上最大的距離，取 max 即可得最大曼哈頓距離。</p>
+<p>踏馬得讓我想一下證明 (這實在太詭譎了) …… 待補。</p>
+<p>Code：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#<span class="keyword">define</span> N 100010</span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">struct</span> point</div><div class="line">{</div><div class="line">	<span class="keyword">int</span> x, y, z;</div><div class="line">}p[N];</div><div class="line"><span class="keyword">int</span> n;</div><div class="line"></div><div class="line"><span class="keyword">int</span> sol(<span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> c)</div><div class="line">{</div><div class="line">	<span class="keyword">int</span> mx, mn, m, i;</div><div class="line">	mx = mn = a * p[<span class="number">0</span>].x + b * p[<span class="number">0</span>].y + c * p[<span class="number">0</span>].z;</div><div class="line">	<span class="keyword">for</span> (i = <span class="number">1</span>; i &lt; n; i++)</div><div class="line">	{</div><div class="line">		m = a * p[i].x + b * p[i].y + c * p[i].z;</div><div class="line">		mx = max(mx, m);</div><div class="line">		mn = min(mn, m);</div><div class="line">	}</div><div class="line">	<span class="keyword">return</span> mx - mn;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keyword">int</span> main()</div><div class="line">{</div><div class="line">	<span class="keyword">int</span> i, t, ctr;</div><div class="line">	<span class="keyword">for</span> (<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &t), ctr = <span class="number">1</span>; ctr &lt;= t; ctr++)</div><div class="line">	{</div><div class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &n);</div><div class="line">		<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; n; i++)</div><div class="line">			<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &p[i].x, &p[i].y, &p[i].z);</div><div class="line">		<span class="built_in">printf</span>(<span class="string">"Case #%d: %d\n"</span>, ctr, max(max(sol(<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>), sol(<span class="number">1</span>, <span class="number">1</span>, -<span class="number">1</span>)), max(sol(<span class="number">1</span>, -<span class="number">1</span>, <span class="number">1</span>), sol(-<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>))));</div><div class="line">	}</div><div class="line">}</div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html"><![CDATA[<p>題目大意：給你三維中 n 個座標，求這 n 個點中最大的曼哈頓距離？（<span>$2\leq{n}\leq{10 ^ 5}$</span>，多組測資）</p>
+<p>這題我擠了好久都想不出來，沒想到神 Inker Kuo 居然連證明都不用，一個數學算法就這樣丟出來，然後留下其他人幫他證明他是對的，根本就是計算界的愛因斯坦你真是神 WORSHIP &lt;(<em> </em>)&gt;</p>
+<p>果然這是現世報吧晚上才戳過學弟最遠點對，結果馬上就遇到這題被戳爆 ……. Orz</p>
+<p>看來沒有神的資質去冒充神果然下場都很淒慘，冒出旋轉卡尺的想法卻因為是三維空間而沒有做 (隨機增量的凸包還是會爆炸 ……)</p>
+<p>看來我還是太弱了，揮一揮衣袖，我帶不走任何電影票 (拭淚 + 嘴砲)</p>
+<p>下有雷</p>
+]]></summary>
+    
+      <category term="C++" scheme="http://m80126colin.github.io/blog/tags/C/"/>
+    
+      <category term="Math" scheme="http://m80126colin.github.io/blog/tags/Math/"/>
+    
+      <category term="程式碼" scheme="http://m80126colin.github.io/blog/categories/%E7%A8%8B%E5%BC%8F%E7%A2%BC/"/>
+    
+      <category term="UVa" scheme="http://m80126colin.github.io/blog/categories/%E7%A8%8B%E5%BC%8F%E7%A2%BC/UVa/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[120201 回顧 2011 年 CPE 冬番]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/20120201-022700/"/>
+    <id>http://m80126colin.github.io/blog/articles/20120201-022700/</id>
+    <published>2012-01-31T18:27:00.000Z</published>
+    <updated>2014-07-21T09:39:24.000Z</updated>
+    <content type="html"><![CDATA[<p>最近幾天都在 PM 萌娘寶貝<br>單練一隻效能真的很高 ….. 花兩天時間 (20 hr) 就輾了四天王<br>火系神寶怒刷水系道館真的很精采 …..<br>下一個目標是 ……. 蒐集全部萌娘!!!! (この変態)<br>UL 嘛 …….. 放置 play ~~<br>最近還滿忙的 ……</p>
+<a id="more"></a>
+
+<p>11 年 12 月 20 日 CPE 冬番</p>
+<p>…… 一整個大爆炸~~~~~~~<br>大數寫不出來真的超崩潰 ……… 真的要大數特訓了 QQ<br>不然開場其實都還滿順利的說<br>以下是前 5 題白值 + 罰點</p>
+<ol>
+<li>75 +  0</li>
+<li>155 + 20</li>
+<li>73 + 20</li>
+<li>135 +  0 (學弟耶 worship)</li>
+<li>117 + 20</li>
+<li>85 +  0 (神威 worship)</li>
+<li>97 + 20</li>
+<li>79 + 40 (*)</li>
+<li>106 + 20</li>
+<li>126 +  0 (worship)</li>
+</ol>
+<p>白值還滿有潛力的，算是小進步的安慰獎<br>只是解題數和罰點整個就是超杯具 …. 唉唉<br>之後先將 UVa 刷進 500 題吧 …….</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>最近幾天都在 PM 萌娘寶貝<br>單練一隻效能真的很高 ….. 花兩天時間 (20 hr) 就輾了四天王<br>火系神寶怒刷水系道館真的很精采 …..<br>下一個目標是 ……. 蒐集全部萌娘!!!! (この変態)<br>UL 嘛 …….. 放置 play ~~<br>最近還滿忙的 ……</p>
+]]></summary>
+    
+      <category term="CPE" scheme="http://m80126colin.github.io/blog/tags/CPE/"/>
+    
+      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
+    
+      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[111128]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/20111128-130400/"/>
+    <id>http://m80126colin.github.io/blog/articles/20111128-130400/</id>
+    <published>2011-11-28T05:04:00.000Z</published>
+    <updated>2014-07-21T09:39:21.000Z</updated>
+    <content type="html"><![CDATA[<p>UL成就區：</p>
+<p>11/24 (四) 娃娃魚 Lv4 達成<br>11/28 (一) 雪莉 62 攻擊骰中 25<br>11/29 (二) 雪莉 Lv4 達成</p>
+<p>預定目標：</p>
+<p>雪莉 R1<br>(喂怎麼都是雪莉wwwwwww)</p>
+<a id="more"></a>
+
+<p>筆記：</p>
+<p><a href="http://www38.atwiki.jp/unlight-fbtw/pages/72.html" target="_blank" rel="external">from 戰鬥教學～詳細篇～</a></p>
+<p>移動階段順序：</p>
+<p>0    移動階段開始<br>1    抽取行動卡     行動卡欄位滿時不會抽取<br>2    抽取事件卡     行動卡欄位滿時一樣會發一張<br>3    出牌到場上     也可以不出牌<br>4    開牌<br>5    移動、回復     選擇不移動即回復1點HP<br>6    移動階段専用必殺技發動    古魯瓦爾多的必殺格局、精神力吸收等<br>7    決定主動權<br>8    更換卡片     可以變更戰鬥角色，當然也可以取消變更<br>9    移動階段結束</p>
+<p>攻防階段順序：</p>
+<p>0    攻撃階段開始     在移動階段裡取得主動權玩家的攻撃階段<br>1    出牌到場上     不出也可以<br>2    開牌     此時攻擊力還沒決定<br>3    防禦階段開始<br>4    出牌到場上     不出也可以<br>5    開牌<br>6    發動必殺技     攻撃前會有效果的技能：如精密射撃、深淵、砂漠的海市蜃樓等<br>7    決定攻撃、防禦力<br>8    骰子判定<br>9    決定最終攻撃、防禦數值<br>10    固有必殺技發動     攻撃或防禦成功時發動的技能効果：如雷撃(卡片破壞)、吸血或劫影攻擊等<br>11    傷害     以在9決定的數值來造成傷害<br>12    攻撃方防禦方交換 / 下一個移動階段</p>
+<p>骰子機率：</p>
+<p>理論上為 1 / 3</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>UL成就區：</p>
+<p>11/24 (四) 娃娃魚 Lv4 達成<br>11/28 (一) 雪莉 62 攻擊骰中 25<br>11/29 (二) 雪莉 Lv4 達成</p>
+<p>預定目標：</p>
+<p>雪莉 R1<br>(喂怎麼都是雪莉wwwwwww)</p>
+]]></summary>
+    
+      <category term="UL" scheme="http://m80126colin.github.io/blog/tags/UL/"/>
+    
+      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
+    
+      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[111122 期中脫出]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/20111122-215500/"/>
+    <id>http://m80126colin.github.io/blog/articles/20111122-215500/</id>
+    <published>2011-11-22T13:55:00.000Z</published>
+    <updated>2014-07-21T09:39:15.000Z</updated>
+    <content type="html"><![CDATA[<p>剛剛打的被吃掉了….<br>只好重打= =<br>現在只差一科<br>期末也快了</p>
+<a id="more"></a>
+
+<p>最近都在玩 UL<br>大約是 在 11/4 左右開始玩的吧<br>過沒多久 (11/18)<br>胖胖天 Hobe 秀輝<br>就在演算法課上大玩特玩……..<br>自重呀!!!!!!<br>話說胖胖天你是不是跑錯教室了呀wwwwww<br>(沒修演算法)<br>話說一開始 UL 玩艾伯真的是錯了呀……<br>人品不好又玩艾伯真的是地獄…..<br>只是最近河道丟一直被洗 UL 噗 (自重)<br>截至目前為止，獲得的成就如下：</p>
+<ol>
+<li>艾伯 (爛骰王) 30顆攻擊骰空骰 (你真的是爛骰王……)</li>
+<li>死了無數次的艾伯 (沒次都被裸王阿貝爾推倒打爆)</li>
+<li>與艾喵對戰連輸 5 場</li>
+<li>同上，最後用艾伯爛骰與艾喵纏鬥 15 回合</li>
+<li>11/13 (日) 左右第一次對戰</li>
+<li>11/17 (四) 爛骰王產出 (距離開始玩 13 天)</li>
+<li>11/18 (五) 第一位受害者被推坑…..</li>
+<li>與 07. 同一天，雪莉獲得!!!!! (14 天)</li>
+<li>11/19 (六) Lv3 雪莉!!!!! (15 天)</li>
+<li>與 09. 同一天左右，第二位受害者被推坑……</li>
+<li>11/20 (日) 對戰 10 星達成，娃娃魚大軍……</li>
+</ol>
+<p>目前預定新成就：</p>
+<ol>
+<li>娃娃魚 Lv4</li>
+<li>雪莉 R1</li>
+</ol>
+<hr>
+<p><a href="http://buzzpark.cc/fortune/show/2FV" target="_blank" rel="external">你在Unlight裡的角色</a></p>
+<p>歡迎來到Unlight的世界！新角色卡『許胖』是能夠操縱巨獸，戴著粗框眼鏡的天使。固有必殺技「逆轉時間」，效果：丟兩次骰子，擇較好的那方結果。 -&gt; 平民枯枝王嗎….(錯字自重)</p>
+<p>——噗浪物——</p>
+<p>[轉] 宋Ｘ力，非學園都市民眾，自稱「超能力者 (Level 5)」，實際等級未測定。能力「多重分身 (Doppelganger)」，可以同一時間不同地點展現自身影像，針對光子能量進行逆向演算，干涉光波色彩成分，造成視覺假象。<br>名場景：假借神跡詐財事件。</p>
+<hr>
+<p><a href="http://newsrumble.tw/" target="_blank" rel="external">正直好新聞</a></p>
+<p>讚!!!!!!!!</p>
+<hr>
+<p><a href="http://gnn.gamer.com.tw/1/59191.html" target="_blank" rel="external">日本「魔法少女」系列動畫 45 年大回顧 前篇：魔法少女 誕生！</a><br><a href="http://gnn.gamer.com.tw/7/59617.html" target="_blank" rel="external">日本「魔法少女」系列動畫 45 年大回顧 後篇：魔法少女 全新進化！</a></p>
+<p>為什麼 1995 年一堆動畫我都知道是什麼黑魔法…….<br>雖然 1995 年的很多出品物我都知道…..(掩面)</p>
+<hr>
+<p>就好像什麼是數學？偏微分方程是數學，複變也是數學。什麼是數學？這個很難去定義。這樣就變成什麼東西都是數學。像你看「數學」只有這麼一點，其他的是「非數學」；可是數學是數學，「非」是數學運算，所以全部都是數學。所以說什麼是數學？數學家研究的就是數學，哲學家研究的就是哲學。</p>
+<hr>
+<p>人生有太多不正直</p>
+<hr>
+<p>暴力、金錢、知識、人心。<br>前三種是手段，為的是最後的目的。</p>
+<hr>
+<p>等待妳的歸來，悄悄的走遠卻沒發覺。</p>
+<hr>
+<p>Halting Problem not only “Computer Beings” but Humans.<br>All People need Happiness and the tiny little Hope in the great Despair.<br>(文法自重)</p>
+<hr>
+<p>有些事情需要很多的故意及無心。</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>剛剛打的被吃掉了….<br>只好重打= =<br>現在只差一科<br>期末也快了</p>
+]]></summary>
+    
+      <category term="UL" scheme="http://m80126colin.github.io/blog/tags/UL/"/>
+    
+      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
+    
+      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[111113]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/20111113-041600/"/>
+    <id>http://m80126colin.github.io/blog/articles/20111113-041600/</id>
+    <published>2011-11-12T20:16:00.000Z</published>
+    <updated>2014-07-21T09:39:10.000Z</updated>
+    <content type="html"><![CDATA[<p>早知道就在光棍節 PO 文了<br>奪帥氣</p>
+<a id="more"></a>
+
+<p>或許這真的不適合。<br>強求下並不會得到幸福。<br>累了，想離開了。<br>等待妳的歸來，悄悄的走遠卻沒發覺。</p>
+<p>有些地方不許此等容身，<br>也不許佇留在此。</p>
+<p>該退休了。</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>早知道就在光棍節 PO 文了<br>奪帥氣</p>
+]]></summary>
+    
+      <category term="光棍節" scheme="http://m80126colin.github.io/blog/tags/%E5%85%89%E6%A3%8D%E7%AF%80/"/>
+    
+      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
+    
+      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
+    
+  </entry>
+  
+</feed>
