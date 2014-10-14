@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的呆毛可以覆蓋全台灣 XD]]></subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://m80126colin.github.io/blog/"/>
-  <updated>2014-10-14T15:05:05.851Z</updated>
+  <updated>2014-10-14T15:22:16.405Z</updated>
   <id>http://m80126colin.github.io/blog/</id>
   
   <author>
@@ -27,7 +27,11 @@
 <li><a href="http://baike.baidu.com/view/8553074.htm" target="_blank" rel="external">神聖幾何學 - Baidu</a></li>
 </ul>
 ]]></content>
-    
+    <summary type="html">
+    <![CDATA[<ul>
+<li><a href="http://blog.yam.com/RedPapaya/article/28452055" target="_blank" rel="external">梅塔特隆立方體 (Metatron)</a></li>
+<li><a href="ht]]>
+    </summary>
     
       <category term="創作" scheme="http://m80126colin.github.io/blog/categories/%E5%89%B5%E4%BD%9C/"/>
     
@@ -51,8 +55,11 @@
 <p><code>hexo-tag-owl</code> 在圖片只支援本地圖片插入<br>解決了當 blog 的根目錄是在 <code>m80126colin.github.io/blog</code> 時<br>圖片卻是從 <code>m80126colin.github.io</code> 來搜尋</p>
 <p>至少有個整理的地方<br>部落格很多部份也想翻新<br>比如 Archive, Tag Cloud 等等<br>這又是另一段故事了</p>
 ]]></content>
-    <summary type="html"><![CDATA[<p>最近都在架部落格 …</p>
-]]></summary>
+    <summary type="html">
+    <![CDATA[<p>最近都在架部落格 …</p>
+]]>
+    
+    </summary>
     
       <category term="hexo" scheme="http://m80126colin.github.io/blog/tags/hexo/"/>
     
@@ -75,7 +82,11 @@
 <li><a href="https://docs.google.com/document/d/1qDgn52fOZfIrlWjy-4LPeFq7b7CBaO1XUXPkdk992DI/edit" target="_blank" rel="external">18 歲的野比大雄</a></li>
 </ul>
 ]]></content>
-    
+    <summary type="html">
+    <![CDATA[<h1 id="小說">小說</h1>
+<ul>
+<li><a href="https://docs.google.com/document/d/1qDgn52fOZfIrlWjy-4LPeFq7b7CBaO1XUXPkdk992DI/edit" target="_blank" ]]>
+    </summary>
     
       <category term="ACGN" scheme="http://m80126colin.github.io/blog/tags/ACGN/"/>
     
@@ -102,7 +113,10 @@
 <h1 id="hexo_(2014-07_-)">hexo (2014.07 -)</h1>
 <p>大學畢業後，利用 hexo 系統重新建構部落格。</p>
 ]]></content>
-    
+    <summary type="html">
+    <![CDATA[<h1 id="yahoo,_pchome_(2005-11-21_-_2008-03-09)">yahoo, pchome (2005.11.21 - 2008.03.09)</h1>
+<p>國中時代 blog 盛行，在一開始國一時班上使用 pchome 佔多數，進團班後使用 ]]>
+    </summary>
     
       <category term="天然呆" scheme="http://m80126colin.github.io/blog/tags/%E5%A4%A9%E7%84%B6%E5%91%86/"/>
     
@@ -144,7 +158,8 @@
 <h1 id="討論議題">討論議題</h1>
 <p>在《時間機器》中，作者提出了對當時社會現象的見解，而現在的社會與當時有無極大的差距？現代社會是否也存有許多致命的危機？</p>
 ]]></content>
-    <summary type="html"><![CDATA[<h1 id="相關書訊">相關書訊</h1>
+    <summary type="html">
+    <![CDATA[<h1 id="相關書訊">相關書訊</h1>
 <ul>
 <li>書籍ISBN: 9577336035</li>
 <li>中文書名: 時間機器</li>
@@ -155,7 +170,9 @@
 <li>出版年月: 2001 年 10 月</li>
 <li>版次: 初版</li>
 </ul>
-]]></summary>
+]]>
+    
+    </summary>
     
       <category term="時間機器" scheme="http://m80126colin.github.io/blog/tags/%E6%99%82%E9%96%93%E6%A9%9F%E5%99%A8/"/>
     
@@ -212,8 +229,11 @@
 <h1 id="LEVEL_9:_KD124_–_2-TO-4_LINE_DECODER">LEVEL 9: KD124 – 2-TO-4 LINE DECODER</h1>
 <h1 id="LEVEL_10:_KA180_–_2-BIT_ADDER_WITH_CARRY">LEVEL 10: KA180 – 2-BIT ADDER WITH CARRY</h1>
 ]]></content>
-    <summary type="html"><![CDATA[<p><a href="http://www.kongregate.com/games/krispykrem/kohctpyktop-engineer-of-the-people" target="_blank" rel="external">Kohctpyktop</a></p>
-]]></summary>
+    <summary type="html">
+    <![CDATA[<p><a href="http://www.kongregate.com/games/krispykrem/kohctpyktop-engineer-of-the-people" target="_blank" rel="external">Kohctpyktop</a></p>
+]]>
+    
+    </summary>
     
       <category term="小遊戲" scheme="http://m80126colin.github.io/blog/tags/%E5%B0%8F%E9%81%8A%E6%88%B2/"/>
     
@@ -373,7 +393,8 @@
 <h1 id="參考連結">參考連結</h1>
 <p><a href="http://markdown.tw" target="_blank" rel="external">Markdown 語法說明</a></p>
 ]]></content>
-    <summary type="html"><![CDATA[<!-- more -->
+    <summary type="html">
+    <![CDATA[<!-- more -->
 
 <h1 id="標題">標題</h1>
 <h2 id="大標題">大標題</h2>
@@ -383,7 +404,9 @@
 <p>或是</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor"># 我是 &lt;h1&gt;</span></div></pre></td></tr></table></figure>
 
-]]></summary>
+]]>
+    
+    </summary>
     
       <category term="md" scheme="http://m80126colin.github.io/blog/tags/md/"/>
     
@@ -439,8 +462,11 @@
 <li><a href="http://en.wikipedia.org/wiki/Graham%27s_number" target="_blank" rel="external">Wikipedia - 葛立恆數</a></li>
 </ul>
 ]]></content>
-    <summary type="html"><![CDATA[<h2 id="數的單位">數的單位</h2>
-]]></summary>
+    <summary type="html">
+    <![CDATA[<h2 id="數的單位">數的單位</h2>
+]]>
+    
+    </summary>
     
       <category term="數字" scheme="http://m80126colin.github.io/blog/tags/%E6%95%B8%E5%AD%97/"/>
     
@@ -478,8 +504,11 @@
 <p>23671(UVa 10700): 105 / 20 / 44<br>2 (65 + 20)<br>Lucky 貓三星題，DP 暴搜 O(<span>$n^3$</span>) 解決</p>
 <p>23681(UVa 10404): 23 / 6 / 67<br>2<br>Lucky 貓三星題，之前誤以為要求 Grundy Number<br>然後 DP 誤判為 O(<span>$n^2$</span>) 然後就炸了 QAQ<br>後來 DP 應為 O(<span>$nm$</span>) 就過了</p>
 ]]></content>
-    <summary type="html"><![CDATA[<p>下雷</p>
-]]></summary>
+    <summary type="html">
+    <![CDATA[<p>下雷</p>
+]]>
+    
+    </summary>
     
       <category term="CPE" scheme="http://m80126colin.github.io/blog/tags/CPE/"/>
     
@@ -505,9 +534,12 @@
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#<span class="keyword">define</span> BIT(i) (1LL &lt;&lt; i)</span></div><div class="line"><span class="preprocessor">#<span class="keyword">define</span> OR(x,i) (x | BIT(i))</span></div><div class="line"><span class="preprocessor">#<span class="keyword">define</span> AND(x,i) (x & BIT(i))</span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">int</span> main()</div><div class="line">{</div><div class="line">	<span class="keyword">long</span> <span class="keyword">long</span> n, L, U, ans, i;</div><div class="line">	<span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%lld%lld%lld"</span>, &n, &L, &U) != EOF)</div><div class="line">	{</div><div class="line">		ans = <span class="number">0</span>;</div><div class="line">		<span class="keyword">for</span> (i = <span class="number">31</span>; i &gt;= <span class="number">0</span>; i--)</div><div class="line">			<span class="keyword">if</span> ( OR(ans, i) &lt;= (AND(n, i) ? L: U) ) ans |= BIT(i);</div><div class="line">		<span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, ans);</div><div class="line">	}</div><div class="line">}</div></pre></td></tr></table></figure>
 
 ]]></content>
-    <summary type="html"><![CDATA[<p>題目大意：給你一個 N，再給下限 L，上限 U，問從 [L, U] 區間中取得最小一個數 M，使得 N or M 最大。</p>
+    <summary type="html">
+    <![CDATA[<p>題目大意：給你一個 N，再給下限 L，上限 U，問從 [L, U] 區間中取得最小一個數 M，使得 N or M 最大。</p>
 <p>下有雷 ………..</p>
-]]></summary>
+]]>
+    
+    </summary>
     
       <category term="C++" scheme="http://m80126colin.github.io/blog/tags/C/"/>
     
@@ -539,10 +571,13 @@
 <p>愛人不是最好的朋友<br>朋友再好也不能牽手<br>感情在天平兩頭 誰都怕太沈重</p>
 <p>好朋友只是朋友 還是朋友 不能夠佔有<br>好朋友瘋狂以後 還是一個人走 無所求<br>好朋友只是朋友 只能保留 一點點溫柔<br>我知道什麽時候回頭 不打擾你的自由</p>
 ]]></content>
-    <summary type="html"><![CDATA[<p>半夜無事來Po首歌<br>最近都沒啥在聽音樂<br>Youtube 在這</p>
+    <summary type="html">
+    <![CDATA[<p>半夜無事來Po首歌<br>最近都沒啥在聽音樂<br>Youtube 在這</p>
 <div class="owl-media owl-video owl-youtube"><iframe src="//www.youtube.com/embed/RhvQkDj4ic0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
 
-]]></summary>
+]]>
+    
+    </summary>
     
       <category term="中文歌" scheme="http://m80126colin.github.io/blog/tags/%E4%B8%AD%E6%96%87%E6%AD%8C/"/>
     
@@ -567,8 +602,11 @@
 <p>寫得大致上都滿順的 ……<br>Rank 1 的學長根本神 (worship)<br>鋼琴、裝呆、茵可也超神 (worship)<br>另外某 rank 32 的神猜題實在太恐怖了 ……….</p>
 <p>好吧其實沒什麼很高興<br>因為手速變慢了<br>等 夏番 吧</p>
 ]]></content>
-    <summary type="html"><![CDATA[<p>又是一篇遲到文 ….</p>
-]]></summary>
+    <summary type="html">
+    <![CDATA[<p>又是一篇遲到文 ….</p>
+]]>
+    
+    </summary>
     
       <category term="CPE" scheme="http://m80126colin.github.io/blog/tags/CPE/"/>
     
@@ -587,7 +625,11 @@
     <content type="html"><![CDATA[<p>來清個雜草</p>
 <p>之後有時間在更新</p>
 ]]></content>
-    
+    <summary type="html">
+    <![CDATA[<p>來清個雜草</p>
+<p>之後有時間在更新</p>
+]]>
+    </summary>
     
       <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
     
@@ -608,9 +650,12 @@
 <p><a href="http://bopbeer.no-blog.jp/blog/2009/09/post_c54b.html" target="_blank" rel="external">木内酒造の手造りビール工房</a></p>
 <p>…… 不管裡面是裝啥我都一概認為是啤酒 (笑)</p>
 ]]></content>
-    <summary type="html"><![CDATA[<p>一起床就聽到 ZUN 要結婚的消息 …..</p>
+    <summary type="html">
+    <![CDATA[<p>一起床就聽到 ZUN 要結婚的消息 …..</p>
 <p><span style="font-size: 200%; color: red;"><strong>終於要結婚啦!!!!!!!!!!!</strong></span></p>
-]]></summary>
+]]>
+    
+    </summary>
     
       <category term="ZUN" scheme="http://m80126colin.github.io/blog/tags/ZUN/"/>
     
@@ -636,10 +681,13 @@
 <p>最近都在寫 UVa<br>沒啥時間打月記 CPE 和 Code果醬 也快開始了<br>新希望是：明年能比大甲賽<br>目前暫定目標：UVa 500 AC</p>
 <p>我是廢文～</p>
 ]]></content>
-    <summary type="html"><![CDATA[<p>成就：</p>
+    <summary type="html">
+    <![CDATA[<p>成就：</p>
 <p>120220 艾依 R1</p>
 <p>QQQQQ 升 R 好難 QQQQ<br>之後再更加努力吧QQQQQQQ</p>
-]]></summary>
+]]>
+    
+    </summary>
     
       <category term="UVa" scheme="http://m80126colin.github.io/blog/tags/UVa/"/>
     
@@ -692,13 +740,16 @@
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#<span class="keyword">define</span> N 100010</span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">struct</span> point</div><div class="line">{</div><div class="line">	<span class="keyword">int</span> x, y, z;</div><div class="line">}p[N];</div><div class="line"><span class="keyword">int</span> n;</div><div class="line"></div><div class="line"><span class="keyword">int</span> sol(<span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> c)</div><div class="line">{</div><div class="line">	<span class="keyword">int</span> mx, mn, m, i;</div><div class="line">	mx = mn = a * p[<span class="number">0</span>].x + b * p[<span class="number">0</span>].y + c * p[<span class="number">0</span>].z;</div><div class="line">	<span class="keyword">for</span> (i = <span class="number">1</span>; i &lt; n; i++)</div><div class="line">	{</div><div class="line">		m = a * p[i].x + b * p[i].y + c * p[i].z;</div><div class="line">		mx = max(mx, m);</div><div class="line">		mn = min(mn, m);</div><div class="line">	}</div><div class="line">	<span class="keyword">return</span> mx - mn;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keyword">int</span> main()</div><div class="line">{</div><div class="line">	<span class="keyword">int</span> i, t, ctr;</div><div class="line">	<span class="keyword">for</span> (<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &t), ctr = <span class="number">1</span>; ctr &lt;= t; ctr++)</div><div class="line">	{</div><div class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &n);</div><div class="line">		<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; n; i++)</div><div class="line">			<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &p[i].x, &p[i].y, &p[i].z);</div><div class="line">		<span class="built_in">printf</span>(<span class="string">"Case #%d: %d\n"</span>, ctr, max(max(sol(<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>), sol(<span class="number">1</span>, <span class="number">1</span>, -<span class="number">1</span>)), max(sol(<span class="number">1</span>, -<span class="number">1</span>, <span class="number">1</span>), sol(-<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>))));</div><div class="line">	}</div><div class="line">}</div></pre></td></tr></table></figure>
 
 ]]></content>
-    <summary type="html"><![CDATA[<p>題目大意：給你三維中 n 個座標，求這 n 個點中最大的曼哈頓距離？（<span>$2\leq{n}\leq{10 ^ 5}$</span>，多組測資）</p>
+    <summary type="html">
+    <![CDATA[<p>題目大意：給你三維中 n 個座標，求這 n 個點中最大的曼哈頓距離？（<span>$2\leq{n}\leq{10 ^ 5}$</span>，多組測資）</p>
 <p>這題我擠了好久都想不出來，沒想到神 Inker Kuo 居然連證明都不用，一個數學算法就這樣丟出來，然後留下其他人幫他證明他是對的，根本就是計算界的愛因斯坦你真是神 WORSHIP &lt;(<em> </em>)&gt;</p>
 <p>果然這是現世報吧晚上才戳過學弟最遠點對，結果馬上就遇到這題被戳爆 ……. Orz</p>
 <p>看來沒有神的資質去冒充神果然下場都很淒慘，冒出旋轉卡尺的想法卻因為是三維空間而沒有做 (隨機增量的凸包還是會爆炸 ……)</p>
 <p>看來我還是太弱了，揮一揮衣袖，我帶不走任何電影票 (拭淚 + 嘴砲)</p>
 <p>下有雷</p>
-]]></summary>
+]]>
+    
+    </summary>
     
       <category term="C++" scheme="http://m80126colin.github.io/blog/tags/C/"/>
     
@@ -735,8 +786,11 @@
 </ol>
 <p>白值還滿有潛力的，算是小進步的安慰獎<br>只是解題數和罰點整個就是超杯具 …. 唉唉<br>之後先將 UVa 刷進 500 題吧 …….</p>
 ]]></content>
-    <summary type="html"><![CDATA[<p>最近幾天都在 PM 萌娘寶貝<br>單練一隻效能真的很高 ….. 花兩天時間 (20 hr) 就輾了四天王<br>火系神寶怒刷水系道館真的很精采 …..<br>下一個目標是 ……. 蒐集全部萌娘!!!! (この変態)<br>UL 嘛 …….. 放置 play ~~<br>最近還滿忙的 ……</p>
-]]></summary>
+    <summary type="html">
+    <![CDATA[<p>最近幾天都在 PM 萌娘寶貝<br>單練一隻效能真的很高 ….. 花兩天時間 (20 hr) 就輾了四天王<br>火系神寶怒刷水系道館真的很精采 …..<br>下一個目標是 ……. 蒐集全部萌娘!!!! (この変態)<br>UL 嘛 …….. 放置 play ~~<br>最近還滿忙的 ……</p>
+]]>
+    
+    </summary>
     
       <category term="CPE" scheme="http://m80126colin.github.io/blog/tags/CPE/"/>
     
@@ -767,11 +821,14 @@
 <p>骰子機率：</p>
 <p>理論上為 1 / 3</p>
 ]]></content>
-    <summary type="html"><![CDATA[<p>UL成就區：</p>
+    <summary type="html">
+    <![CDATA[<p>UL成就區：</p>
 <p>11/24 (四) 娃娃魚 Lv4 達成<br>11/28 (一) 雪莉 62 攻擊骰中 25<br>11/29 (二) 雪莉 Lv4 達成</p>
 <p>預定目標：</p>
 <p>雪莉 R1<br>(喂怎麼都是雪莉wwwwwww)</p>
-]]></summary>
+]]>
+    
+    </summary>
     
       <category term="UL" scheme="http://m80126colin.github.io/blog/tags/UL/"/>
     
@@ -833,8 +890,11 @@
 <hr>
 <p>有些事情需要很多的故意及無心。</p>
 ]]></content>
-    <summary type="html"><![CDATA[<p>剛剛打的被吃掉了….<br>只好重打= =<br>現在只差一科<br>期末也快了</p>
-]]></summary>
+    <summary type="html">
+    <![CDATA[<p>剛剛打的被吃掉了….<br>只好重打= =<br>現在只差一科<br>期末也快了</p>
+]]>
+    
+    </summary>
     
       <category term="UL" scheme="http://m80126colin.github.io/blog/tags/UL/"/>
     
@@ -857,8 +917,11 @@
 <p>有些地方不許此等容身，<br>也不許佇留在此。</p>
 <p>該退休了。</p>
 ]]></content>
-    <summary type="html"><![CDATA[<p>早知道就在光棍節 PO 文了<br>奪帥氣</p>
-]]></summary>
+    <summary type="html">
+    <![CDATA[<p>早知道就在光棍節 PO 文了<br>奪帥氣</p>
+]]>
+    
+    </summary>
     
       <category term="光棍節" scheme="http://m80126colin.github.io/blog/tags/%E5%85%89%E6%A3%8D%E7%AF%80/"/>
     
