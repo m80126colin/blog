@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的呆毛可以覆蓋全台灣 XD]]></subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://m80126colin.github.io/blog/"/>
-  <updated>2014-10-22T18:29:55.356Z</updated>
+  <updated>2014-10-22T18:57:56.607Z</updated>
   <id>http://m80126colin.github.io/blog/</id>
   
   <author>
@@ -13,6 +13,34 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[[翻譯][UVa][11525] Potentiometers]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/uva11525/"/>
+    <id>http://m80126colin.github.io/blog/articles/uva11525/</id>
+    <published>2014-10-22T18:49:56.000Z</published>
+    <updated>2014-10-22T18:57:47.000Z</updated>
+    <content type="html"><![CDATA[<p>給定 <span>$N$</span> 和 <span>$K$</span>，請從 1 到 <span>$K$</span> 的字典順序排列中，找出第 <span>$N$</span> 個排列，<span>$N$</span> 從 0 開始，因為 <span>$N$</span> 會很大，因此我們用 K 個非負整數 <span>$S_1$</span>, <span>$S_2$</span>, <span>$\cdots{}$</span>, <span>$S_k$</span> 來表示。</p>
+<a id="more"></a>
+
+<h2 id="輸入">輸入</h2>
+<h2 id="輸出">輸出</h2>
+<h2 id="範例輸入">範例輸入</h2>
+<h2 id="範例輸出">範例輸出</h2>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>給定 <span>$N$</span> 和 <span>$K$</span>，請從 1 到 <span>$K$</span> 的字典順序排列中，找出第 <span>$N$</span> 個排列，<span>$N$</span> 從 0 開始，因為 <span>$N$</span> 會很大，因此我們用 K 個非負整數 <span>$S_1$</span>, <span>$S_2$</span>, <span>$\cdots{}$</span>, <span>$S_k$</span> 來表示。</p>
+]]>
+    
+    </summary>
+    
+      <category term="翻譯" scheme="http://m80126colin.github.io/blog/tags/%E7%BF%BB%E8%AD%AF/"/>
+    
+      <category term="翻譯" scheme="http://m80126colin.github.io/blog/categories/%E7%BF%BB%E8%AD%AF/"/>
+    
+      <category term="UVa/ACM" scheme="http://m80126colin.github.io/blog/categories/%E7%BF%BB%E8%AD%AF/UVa-ACM/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[[翻譯][UVa][12086] Potentiometers]]></title>
@@ -871,44 +899,6 @@
     </summary>
     
       <category term="CPE" scheme="http://m80126colin.github.io/blog/tags/CPE/"/>
-    
-      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
-    
-      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[111128]]></title>
-    <link href="http://m80126colin.github.io/blog/articles/20111128-130400/"/>
-    <id>http://m80126colin.github.io/blog/articles/20111128-130400/</id>
-    <published>2011-11-28T05:04:00.000Z</published>
-    <updated>2014-07-21T09:39:21.000Z</updated>
-    <content type="html"><![CDATA[<p>UL成就區：</p>
-<p>11/24 (四) 娃娃魚 Lv4 達成<br>11/28 (一) 雪莉 62 攻擊骰中 25<br>11/29 (二) 雪莉 Lv4 達成</p>
-<p>預定目標：</p>
-<p>雪莉 R1<br>(喂怎麼都是雪莉wwwwwww)</p>
-<a id="more"></a>
-
-<p>筆記：</p>
-<p><a href="http://www38.atwiki.jp/unlight-fbtw/pages/72.html" target="_blank" rel="external">from 戰鬥教學～詳細篇～</a></p>
-<p>移動階段順序：</p>
-<p>0    移動階段開始<br>1    抽取行動卡     行動卡欄位滿時不會抽取<br>2    抽取事件卡     行動卡欄位滿時一樣會發一張<br>3    出牌到場上     也可以不出牌<br>4    開牌<br>5    移動、回復     選擇不移動即回復1點HP<br>6    移動階段専用必殺技發動    古魯瓦爾多的必殺格局、精神力吸收等<br>7    決定主動權<br>8    更換卡片     可以變更戰鬥角色，當然也可以取消變更<br>9    移動階段結束</p>
-<p>攻防階段順序：</p>
-<p>0    攻撃階段開始     在移動階段裡取得主動權玩家的攻撃階段<br>1    出牌到場上     不出也可以<br>2    開牌     此時攻擊力還沒決定<br>3    防禦階段開始<br>4    出牌到場上     不出也可以<br>5    開牌<br>6    發動必殺技     攻撃前會有效果的技能：如精密射撃、深淵、砂漠的海市蜃樓等<br>7    決定攻撃、防禦力<br>8    骰子判定<br>9    決定最終攻撃、防禦數值<br>10    固有必殺技發動     攻撃或防禦成功時發動的技能効果：如雷撃(卡片破壞)、吸血或劫影攻擊等<br>11    傷害     以在9決定的數值來造成傷害<br>12    攻撃方防禦方交換 / 下一個移動階段</p>
-<p>骰子機率：</p>
-<p>理論上為 1 / 3</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>UL成就區：</p>
-<p>11/24 (四) 娃娃魚 Lv4 達成<br>11/28 (一) 雪莉 62 攻擊骰中 25<br>11/29 (二) 雪莉 Lv4 達成</p>
-<p>預定目標：</p>
-<p>雪莉 R1<br>(喂怎麼都是雪莉wwwwwww)</p>
-]]>
-    
-    </summary>
-    
-      <category term="UL" scheme="http://m80126colin.github.io/blog/tags/UL/"/>
     
       <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
     
