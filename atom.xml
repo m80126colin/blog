@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的呆毛可以覆蓋全台灣 XD]]></subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://m80126colin.github.io/blog/"/>
-  <updated>2014-10-22T18:04:18.137Z</updated>
+  <updated>2014-10-22T18:07:31.053Z</updated>
   <id>http://m80126colin.github.io/blog/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://m80126colin.github.io/blog/articles/uva12086/"/>
     <id>http://m80126colin.github.io/blog/articles/uva12086/</id>
     <published>2014-10-22T17:45:55.000Z</published>
-    <updated>2014-10-22T18:04:09.000Z</updated>
+    <updated>2014-10-22T18:07:22.000Z</updated>
     <content type="html"><![CDATA[<p>電位計 (potentiometer，簡稱 potmeter) 是一種有可變電阻的電子設備，它有兩個接點 (terminal) 和一些控制結構 (通常是刻度盤、齒輪或者滑塊) 使得我們可以調整兩接點間的電阻值從 0 (無電阻) 到一個最大值。電阻的單位是歐姆 (Ohm)，當有兩個以上的電阻串聯 (也就是一個接著一個連接) 在一起，總電阻就會是個別電阻的總和。</p>
 <p>在這個問題中，我們考慮 <span>$N$</span> 個串聯的電位計，從左到右分別編號為 1 號到 <span>$N$</span> 號，第 <span>$x$</span> 號的電位計左側接點和第 <span>$x-1$</span> 號的右側相連，且第 <span>$x$</span> 號的電位計右側接點和第 <span>$x+1$</span> 號的左側相連，而 1 號電位計的左側接點和 <span>$N$</span> 號的右側接點並沒有接上其他東西。</p>
 <p>一開始所有電位計會有介於 0 到 1000 歐姆的電阻，我們可以做兩件事：</p>
@@ -38,12 +38,13 @@
 </ul>
 <p>如果一筆 <span>$N=0$</span> 的測資出現代表輸入結束，並且此筆測資不需處理。</p>
 <h2 id="輸出">輸出</h2>
-<p>對於輸入的每筆測資，生出一行「<code>Case</code><span>$n$</span><code>:</code>」</p>
+<p>對於輸入的每筆測資，請先生出一行「<code>Case n:</code>」，而 <span>$n$</span> 是一個從 1 開始的測資數。</p>
+<p>對於輸入中每次的測量操作，輸出包含一個數字的一行: </p>
 <h2 id="範例輸入">範例輸入</h2>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="number">3</span></div><div class="line"><span class="number">100</span></div><div class="line"><span class="number">100</span></div><div class="line"><span class="number">100</span></div><div class="line">M <span class="number">1</span> <span class="number">1</span></div><div class="line">M <span class="number">1</span> <span class="number">3</span></div><div class="line">S <span class="number">2</span> <span class="number">200</span></div><div class="line">M <span class="number">1</span> <span class="number">2</span></div><div class="line">S <span class="number">3</span> <span class="number">0</span></div><div class="line">M <span class="number">2</span> <span class="number">3</span></div><div class="line"><span class="keyword">END</span></div><div class="line"><span class="number">10</span></div><div class="line"><span class="number">1</span></div><div class="line"><span class="number">2</span></div><div class="line"><span class="number">3</span></div><div class="line"><span class="number">4</span></div><div class="line"><span class="number">5</span></div><div class="line"><span class="number">6</span></div><div class="line"><span class="number">7</span></div><div class="line"><span class="number">8</span></div><div class="line"><span class="number">9</span></div><div class="line"><span class="number">10</span></div><div class="line">M <span class="number">1</span> <span class="number">10</span></div><div class="line"><span class="keyword">END</span></div><div class="line"><span class="number">0</span></div></pre></td></tr></table></figure>
 
 <h2 id="範例輸出">範例輸出</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">Case</span> <span class="number">1</span>:</div><div class="line"><span class="number">100</span></div><div class="line"><span class="number">300</span></div><div class="line"><span class="number">300</span></div><div class="line"><span class="number">200</span></div><div class="line"></div><div class="line"><span class="keyword">Case</span> <span class="number">2</span>:</div><div class="line"><span class="number">55</span></div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">Case</span> <span class="number">1</span>:</div><div class="line"><span class="number">100</span></div><div class="line"><span class="number">300</span></div><div class="line"><span class="number">300</span></div><div class="line"><span class="number">200</span></div><div class="line"> </div><div class="line"><span class="keyword">Case</span> <span class="number">2</span>:</div><div class="line"><span class="number">55</span></div></pre></td></tr></table></figure>
 
 ]]></content>
     <summary type="html">
