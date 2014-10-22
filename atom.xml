@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的呆毛可以覆蓋全台灣 XD]]></subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://m80126colin.github.io/blog/"/>
-  <updated>2014-10-22T19:20:07.375Z</updated>
+  <updated>2014-10-22T19:31:54.877Z</updated>
   <id>http://m80126colin.github.io/blog/</id>
   
   <author>
@@ -19,14 +19,14 @@
     <link href="http://m80126colin.github.io/blog/articles/uva11525/"/>
     <id>http://m80126colin.github.io/blog/articles/uva11525/</id>
     <published>2014-10-22T18:49:56.000Z</published>
-    <updated>2014-10-22T19:19:24.000Z</updated>
+    <updated>2014-10-22T19:31:44.000Z</updated>
     <content type="html"><![CDATA[<p>給定 <span>$N$</span> 和 <span>$K$</span>，請從 1 到 <span>$K$</span> 的字典順序排列中，找出第 <span>$N$</span> 個排列，<span>$N$</span> 從 0 開始，因為 <span>$N$</span> 會很大，因此我們用 K 個非負整數 <span>$S_1$</span>, <span>$S_2$</span>, <span>$\cdots{}$</span>, <span>$S_k$</span> 來表示。從這一系列的數字，我們可以用下面的公式計算 <span>$N$</span>：</p>
 <span>$$\sum^{K}_{i=1}{S_i\times{(K-i)!}}$$</span>
 
 <a id="more"></a>
 
 <h2 id="輸入">輸入</h2>
-<p>第一行有一個整數 <span>$T$</span> (<span>$\leq{10}$</span>) 代表測試資料的數量。每筆測資會有兩行，第一行有一個整數 <span>$K$</span> (<span>$1\leq{K}\leq{50000}$</span>)，接下來一行會有 <span>$K$</span> 個整數 <span>$S_1$</span>, <span>$S_2$</span>, <span>$\cdots{}$</span>, <span>$S_k$</span> (<span>$0\leq{S_i}\leq{K-i}$</span>)</p>
+<p>第一行有一個整數 <span>$T$</span> (<span>$\leq{10}$</span>) 代表測試資料的數量。每筆測資會有兩行，第一行有一個整數 <span>$K$</span> (<span>$1\leq{K}\leq{50000}$</span>)，接下來一行會有 <span>$K$</span> 個整數 <span>$S_1$</span>, <span>$S_2$</span>, <span>$\cdots{}$</span>, <span>$S_k$</span> (<span>$0\leq{S_i}\leq{K-i}$</span>)。</p>
 <h2 id="輸出">輸出</h2>
 <p>對於每筆測資，輸出 1 到 K 的第 <span>$N$</span> 個排列，這 <span>$N$</span> 個數字間有一個空白隔開。</p>
 <h2 id="範例輸入">範例輸入</h2>
