@@ -131,20 +131,30 @@
 </div>
 
         <p>電位計 (potentiometer，簡稱 potmeter) 是一種有可變電阻的電子設備，它有兩個接點 (terminal) 和一些控制結構 (通常是刻度盤、齒輪或者滑塊) 使得我們可以調整兩接點間的電阻值從 0 (無電阻) 到一個最大值。電阻的單位是歐姆 (Ohm)，當有兩個以上的電阻串聯 (也就是一個接著一個連接) 在一起，總電阻就會是個別電阻的總和。</p>
-<p>在這個問題中，我們考慮 <span>$N$</span> 個串聯的電位計，從左到右分別編號為 1 號到 <span>$N$</span> 號，第 <span>$x$</span> 號的電位計左端接點和第 <span>$x-1$</span> 號的右端相連，且第 <span>$x$</span> 號的電位計右端接點和第 <span>$x+1$</span> 號的左端相連，而 1 號電位計的左端接點和 <span>$N$</span> 號的右端接點並沒有接上其他東西。</p>
+<p>在這個問題中，我們考慮 <span>$N$</span> 個串聯的電位計，從左到右分別編號為 1 號到 <span>$N$</span> 號，第 <span>$x$</span> 號的電位計左側接點和第 <span>$x-1$</span> 號的右側相連，且第 <span>$x$</span> 號的電位計右側接點和第 <span>$x+1$</span> 號的左側相連，而 1 號電位計的左側接點和 <span>$N$</span> 號的右側接點並沒有接上其他東西。</p>
 <p>一開始所有電位計會有介於 0 到 1000 歐姆的電阻，我們可以做兩件事：</p>
 <ul>
 <li>設定其中一個電位計為另一個電阻值</li>
-<li>測量任意一個區間的總電阻</li>
+<li>測量任意兩個接點之間的電阻</li>
 </ul>
+<a id="more"></a>
+
 <h2 id="輸入">輸入</h2>
 <p>輸入有不超過 3 組測資。每組測資一開始有一個 <span>$N$</span>，代表電位計的數量，<span>$N$</span> 可以大到 200000。接著有 <span>$N$</span> 行，每行有一個介於 0 到 1000 的數字，代表 1 號到 <span>$N$</span> 號電位計的初始電阻值。接著有數次操作，每行代表一個操作，操作數可達到 200000 次，這裡有 3 種操作：</p>
 <ul>
-<li>「<span>$S x r$</span>」- 設定第 <span>$x$</span> 號電位計的電阻值為 <span>$r$</span> 歐姆</li>
+<li>「S <span>$x$</span> <span>$r$</span>」- 設定第 <span>$x$</span> 號電位計的電阻值為 <span>$r$</span> 歐姆，<span>$x$</span> 會是一個有效的電位計編號而 <span>$r$</span> 介於 0 到 1000</li>
+<li>「M <span>$x$</span> <span>$y$</span>」- 測量 <span>$x$</span> 號左側接點到 <span>$y$</span> 號右側接點的電阻，兩個編號都會是有效的且 <span>$x$</span> 小於等於 <span>$y$</span></li>
+<li>「END」- 該筆測試資料的結束，只會在一系列操作的最尾端出現一次</li>
 </ul>
+<p>如果一筆 <span>$N=0$</span> 的測資出現代表輸入結束，並且此筆測資不需處理。</p>
 <h2 id="輸出">輸出</h2>
+<p>對於輸入的每筆測資，生出一行「<code>Case</code><span>$n$</span><code>:</code>」</p>
 <h2 id="範例輸入">範例輸入</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="number">3</span></div><div class="line"><span class="number">100</span></div><div class="line"><span class="number">100</span></div><div class="line"><span class="number">100</span></div><div class="line">M <span class="number">1</span> <span class="number">1</span></div><div class="line">M <span class="number">1</span> <span class="number">3</span></div><div class="line">S <span class="number">2</span> <span class="number">200</span></div><div class="line">M <span class="number">1</span> <span class="number">2</span></div><div class="line">S <span class="number">3</span> <span class="number">0</span></div><div class="line">M <span class="number">2</span> <span class="number">3</span></div><div class="line"><span class="keyword">END</span></div><div class="line"><span class="number">10</span></div><div class="line"><span class="number">1</span></div><div class="line"><span class="number">2</span></div><div class="line"><span class="number">3</span></div><div class="line"><span class="number">4</span></div><div class="line"><span class="number">5</span></div><div class="line"><span class="number">6</span></div><div class="line"><span class="number">7</span></div><div class="line"><span class="number">8</span></div><div class="line"><span class="number">9</span></div><div class="line"><span class="number">10</span></div><div class="line">M <span class="number">1</span> <span class="number">10</span></div><div class="line"><span class="keyword">END</span></div><div class="line"><span class="number">0</span></div></pre></td></tr></table></figure>
+
 <h2 id="範例輸出">範例輸出</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">Case</span> <span class="number">1</span>:</div><div class="line"><span class="number">100</span></div><div class="line"><span class="number">300</span></div><div class="line"><span class="number">300</span></div><div class="line"><span class="number">200</span></div><div class="line"></div><div class="line"><span class="keyword">Case</span> <span class="number">2</span>:</div><div class="line"><span class="number">55</span></div></pre></td></tr></table></figure>
+
 
       
     </div>
