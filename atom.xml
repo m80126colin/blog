@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的呆毛可以覆蓋全台灣 XD]]></subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://m80126colin.github.io/blog/"/>
-  <updated>2014-10-22T17:46:26.873Z</updated>
+  <updated>2014-10-22T17:48:13.841Z</updated>
   <id>http://m80126colin.github.io/blog/</id>
   
   <author>
@@ -13,6 +13,40 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[[翻譯][UVa][12086] Potentiometers]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/uva12086/"/>
+    <id>http://m80126colin.github.io/blog/articles/uva12086/</id>
+    <published>2014-10-22T17:45:55.000Z</published>
+    <updated>2014-10-22T17:48:05.000Z</updated>
+    <content type="html"><![CDATA[<p>電位計 (potentiometer，簡稱 potmeter) 是一種有可變電阻的電子設備，它有兩個接點 (terminal) 和一些控制結構 (通常是刻度盤、齒輪或者滑塊) 使得我們可以調整兩接點間的電阻值從 0 (無電阻) 到一個最大值。電阻的單位是歐姆 (Ohm)，當有兩個以上的電阻串聯 (也就是一個接著一個連接) 在一起，總電阻就會是個別電阻的總和。</p>
+<p>在這個問題中，我們考慮 <span>$N$</span> 個串聯的電位計，從左到右分別編號為 1 號到 <span>$N$</span> 號，第 <span>$x$</span> 號的電位計左端接點和第 <span>$x-1$</span> 號的右端相連，且第 <span>$x$</span> 號的電位計右端接點和第 <span>$x+1$</span> 號的左端相連，而 1 號電位計的左端接點和 <span>$N$</span> 號的右端接點並沒有接上其他東西。</p>
+<p>一開始所有電位計會有介於 0 到 1000 歐姆的電阻，我們可以做兩件事：</p>
+<ul>
+<li>設定其中一個電位計為另一個電阻值</li>
+<li>測量任意一個區間的總電阻</li>
+</ul>
+<h2 id="輸入">輸入</h2>
+<p>輸入有不超過 3 組測資。每組測資一開始有一個 <span>$N$</span>，代表電位計的數量，<span>$N$</span> 可以大到 200000。接著有 <span>$N$</span> 行，每行有一個介於 0 到 1000 的數字，代表 1 號到 <span>$N$</span> 號電位計的初始電阻值。接著有數次操作，每行代表一個操作，操作數可達到 200000 次，這裡有 3 種操作：</p>
+<ul>
+<li>「<span>$S x r$</span>」- 設定第 <span>$x$</span> 號電位計的電阻值為 <span>$r$</span> 歐姆</li>
+</ul>
+<h2 id="輸出">輸出</h2>
+<h2 id="範例輸入">範例輸入</h2>
+<h2 id="範例輸出">範例輸出</h2>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>電位計 (potentiometer，簡稱 potmeter) 是一種有可變電阻的電子設備，它有兩個接點 (terminal) 和一些控制結構 (通常是刻度盤、齒輪或者滑塊) 使得我們可以調整兩接點間的電阻值從 0 (無電阻) 到一個最大值。電阻的單位是歐姆 (Ohm)，當]]>
+    </summary>
+    
+      <category term="翻譯" scheme="http://m80126colin.github.io/blog/tags/%E7%BF%BB%E8%AD%AF/"/>
+    
+      <category term="翻譯" scheme="http://m80126colin.github.io/blog/categories/%E7%BF%BB%E8%AD%AF/"/>
+    
+      <category term="UVa/ACM" scheme="http://m80126colin.github.io/blog/categories/%E7%BF%BB%E8%AD%AF/UVa-ACM/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Span 的性質]]></title>
@@ -849,72 +883,6 @@
 <p>11/24 (四) 娃娃魚 Lv4 達成<br>11/28 (一) 雪莉 62 攻擊骰中 25<br>11/29 (二) 雪莉 Lv4 達成</p>
 <p>預定目標：</p>
 <p>雪莉 R1<br>(喂怎麼都是雪莉wwwwwww)</p>
-]]>
-    
-    </summary>
-    
-      <category term="UL" scheme="http://m80126colin.github.io/blog/tags/UL/"/>
-    
-      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
-    
-      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[111122 期中脫出]]></title>
-    <link href="http://m80126colin.github.io/blog/articles/20111122-215500/"/>
-    <id>http://m80126colin.github.io/blog/articles/20111122-215500/</id>
-    <published>2011-11-22T13:55:00.000Z</published>
-    <updated>2014-07-21T09:39:15.000Z</updated>
-    <content type="html"><![CDATA[<p>剛剛打的被吃掉了….<br>只好重打= =<br>現在只差一科<br>期末也快了</p>
-<a id="more"></a>
-
-<p>最近都在玩 UL<br>大約是 在 11/4 左右開始玩的吧<br>過沒多久 (11/18)<br>胖胖天 Hobe 秀輝<br>就在演算法課上大玩特玩……..<br>自重呀!!!!!!<br>話說胖胖天你是不是跑錯教室了呀wwwwww<br>(沒修演算法)<br>話說一開始 UL 玩艾伯真的是錯了呀……<br>人品不好又玩艾伯真的是地獄…..<br>只是最近河道丟一直被洗 UL 噗 (自重)<br>截至目前為止，獲得的成就如下：</p>
-<ol>
-<li>艾伯 (爛骰王) 30顆攻擊骰空骰 (你真的是爛骰王……)</li>
-<li>死了無數次的艾伯 (沒次都被裸王阿貝爾推倒打爆)</li>
-<li>與艾喵對戰連輸 5 場</li>
-<li>同上，最後用艾伯爛骰與艾喵纏鬥 15 回合</li>
-<li>11/13 (日) 左右第一次對戰</li>
-<li>11/17 (四) 爛骰王產出 (距離開始玩 13 天)</li>
-<li>11/18 (五) 第一位受害者被推坑…..</li>
-<li>與 07. 同一天，雪莉獲得!!!!! (14 天)</li>
-<li>11/19 (六) Lv3 雪莉!!!!! (15 天)</li>
-<li>與 09. 同一天左右，第二位受害者被推坑……</li>
-<li>11/20 (日) 對戰 10 星達成，娃娃魚大軍……</li>
-</ol>
-<p>目前預定新成就：</p>
-<ol>
-<li>娃娃魚 Lv4</li>
-<li>雪莉 R1</li>
-</ol>
-<hr>
-<p><a href="http://buzzpark.cc/fortune/show/2FV" target="_blank" rel="external">你在Unlight裡的角色</a></p>
-<p>歡迎來到Unlight的世界！新角色卡『許胖』是能夠操縱巨獸，戴著粗框眼鏡的天使。固有必殺技「逆轉時間」，效果：丟兩次骰子，擇較好的那方結果。 -&gt; 平民枯枝王嗎….(錯字自重)</p>
-<p>——噗浪物——</p>
-<p>[轉] 宋Ｘ力，非學園都市民眾，自稱「超能力者 (Level 5)」，實際等級未測定。能力「多重分身 (Doppelganger)」，可以同一時間不同地點展現自身影像，針對光子能量進行逆向演算，干涉光波色彩成分，造成視覺假象。<br>名場景：假借神跡詐財事件。</p>
-<hr>
-<p><a href="http://newsrumble.tw/" target="_blank" rel="external">正直好新聞</a></p>
-<p>讚!!!!!!!!</p>
-<hr>
-<p><a href="http://gnn.gamer.com.tw/1/59191.html" target="_blank" rel="external">日本「魔法少女」系列動畫 45 年大回顧 前篇：魔法少女 誕生！</a><br><a href="http://gnn.gamer.com.tw/7/59617.html" target="_blank" rel="external">日本「魔法少女」系列動畫 45 年大回顧 後篇：魔法少女 全新進化！</a></p>
-<p>為什麼 1995 年一堆動畫我都知道是什麼黑魔法…….<br>雖然 1995 年的很多出品物我都知道…..(掩面)</p>
-<hr>
-<p>就好像什麼是數學？偏微分方程是數學，複變也是數學。什麼是數學？這個很難去定義。這樣就變成什麼東西都是數學。像你看「數學」只有這麼一點，其他的是「非數學」；可是數學是數學，「非」是數學運算，所以全部都是數學。所以說什麼是數學？數學家研究的就是數學，哲學家研究的就是哲學。</p>
-<hr>
-<p>人生有太多不正直</p>
-<hr>
-<p>暴力、金錢、知識、人心。<br>前三種是手段，為的是最後的目的。</p>
-<hr>
-<p>等待妳的歸來，悄悄的走遠卻沒發覺。</p>
-<hr>
-<p>Halting Problem not only “Computer Beings” but Humans.<br>All People need Happiness and the tiny little Hope in the great Despair.<br>(文法自重)</p>
-<hr>
-<p>有些事情需要很多的故意及無心。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>剛剛打的被吃掉了….<br>只好重打= =<br>現在只差一科<br>期末也快了</p>
 ]]>
     
     </summary>
