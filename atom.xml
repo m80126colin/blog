@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的呆毛可以覆蓋全台灣 XD]]></subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://m80126colin.github.io/blog/"/>
-  <updated>2014-10-23T04:03:49.272Z</updated>
+  <updated>2014-10-23T04:07:44.008Z</updated>
   <id>http://m80126colin.github.io/blog/</id>
   
   <author>
@@ -19,9 +19,11 @@
     <link href="http://m80126colin.github.io/blog/articles/uva10685/"/>
     <id>http://m80126colin.github.io/blog/articles/uva10685/</id>
     <published>2014-10-22T21:33:04.000Z</published>
-    <updated>2014-10-23T04:03:18.000Z</updated>
+    <updated>2014-10-23T04:07:33.000Z</updated>
     <content type="html"><![CDATA[<p>在自然界中，存在著食物鏈 (alimentary chain)，在食物鏈的底層通常是植物 (vegetal)，小型動物吃這些植物，然後大型動物吃這些小型動物。食物鏈可以是環狀，當有些動物死掉後他將會分解變成礦物質，而這些礦物質會是植物的營養來源。</p>
 <p>在這題目中，給你一堆生物，你將找出最大的食物鏈。如果 <span>$A$</span> 是 <span>$B$</span> 的掠食者 (predator)，則你可以將他們都視為在相同食物鏈中。</p>
+<a id="more"></a>
+
 <h2 id="輸入">輸入</h2>
 <p>輸入檔案中有多組輸入，每組輸入的敘述如下：</p>
 <p>每組輸入開始有兩個整數 <span>$C$</span> (<span>$1\leq{C}\leq{5000}$</span>) 和 <span>$R$</span> (<span>$0\leq{R}\leq{5000}$</span>)，<span>$C$</span> 代表生物數量，<span>$R$</span> 代表關係數量。接下來的 <span>$C$</span> 行是生物名稱，每個名稱由大寫字母 (A, B, …, Z)、小寫字母 (a, b, …, z) 和底線 (_) 構成，名稱的長度不會超過 30 個字元。接著有 <span>$R$</span> 行描述生物之間的關係，每一行會有兩個生物名稱，代表第二個生物是第一個生物的掠食者。你可以假設任何生物的掠食者不會是自己。</p>
@@ -37,7 +39,9 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>在自然界中，存在著食物鏈 (alimentary chain)，在食物鏈的底層通常是植物 (vegetal)，小型動物吃這些植物，然後大型動物吃這些小型動物。食物鏈可以是環狀，當有些動物死掉後他將會分解變成礦物質，而這些礦物質會是植物的營養來源。</p>
-<p>在這題目中，]]>
+<p>在這題目中，給你一堆生物，你將找出最大的食物鏈。如果 <span>$A$</span> 是 <span>$B$</span> 的掠食者 (predator)，則你可以將他們都視為在相同食物鏈中。</p>
+]]>
+    
     </summary>
     
       <category term="翻譯" scheme="http://m80126colin.github.io/blog/tags/%E7%BF%BB%E8%AD%AF/"/>
