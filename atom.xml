@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的呆毛可以覆蓋全台灣 XD]]></subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://m80126colin.github.io/blog/"/>
-  <updated>2014-10-22T19:31:54.877Z</updated>
+  <updated>2014-10-23T04:03:49.272Z</updated>
   <id>http://m80126colin.github.io/blog/</id>
   
   <author>
@@ -13,6 +13,40 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[[翻譯][UVa][10685] Nature]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/uva10685/"/>
+    <id>http://m80126colin.github.io/blog/articles/uva10685/</id>
+    <published>2014-10-22T21:33:04.000Z</published>
+    <updated>2014-10-23T04:03:18.000Z</updated>
+    <content type="html"><![CDATA[<p>在自然界中，存在著食物鏈 (alimentary chain)，在食物鏈的底層通常是植物 (vegetal)，小型動物吃這些植物，然後大型動物吃這些小型動物。食物鏈可以是環狀，當有些動物死掉後他將會分解變成礦物質，而這些礦物質會是植物的營養來源。</p>
+<p>在這題目中，給你一堆生物，你將找出最大的食物鏈。如果 <span>$A$</span> 是 <span>$B$</span> 的掠食者 (predator)，則你可以將他們都視為在相同食物鏈中。</p>
+<h2 id="輸入">輸入</h2>
+<p>輸入檔案中有多組輸入，每組輸入的敘述如下：</p>
+<p>每組輸入開始有兩個整數 <span>$C$</span> (<span>$1\leq{C}\leq{5000}$</span>) 和 <span>$R$</span> (<span>$0\leq{R}\leq{5000}$</span>)，<span>$C$</span> 代表生物數量，<span>$R$</span> 代表關係數量。接下來的 <span>$C$</span> 行是生物名稱，每個名稱由大寫字母 (A, B, …, Z)、小寫字母 (a, b, …, z) 和底線 (_) 構成，名稱的長度不會超過 30 個字元。接著有 <span>$R$</span> 行描述生物之間的關係，每一行會有兩個生物名稱，代表第二個生物是第一個生物的掠食者。你可以假設任何生物的掠食者不會是自己。</p>
+<p>輸入結束在 <span>$C=R=0$</span>，這組輸入不必處理。兩組輸入間會有一個空白行隔開。</p>
+<h2 id="輸出">輸出</h2>
+<p>對於每組輸入，產生一行輸出，代表最大的食物鏈大小。</p>
+<h2 id="範例輸入">範例輸入</h2>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">5 2</div><div class="line">caterpillar</div><div class="line">bird</div><div class="line">horse</div><div class="line">elefant</div><div class="line">herb</div><div class="line">herb caterpillar</div><div class="line">caterpillar bird</div><div class="line"> </div><div class="line">0 0</div></pre></td></tr></table></figure>
+
+<h2 id="範例輸出">範例輸出</h2>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">3</div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在自然界中，存在著食物鏈 (alimentary chain)，在食物鏈的底層通常是植物 (vegetal)，小型動物吃這些植物，然後大型動物吃這些小型動物。食物鏈可以是環狀，當有些動物死掉後他將會分解變成礦物質，而這些礦物質會是植物的營養來源。</p>
+<p>在這題目中，]]>
+    </summary>
+    
+      <category term="翻譯" scheme="http://m80126colin.github.io/blog/tags/%E7%BF%BB%E8%AD%AF/"/>
+    
+      <category term="翻譯" scheme="http://m80126colin.github.io/blog/categories/%E7%BF%BB%E8%AD%AF/"/>
+    
+      <category term="UVa/ACM" scheme="http://m80126colin.github.io/blog/categories/%E7%BF%BB%E8%AD%AF/UVa-ACM/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[[翻譯][UVa][11525] Permutation]]></title>
@@ -874,45 +908,6 @@
       <category term="程式碼" scheme="http://m80126colin.github.io/blog/categories/%E7%A8%8B%E5%BC%8F%E7%A2%BC/"/>
     
       <category term="UVa" scheme="http://m80126colin.github.io/blog/categories/%E7%A8%8B%E5%BC%8F%E7%A2%BC/UVa/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[120201 回顧 2011 年 CPE 冬番]]></title>
-    <link href="http://m80126colin.github.io/blog/articles/20120201-022700/"/>
-    <id>http://m80126colin.github.io/blog/articles/20120201-022700/</id>
-    <published>2012-01-31T18:27:00.000Z</published>
-    <updated>2014-07-21T09:39:24.000Z</updated>
-    <content type="html"><![CDATA[<p>最近幾天都在 PM 萌娘寶貝<br>單練一隻效能真的很高 ….. 花兩天時間 (20 hr) 就輾了四天王<br>火系神寶怒刷水系道館真的很精采 …..<br>下一個目標是 ……. 蒐集全部萌娘!!!! (この変態)<br>UL 嘛 …….. 放置 play ~~<br>最近還滿忙的 ……</p>
-<a id="more"></a>
-
-<p>11 年 12 月 20 日 CPE 冬番</p>
-<p>…… 一整個大爆炸~~~~~~~<br>大數寫不出來真的超崩潰 ……… 真的要大數特訓了 QQ<br>不然開場其實都還滿順利的說<br>以下是前 5 題白值 + 罰點</p>
-<ol>
-<li>75 +  0</li>
-<li>155 + 20</li>
-<li>73 + 20</li>
-<li>135 +  0 (學弟耶 worship)</li>
-<li>117 + 20</li>
-<li>85 +  0 (神威 worship)</li>
-<li>97 + 20</li>
-<li>79 + 40 (*)</li>
-<li>106 + 20</li>
-<li>126 +  0 (worship)</li>
-</ol>
-<p>白值還滿有潛力的，算是小進步的安慰獎<br>只是解題數和罰點整個就是超杯具 …. 唉唉<br>之後先將 UVa 刷進 500 題吧 …….</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>最近幾天都在 PM 萌娘寶貝<br>單練一隻效能真的很高 ….. 花兩天時間 (20 hr) 就輾了四天王<br>火系神寶怒刷水系道館真的很精采 …..<br>下一個目標是 ……. 蒐集全部萌娘!!!! (この変態)<br>UL 嘛 …….. 放置 play ~~<br>最近還滿忙的 ……</p>
-]]>
-    
-    </summary>
-    
-      <category term="CPE" scheme="http://m80126colin.github.io/blog/tags/CPE/"/>
-    
-      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
-    
-      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
     
   </entry>
   
