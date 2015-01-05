@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>數與大數 | 天然呆</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="數的單位">
+<meta property="og:type" content="article">
+<meta property="og:title" content="數與大數">
+<meta property="og:url" content="http://m80126colin.github.io/blog/blog/articles/筆記/article/數與大數/">
+<meta property="og:site_name" content="天然呆">
+<meta property="og:description" content="數的單位">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="數與大數">
+<meta name="twitter:description" content="數的單位">
+
+  
+    <link rel="alternative" href="/blog/atom.xml" title="天然呆" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/blog/css/style.css" type="text/css">
+
+  
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/blog/" id="logo">天然呆</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/blog/" id="subtitle">我的呆毛可以覆蓋全台灣 XD</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/blog/">首頁</a>
+        
+          <a class="main-nav-link" href="/blog/archives">網誌存檔</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/blog/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://m80126colin.github.io/blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-筆記/article/數與大數" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/articles/筆記/article/數與大數/" class="article-date">
+  <time datetime="2014-05-13T18:53:44.000Z" itemprop="datePublished">5月 14 2014</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/筆記/">筆記</a>►<a class="article-category-link" href="/blog/categories/筆記/文章/">文章</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      數與大數
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+<div class="toc-table">
+  <h2>目錄</h2>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#數的單位"><span class="toc-text">數的單位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#指數"><span class="toc-text">指數</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#指數律"><span class="toc-text">指數律</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#指數運算"><span class="toc-text">指數運算</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#英文數字"><span class="toc-text">英文數字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#德文數字"><span class="toc-text">德文數字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#中文數字"><span class="toc-text">中文數字</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#超大數"><span class="toc-text">超大數</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#高德納箭號表示法_(Knuth’s_Up-arrow_Notation)"><span class="toc-text">高德納箭號表示法 (Knuth’s Up-arrow Notation)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hyper運算符_(Hyperoperation)"><span class="toc-text">Hyper運算符 (Hyperoperation)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#施坦因豪斯-莫澤表示法_(Steinhaus–Moser_Notation)"><span class="toc-text">施坦因豪斯-莫澤表示法 (Steinhaus–Moser Notation)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#阿克曼函數_(Ackermann_Function)"><span class="toc-text">阿克曼函數 (Ackermann Function)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#康威鏈式箭號表示法_(Conway_Chained_Arrow_Notation)"><span class="toc-text">康威鏈式箭號表示法 (Conway Chained Arrow Notation)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#葛立恆數_(Graham’s_Number)"><span class="toc-text">葛立恆數 (Graham’s Number)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#參考資料"><span class="toc-text">參考資料</span></a>
+  <hr>
+</div>
+
+        <h2 id="數的單位">數的單位</h2>
+<a id="more"></a>
+
+<p>1 googol = <span>$10^{100}$</span></p>
+<p>1 googolplex = <span>$10^{10^{100}}$</span></p>
+<h2 id="指數">指數</h2>
+<h3 id="指數律">指數律</h3>
+<h3 id="指數運算">指數運算</h3>
+<h2 id="英文數字">英文數字</h2>
+<h2 id="德文數字">德文數字</h2>
+<h2 id="中文數字">中文數字</h2>
+<h1 id="超大數">超大數</h1>
+<h2 id="高德納箭號表示法_(Knuth’s_Up-arrow_Notation)">高德納箭號表示法 (Knuth’s Up-arrow Notation)</h2>
+<h2 id="Hyper運算符_(Hyperoperation)">Hyper運算符 (Hyperoperation)</h2>
+<h2 id="施坦因豪斯-莫澤表示法_(Steinhaus–Moser_Notation)">施坦因豪斯-莫澤表示法 (Steinhaus–Moser Notation)</h2>
+<h2 id="阿克曼函數_(Ackermann_Function)">阿克曼函數 (Ackermann Function)</h2>
+<h2 id="康威鏈式箭號表示法_(Conway_Chained_Arrow_Notation)">康威鏈式箭號表示法 (Conway Chained Arrow Notation)</h2>
+<h3 id="葛立恆數_(Graham’s_Number)">葛立恆數 (Graham’s Number)</h3>
+<h1 id="參考資料">參考資料</h1>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Knuth%27s_up-arrow_notation" target="_blank" rel="external">Wikipedia - 高德納箭號表示法</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Hyperoperation" target="_blank" rel="external">Wikipedia - Hyper運算符</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Steinhaus%E2%80%93Moser_notation" target="_blank" rel="external">Wikipedia - 施坦因豪斯-莫澤表示法</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ackermann_function" target="_blank" rel="external">Wikipedia - 阿克曼函數</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Conway_chained_arrow_notation" target="_blank" rel="external">Wikipedia - 康威鏈式箭號表示法</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Graham%27s_number" target="_blank" rel="external">Wikipedia - 葛立恆數</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://m80126colin.github.io/blog/articles/筆記/article/數與大數/" data-id="vi1xs4hbwzaya853" class="article-share-link">分享</a>
+      
+  <a href="http://m80126colin.github.io/blog/articles/筆記/article/數與大數/#disqus_thread" class="article-comment-link">文章留言</a>
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/中文/">中文</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/大數/">大數</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/德文/">德文</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/數字/">數字</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/英文/">英文</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/高德納記號/">高德納記號</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/articles/筆記/usage/md-file-format/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Markdown 檔格式
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/articles/20120602-011600/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">120601 CPE 夏番</div>
+    </a>
+  
+</nav>
+
+  
+  
+<div id="comments">
+  
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  <script>
+    var disqus_shortname = 'm80126colin';
+    
+    var disqus_url = 'http://m80126colin.github.io/blog/articles/筆記/article/數與大數/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//go.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  
+</div>
+
+</article></section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分類</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/公告/">公告</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/">分享</a><span class="category-list-count">44</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/Vocaloid-系列/">Vocaloid 系列</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/中文歌/">中文歌</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/惡趣味/">惡趣味</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/日文歌/">日文歌</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/東方系列/">東方系列</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/轉載小說/">轉載小說</a><span class="category-list-count">15</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/轉載小說/好人筆記本/">好人筆記本</a><span class="category-list-count">15</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/轉錄文章/">轉錄文章</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/">創作</a><span class="category-list-count">27</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/中長篇小說/">中長篇小說</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/中長篇小說/日常篇/">日常篇</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/微小說/">微小說</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/心得/">心得</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/散文/">散文</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/極短篇小說/">極短篇小說</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/設定/">設定</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/詩/">詩</a><span class="category-list-count">14</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/程式碼/">程式碼</a><span class="category-list-count">28</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/程式碼/UVa/">UVa</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/程式碼/ZeroJudge/">ZeroJudge</a><span class="category-list-count">24</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/程式碼/codebook/">codebook</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/筆記/">筆記</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/筆記/使用說明/">使用說明</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/筆記/備份/">備份</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/筆記/文章/">文章</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/筆記/線性代數/">線性代數</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/翻譯/">翻譯</a><span class="category-list-count">34</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/翻譯/Project-Euler/">Project Euler</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/翻譯/USACO/">USACO</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/翻譯/UVa-ACM/">UVa/ACM</a><span class="category-list-count">25</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/語言/">語言</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/語言/中文/">中文</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/語言/德文/">德文</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/遊戲/">遊戲</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/雜記/">雜記</a><span class="category-list-count">63</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/雜記/國中時代/">國中時代</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/雜記/後日談/">後日談</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/雜記/椰林杜鵑啼/">椰林杜鵑啼</a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/雜記/蔚衣俠客/">蔚衣俠客</a><span class="category-list-count">31</span></li></ul></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">標籤雲</h3>
+    <div class="widget tagcloud">
+      <a href="/blog/tags/18-歲的野比大雄/" style="font-size: 10.00px;">18 歲的野比大雄</a><a href="/blog/tags/311-東日本大震災/" style="font-size: 10.00px;">311 東日本大震災</a><a href="/blog/tags/921/" style="font-size: 10.00px;">921</a><a href="/blog/tags/ACGN/" style="font-size: 10.00px;">ACGN</a><a href="/blog/tags/American-SHENGDIYAGE/" style="font-size: 10.00px;">American SHENGDIYAGE</a><a href="/blog/tags/Bad-Apple/" style="font-size: 10.00px;">Bad Apple</a><a href="/blog/tags/Bump-of-Chicken/" style="font-size: 11.67px;">Bump of Chicken</a><a href="/blog/tags/C/" style="font-size: 20.00px;">C++</a><a href="/blog/tags/CPE/" style="font-size: 15.00px;">CPE</a><a href="/blog/tags/Cosplay/" style="font-size: 10.00px;">Cosplay</a><a href="/blog/tags/Dancing-Link/" style="font-size: 10.00px;">Dancing Link</a><a href="/blog/tags/Dream-Machine/" style="font-size: 10.00px;">Dream Machine</a><a href="/blog/tags/Dynamic-Programming/" style="font-size: 11.67px;">Dynamic Programming</a><a href="/blog/tags/El-Shaddai/" style="font-size: 10.00px;">El Shaddai</a><a href="/blog/tags/Emma-的信/" style="font-size: 10.00px;">Emma 的信</a><a href="/blog/tags/GUMI/" style="font-size: 10.00px;">GUMI</a><a href="/blog/tags/Good-Guy-Note/" style="font-size: 18.33px;">Good Guy Note</a><a href="/blog/tags/Greedy/" style="font-size: 10.00px;">Greedy</a><a href="/blog/tags/H-G-威爾斯/" style="font-size: 10.00px;">H.G.威爾斯</a><a href="/blog/tags/HEY-APPLE/" style="font-size: 11.67px;">HEY APPLE</a><a href="/blog/tags/HEY-ORANGE/" style="font-size: 10.00px;">HEY ORANGE</a><a href="/blog/tags/Hatsune-Miku/" style="font-size: 16.67px;">Hatsune Miku</a><a href="/blog/tags/John-Titor/" style="font-size: 10.00px;">John Titor</a><a href="/blog/tags/Josephus-Problem/" style="font-size: 10.00px;">Josephus Problem</a><a href="/blog/tags/K-ON/" style="font-size: 10.00px;">K-ON</a><a href="/blog/tags/KAITO/" style="font-size: 10.00px;">KAITO</a><a href="/blog/tags/Kagamine-Ren/" style="font-size: 10.00px;">Kagamine Ren</a><a href="/blog/tags/Kagamine-Rin/" style="font-size: 10.00px;">Kagamine Rin</a><a href="/blog/tags/Kaito/" style="font-size: 10.00px;">Kaito</a><a href="/blog/tags/MRT/" style="font-size: 10.00px;">MRT</a><a href="/blog/tags/Math/" style="font-size: 10.00px;">Math</a><a href="/blog/tags/Megpoid/" style="font-size: 10.00px;">Megpoid</a><a href="/blog/tags/Megurine-Luka/" style="font-size: 13.33px;">Megurine Luka</a><a href="/blog/tags/Meiko/" style="font-size: 10.00px;">Meiko</a><a href="/blog/tags/Min-Max-Problem/" style="font-size: 10.00px;">Min Max Problem</a><a href="/blog/tags/Project-Euler/" style="font-size: 10.00px;">Project Euler</a><a href="/blog/tags/Q-matrix/" style="font-size: 10.00px;">Q-matrix</a><a href="/blog/tags/SCC/" style="font-size: 11.67px;">SCC</a><a href="/blog/tags/Stack/" style="font-size: 10.00px;">Stack</a><a href="/blog/tags/Strong-Connected-Component/" style="font-size: 11.67px;">Strong Connected Component</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">網誌存檔</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2015/01/">January 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2014/10/">October 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2014/08/">August 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2014/07/">July 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2014/05/">May 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2012/06/">June 2012</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2012/05/">May 2012</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2012/03/">March 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2012/02/">February 2012</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/11/">November 2011</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/10/">October 2011</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/09/">September 2011</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/08/">August 2011</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/07/">July 2011</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/06/">June 2011</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/05/">May 2011</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/03/">March 2011</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/01/">January 2011</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/12/">December 2010</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/11/">November 2010</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/09/">September 2010</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/07/">July 2010</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/06/">June 2010</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/05/">May 2010</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/03/">March 2010</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/02/">February 2010</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/12/">December 2009</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/11/">November 2009</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/10/">October 2009</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/09/">September 2009</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/08/">August 2009</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/07/">July 2009</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/06/">June 2009</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/05/">May 2009</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/03/">March 2009</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/02/">February 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/01/">January 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/11/">November 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/10/">October 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/09/">September 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/08/">August 2008</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/07/">July 2008</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/06/">June 2008</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/05/">May 2008</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/03/">March 2008</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2007/04/">April 2007</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2006/05/">May 2006</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2005/12/">December 2005</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2005/11/">November 2005</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/blog/articles/語言/中文/triple-chinese/">[轉載] 一堆三個字在一起，你會念嗎?</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/翻譯/uva/uva599/">[翻譯][UVa][599] The Forrest for the Trees</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/翻譯/uva/uva10685/">[翻譯][UVa][10685] Nature</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/翻譯/uva/uva11525/">[翻譯][UVa][11525] Permutation</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/翻譯/uva/uva12086/">[翻譯][UVa][12086] Potentiometers</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/筆記/linear algebra/20141021-span/">Span 的性質</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/metatron/">梅塔特隆立方體 (Metatron)</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/雜記/graduate/20140730-024300/">20140730 近況</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/acgn-list/">推薦 ACGN 列表</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/history/">「天然呆」部落史</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/創作/心得/review-2/">[心得] 穿梭時空旅</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/遊戲/kohctpyktop-engineer-of-the-people/">Kohctpyktop: Engineer of the People 記錄</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/筆記/usage/md-file-format/">Markdown 檔格式</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/筆記/article/數與大數/">數與大數</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/20120602-011600/">120601 CPE 夏番</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/程式碼/uva/uva-10718-code/">[解題報告][UVa][10718] Bit Mask</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/20120521-013400/">120521 只是朋友</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/20120514-052900/">120514 2012 年 CPE 春番</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/20120514-051400/">120514 清雜草</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/20120302-002700/">120302 ご結婚おめでとう！！</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新留言</h3>
+    <div class="widget">
+      <script type="text/javascript" src="http://m80126colin.disqus.com/recent_comments_widget.js?num_items=20&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=10&amp;hide_mods=0"></script>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">相關連結</h3>
+    <div class="widget">
+      
+      <p><a href="http://mypaper.pchome.com.tw/zerojudge" title="神 morris">Morris' Blog</a></p>
+      
+      <p><a href="http://morris821028.github.io">Morris' Blog (on Github)</a></p>
+      
+      <p><a href="http://sd12582000.blogspot.tw" title="神妮可">OldNick's Blog</a></p>
+      
+      <p><a href="http://lovetabris.pixnet.net/blog">腐宅日常生活。</a></p>
+      
+      <p><a href="http://xuanwo.org">旋渦</a></p>
+      
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      Powered by <a href="http://hexo.io" target="_blank">Hexo</a> and Theme by <a href="https://github.com/m80126colin/hexo-theme-giraffe" target="_blank">Giraffe</a> &copy; 2015 許胖<br>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">首頁</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">網誌存檔</a>
+  
+</nav>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css" type="text/css">
+
+  <script src="/blog/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+<script src="/blog/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
