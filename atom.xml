@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的呆毛可以覆蓋全台灣 XD]]></subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://m80126colin.github.io/blog/"/>
-  <updated>2015-01-05T11:57:21.741Z</updated>
+  <updated>2015-01-15T11:35:16.508Z</updated>
   <id>http://m80126colin.github.io/blog/</id>
   
   <author>
@@ -13,6 +13,315 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[[hexo 3.0.0-beta.1] hexo 原始碼閱讀 01]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/%E7%AD%86%E8%A8%98/hexo/hexo-read-code-01/"/>
+    <id>http://m80126colin.github.io/blog/articles/筆記/hexo/hexo-read-code-01/</id>
+    <published>2015-01-15T08:53:37.000Z</published>
+    <updated>2015-01-15T11:34:27.000Z</updated>
+    <content type="html"><![CDATA[<p>最近 Tommy 大發佈了 <a href="https://github.com/hexojs/hexo" target="_blank" rel="external">hexo</a> 3.0.0 的 beta1 版本，那麼就藉機來讀一下新版本 hexo 的架構，之後也好開發新東西。</p>
+<a id="more"></a>
+
+<h2 id="檔案架構">檔案架構</h2>
+<pre><code>./
+├── assets/
+├── bin/
+│    └── hexo
+├── lib/
+│    ├── box/
+│    ├── cli/
+│    ├── <span class="built_in">extend</span>/
+│    ├── hexo/
+│    ├── models/
+│    ├── plugins/
+│    └── theme/
+├── test/
+│    ├── fixtures/
+│    ├── scripts/
+│    ├── util/
+│    └── <span class="built_in">index</span>.js
+├── .gitignore
+├── .gitmodules
+├── .jshintrc
+├── .npmignore
+├── .travis.yml
+├── LICENSE
+├── README.md
+├── appveyor.yml
+├── gulpfile.js
+└── package.json
+</code></pre><h2 id="hexo_主程式_-/bin/hexo">hexo 主程式 ./bin/hexo</h2>
+<p>可以看到主程式如下：</p>
+<figure class="highlight js"><figcaption><span>./bin/hexo</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#!<span class="regexp">/usr/</span>bin/env node</div><div class="line"><span class="keyword">var</span> args = <span class="built_in">require</span>(<span class="string">'minimist'</span>)(process.argv.slice(<span class="number">2</span>));</div><div class="line"><span class="built_in">require</span>(<span class="string">'../lib/cli/init'</span>)(args);</div></pre></td></tr></table></figure>
+
+<p>估計是解析參數後，由 <code>./lib/cli/init</code> 來初始化。在 <code>./lib/cli/init.js</code> 前幾行宣告：</p>
+<figure class="highlight js"><figcaption><span>./lib/cli/init.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> Hexo = <span class="built_in">require</span>(<span class="string">'../hexo'</span>);</div><div class="line"><span class="keyword">var</span> pathFn = <span class="built_in">require</span>(<span class="string">'path'</span>);</div><div class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'hexo-fs'</span>);</div><div class="line"><span class="keyword">var</span> chalk = <span class="built_in">require</span>(<span class="string">'chalk'</span>);</div></pre></td></tr></table></figure>
+
+<p>可能 hexo 的主體已經打包成 <code>./lib/hexo</code>。</p>
+<h2 id="hexo_本體_-/lib/hexo">hexo 本體 ./lib/hexo</h2>
+<h3 id="-/lib/hexo/index-js">./lib/hexo/index.js</h3>
+<p><code>./lib/hexo/index.js</code> 定義的是 Hexo 物件，前面的宣告：</p>
+<figure class="highlight js"><figcaption><span>./lib/hexo/index.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> util = <span class="built_in">require</span>(<span class="string">'hexo-util'</span>);</div><div class="line"><span class="keyword">var</span> Promise = <span class="built_in">require</span>(<span class="string">'bluebird'</span>);</div><div class="line"><span class="keyword">var</span> pathFn = <span class="built_in">require</span>(<span class="string">'path'</span>);</div><div class="line"><span class="keyword">var</span> tildify = <span class="built_in">require</span>(<span class="string">'tildify'</span>);</div><div class="line"><span class="keyword">var</span> Database = <span class="built_in">require</span>(<span class="string">'warehouse'</span>);</div><div class="line"><span class="keyword">var</span> _ = <span class="built_in">require</span>(<span class="string">'lodash'</span>);</div><div class="line"><span class="keyword">var</span> chalk = <span class="built_in">require</span>(<span class="string">'chalk'</span>);</div><div class="line"><span class="keyword">var</span> EventEmitter = <span class="built_in">require</span>(<span class="string">'events'</span>).EventEmitter;</div><div class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'hexo-fs'</span>);</div><div class="line"><span class="keyword">var</span> Module = <span class="built_in">require</span>(<span class="string">'module'</span>);</div><div class="line"><span class="keyword">var</span> vm = <span class="built_in">require</span>(<span class="string">'vm'</span>);</div><div class="line"><span class="keyword">var</span> pkg = <span class="built_in">require</span>(<span class="string">'../../package.json'</span>);</div><div class="line"><span class="keyword">var</span> createLogger = <span class="built_in">require</span>(<span class="string">'./create_logger'</span>);</div><div class="line"><span class="keyword">var</span> extend = <span class="built_in">require</span>(<span class="string">'../extend'</span>);</div><div class="line"><span class="keyword">var</span> Render = <span class="built_in">require</span>(<span class="string">'./render'</span>);</div><div class="line"><span class="keyword">var</span> registerModels = <span class="built_in">require</span>(<span class="string">'./register_models'</span>);</div><div class="line"><span class="keyword">var</span> Post = <span class="built_in">require</span>(<span class="string">'./post'</span>);</div><div class="line"><span class="keyword">var</span> Scaffold = <span class="built_in">require</span>(<span class="string">'./scaffold'</span>);</div><div class="line"><span class="keyword">var</span> Source = <span class="built_in">require</span>(<span class="string">'./source'</span>);</div><div class="line"><span class="keyword">var</span> Router = <span class="built_in">require</span>(<span class="string">'./router'</span>);</div><div class="line"><span class="keyword">var</span> defaultConfig = <span class="built_in">require</span>(<span class="string">'./default_config'</span>);</div></pre></td></tr></table></figure>
+
+<p>在第 54 行到 64 行初始化 hexo.extend：</p>
+<figure class="highlight js"><figcaption><span>./lib/hexo/index.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">this</span>.extend = {</div><div class="line">  <span class="built_in">console</span>: <span class="keyword">new</span> extend.Console(),</div><div class="line">  deployer: <span class="keyword">new</span> extend.Deployer(),</div><div class="line">  filter: <span class="keyword">new</span> extend.Filter(),</div><div class="line">  generator: <span class="keyword">new</span> extend.Generator(),</div><div class="line">  helper: <span class="keyword">new</span> extend.Helper(),</div><div class="line">  migrator: <span class="keyword">new</span> extend.Migrator(),</div><div class="line">  processor: <span class="keyword">new</span> extend.Processor(),</div><div class="line">  renderer: <span class="keyword">new</span> extend.Renderer(),</div><div class="line">  tag: <span class="keyword">new</span> extend.Tag()</div><div class="line">};</div></pre></td></tr></table></figure>
+
+<p>我們可以知道 hexo 的 plugins 有 9 種 (配合<a href="http://hexo.io/docs/plugins.html" target="_blank" rel="external">文件</a>)：</p>
+<ul>
+<li>console：用來操控 hexo 的介面</li>
+<li>depolyer：將 blog 佈署在各種系統上</li>
+<li>filter：用來修蓋特定內容的工具 (ex. excerpt 等)</li>
+<li>generator：用來生成靜態文件 (ex. RSS, sitemap 等)</li>
+<li>helper：寫 theme 時，用來快速插入特定內容的工具</li>
+<li>migrator：從別的 blog 系統搬來 hexo 的工具</li>
+<li>processor：處理 <code>source</code> 資料夾的原始檔案</li>
+<li>render：用來處理特定文件 (ex. ejs, stylus, jade 等)</li>
+<li>tag：用作快速插入特定內容的工具 (ex. bootstrap, multimedia 等)</li>
+</ul>
+<p>而在 <code>Hexo.prototype.init</code> 中，第 116 行到 122 行：</p>
+<figure class="highlight js"><figcaption><span>./lib/hexo/index.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Load internal plugins</span></div><div class="line"><span class="built_in">require</span>(<span class="string">'../plugins/console'</span>)(<span class="keyword">this</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'../plugins/filter'</span>)(<span class="keyword">this</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'../plugins/generator'</span>)(<span class="keyword">this</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'../plugins/helper'</span>)(<span class="keyword">this</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'../plugins/processor'</span>)(<span class="keyword">this</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'../plugins/renderer'</span>)(<span class="keyword">this</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'../plugins/tag'</span>)(<span class="keyword">this</span>);</div></pre></td></tr></table></figure>
+
+<p>載入 hexo 本身擁有的 plugin。</p>
+<h2 id="hexo_本身擁有的_plugins">hexo 本身擁有的 plugins</h2>
+<h3 id="內建_plugin_架構">內建 plugin 架構</h3>
+<pre><code>./lib/plugins/
+├── console/
+│    ├── clean.js
+│    ├── config.js
+│    ├── deploy.js
+│    ├── generate.js
+│    ├── <span class="keyword">help</span>.js
+│    ├── <span class="built_in">index</span>.js
+│    ├── init.js
+│    ├── migrate.js
+│    ├── <span class="keyword">new</span>.js
+│    ├── publish.js
+│    ├── render.js
+│    └── <span class="keyword">version</span>.js
+├── <span class="built_in">filter</span>/
+│    ├── after_post_render/
+│    │    ├── excerpt.js
+│    │    ├── external_link.js
+│    │    └── <span class="built_in">index</span>.js
+│    ├── before_post_render/
+│    │    ├── backtick_code_block.js
+│    │    ├── <span class="built_in">index</span>.js
+│    │    └── titlecase.js
+│    ├── <span class="built_in">index</span>.js
+│    ├── new_post_path.js
+│    └── post_permalink.js
+├── generator/
+│    ├── asset.js
+│    ├── <span class="built_in">index</span>.js
+│    ├── page.js
+│    └── post.js
+├── helper/
+│    ├── css.js
+│    ├── date.js
+│    ├── favicon_tag.js
+│    ├── feed_tag.js
+│    ├── format.js
+│    ├── fragment_cache.js
+│    ├── gravatar.js
+│    ├── image_tag.js
+│    ├── <span class="built_in">index</span>.js
+│    ├── <span class="keyword">is</span>.js
+│    ├── js.js
+│    ├── link_to.js
+│    ├── list_archives.js
+│    ├── list_categories.js
+│    ├── list_posts.js
+│    ├── list_tags.js
+│    ├── mail_to.js
+│    ├── markdown.js
+│    ├── number_format.js
+│    ├── open_graph.js
+│    ├── paginator.js
+│    ├── partial.js
+│    ├── render.js
+│    ├── search_form.js
+│    ├── tagcloud.js
+│    ├── toc.js
+│    └── url.js
+├── processor/
+│    ├── asset.js
+│    ├── common.js
+│    ├── <span class="built_in">index</span>.js
+│    └── post.js
+├── renderer/
+│    ├── html.js
+│    ├── <span class="built_in">index</span>.js
+│    ├── json.js
+│    ├── swig.js
+│    └── yaml.js
+└── <span class="keyword">tag</span>/
+    ├── asset_img.js
+    ├── asset_link.js
+    ├── asset_path.js
+    ├── blockquote.js
+    ├── code.js
+    ├── gist.js
+    ├── iframe.js
+    ├── img.js
+    ├── include_code.js
+    ├── <span class="built_in">index</span>.js
+    ├── jsfiddle.js
+    ├── link.js
+    ├── post_link.js
+    ├── post_path.js
+    ├── pullquote.js
+    ├── raw.js
+    ├── vimeo.js
+    └── youtube.js
+</code></pre><h3 id="console">console</h3>
+<p>也就是 hexo 的指令，在 <code>./lib/plugins/console/index.js</code> 中逐一註冊各指令，其中第 2 行：</p>
+<figure class="highlight js"><figcaption><span>./lib/plugins/console/index.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> <span class="built_in">console</span> = ctx.extend.console;</div></pre></td></tr></table></figure>
+
+<p><code>ctx</code> 從 <code>./lib/hexo/index.js</code> 的 <code>require(&#39;../plugins/console&#39;)(this);</code> 進來時是 <code>Hexo</code> 本身，我們可以從 <code>./lib/plugins/console/index.js</code> 看到內建的指令有：</p>
+<ul>
+<li>clean</li>
+<li>config</li>
+<li>deploy</li>
+<li>generate</li>
+<li>help</li>
+<li>init</li>
+<li>list</li>
+<li>migrate</li>
+<li>new</li>
+<li>publish</li>
+<li>render</li>
+<li>version</li>
+</ul>
+<p>從<a href="http://hexo.io/docs/plugins.html#Console" target="_blank" rel="external">文件</a>雖然可以知道大概的註冊方法，但是設定 <code>option</code> 還是得從 <code>./lib/hexo/index.js</code> 第 55 行 <code>console: new extend.Console(),</code> 開始找起。</p>
+<h3 id="filter">filter</h3>
+<p>在 <code>./lib/plugins/filter/index.js</code> 有：</p>
+<figure class="highlight js"><figcaption><span>./lib/plugins/filter/index.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>(<span class="string">'./after_post_render'</span>)(ctx);</div><div class="line"><span class="built_in">require</span>(<span class="string">'./before_post_render'</span>)(ctx);</div></pre></td></tr></table></figure>
+
+<p>遞迴註冊 filter。內建的 filter：</p>
+<ul>
+<li>new_post_path</li>
+<li>post_permalink</li>
+<li>after_post_render：在 md 檔被 render 後執行<ul>
+<li>excerpt</li>
+<li>external_link</li>
+</ul>
+</li>
+<li>before_post_render：在 md 檔被 render 前執行<ul>
+<li>backtick_code_block</li>
+<li>titlecase</li>
+</ul>
+</li>
+</ul>
+<h3 id="generator">generator</h3>
+<ul>
+<li>asset</li>
+<li>page</li>
+<li>post</li>
+</ul>
+<h3 id="helper">helper</h3>
+<p>在 <code>./date.js</code> 內：</p>
+<ul>
+<li>date</li>
+<li>date_xml</li>
+<li>time</li>
+<li>full_date</li>
+<li>time_tag</li>
+<li>moment</li>
+</ul>
+<p>在 <code>./format.js</code> 內：</p>
+<ul>
+<li>strip_html</li>
+<li>trim</li>
+<li>titlecase</li>
+<li>word_wrap</li>
+<li>truncate</li>
+</ul>
+<p>在 <code>./is.js</code> 內：</p>
+<ul>
+<li>is_current</li>
+<li>is_home</li>
+<li>is_post</li>
+<li>is_archive</li>
+<li>is_year</li>
+<li>is_month</li>
+<li>is_category</li>
+<li>is_tag</li>
+</ul>
+<p>在 <code>./tagcloud.js</code> 內：</p>
+<ul>
+<li>tagcloud</li>
+<li>tag_cloud (同上)</li>
+</ul>
+<p>在 <code>./url.js</code> 內：</p>
+<ul>
+<li>relative_url</li>
+<li>url_for</li>
+</ul>
+<p>連結工具：</p>
+<ul>
+<li>css</li>
+<li>js</li>
+<li>link_to</li>
+<li>mail_to</li>
+<li>image_tag</li>
+<li>favicon_tag</li>
+<li>feed_tag</li>
+</ul>
+<p>list 系列：</p>
+<ul>
+<li>list_archives</li>
+<li>list_categories</li>
+<li>list_tags</li>
+<li>list_posts</li>
+</ul>
+<p>其他：</p>
+<ul>
+<li>search_form</li>
+<li>fragment_cache (傳入參數 ctx)</li>
+<li>gravatar</li>
+<li>open_graph</li>
+<li>number_format</li>
+<li>paginator</li>
+<li>partial (傳入參數 ctx)</li>
+<li>markdown</li>
+<li>render (傳入參數 ctx)</li>
+<li>toc</li>
+</ul>
+<h3 id="processor">processor</h3>
+<ul>
+<li>asset</li>
+<li>post</li>
+</ul>
+<h3 id="renderer">renderer</h3>
+<p>根據<a href="http://hexo.io/docs/plugins.html#Renderer" target="_blank" rel="external">文件</a>，註冊方式有四個參數：</p>
+<ol>
+<li>輸入檔案格式</li>
+<li>輸出檔案格式</li>
+<li>render 函數</li>
+<li>是否同步</li>
+</ol>
+<p>直接貼出 <code>./lib/plugins/renderer/index.js</code>：</p>
+<figure class="highlight js"><figcaption><span>./lib/plugins/renderer/index.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> renderer = ctx.extend.renderer;</div><div class="line"><span class="keyword">var</span> html = <span class="built_in">require</span>(<span class="string">'./html'</span>);</div><div class="line">renderer.register(<span class="string">'htm'</span>, <span class="string">'html'</span>, html, <span class="literal">true</span>);</div><div class="line">renderer.register(<span class="string">'html'</span>, <span class="string">'html'</span>, html, <span class="literal">true</span>);</div><div class="line">renderer.register(<span class="string">'json'</span>, <span class="string">'json'</span>, <span class="built_in">require</span>(<span class="string">'./json'</span>), <span class="literal">true</span>);</div><div class="line">renderer.register(<span class="string">'swig'</span>, <span class="string">'html'</span>, <span class="built_in">require</span>(<span class="string">'./swig'</span>), <span class="literal">true</span>);</div><div class="line"><span class="keyword">var</span> yml = <span class="built_in">require</span>(<span class="string">'./yaml'</span>);</div><div class="line">renderer.register(<span class="string">'yml'</span>, <span class="string">'json'</span>, yml, <span class="literal">true</span>);</div><div class="line">renderer.register(<span class="string">'yaml'</span>, <span class="string">'json'</span>, yml, <span class="literal">true</span>);</div></pre></td></tr></table></figure>
+
+<h3 id="tag">tag</h3>
+<p>類似就不整理了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近 Tommy 大發佈了 <a href="https://github.com/hexojs/hexo" target="_blank" rel="external">hexo</a> 3.0.0 的 beta1 版本，那麼就藉機來讀一下新版本 hexo 的架構，之後也好開發新東西。</p>
+]]>
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://m80126colin.github.io/blog/tags/hexo/"/>
+    
+      <category term="hxojs" scheme="http://m80126colin.github.io/blog/tags/hxojs/"/>
+    
+      <category term="筆記" scheme="http://m80126colin.github.io/blog/categories/%E7%AD%86%E8%A8%98/"/>
+    
+      <category term="hexo" scheme="http://m80126colin.github.io/blog/categories/%E7%AD%86%E8%A8%98/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[[轉載] 一堆三個字在一起，你會念嗎?]]></title>
@@ -1022,36 +1331,6 @@
 <p>之後有時間在更新</p>
 ]]>
     </summary>
-    
-      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
-    
-      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[120302 ご結婚おめでとう！！]]></title>
-    <link href="http://m80126colin.github.io/blog/articles/20120302-002700/"/>
-    <id>http://m80126colin.github.io/blog/articles/20120302-002700/</id>
-    <published>2012-03-01T16:27:00.000Z</published>
-    <updated>2014-07-21T09:39:32.000Z</updated>
-    <content type="html"><![CDATA[<p>一起床就聽到 ZUN 要結婚的消息 …..</p>
-<p><span style="font-size: 200%; color: red;"><strong>終於要結婚啦!!!!!!!!!!!</strong></span></p>
-<a id="more"></a>
-
-<p><a href="http://bopbeer.no-blog.jp/blog/2009/09/post_c54b.html" target="_blank" rel="external">木内酒造の手造りビール工房</a></p>
-<p>…… 不管裡面是裝啥我都一概認為是啤酒 (笑)</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>一起床就聽到 ZUN 要結婚的消息 …..</p>
-<p><span style="font-size: 200%; color: red;"><strong>終於要結婚啦!!!!!!!!!!!</strong></span></p>
-]]>
-    
-    </summary>
-    
-      <category term="ZUN" scheme="http://m80126colin.github.io/blog/tags/ZUN/"/>
-    
-      <category term="結婚" scheme="http://m80126colin.github.io/blog/tags/%E7%B5%90%E5%A9%9A/"/>
     
       <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
     

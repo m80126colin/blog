@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>[hexo 3.0.0-beta.1] hexo 原始碼閱讀 01 | 天然呆</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="最近 Tommy 大發佈了 hexo 3.0.0 的 beta1 版本，那麼就藉機來讀一下新版本 hexo 的架構，之後也好開發新東西。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[hexo 3.0.0-beta.1] hexo 原始碼閱讀 01">
+<meta property="og:url" content="http://m80126colin.github.io/blog/blog/articles/筆記/hexo/hexo-read-code-01/">
+<meta property="og:site_name" content="天然呆">
+<meta property="og:description" content="最近 Tommy 大發佈了 hexo 3.0.0 的 beta1 版本，那麼就藉機來讀一下新版本 hexo 的架構，之後也好開發新東西。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[hexo 3.0.0-beta.1] hexo 原始碼閱讀 01">
+<meta name="twitter:description" content="最近 Tommy 大發佈了 hexo 3.0.0 的 beta1 版本，那麼就藉機來讀一下新版本 hexo 的架構，之後也好開發新東西。">
+
+  
+    <link rel="alternative" href="/blog/atom.xml" title="天然呆" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/blog/css/style.css" type="text/css">
+
+  
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/blog/" id="logo">天然呆</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/blog/" id="subtitle">我的呆毛可以覆蓋全台灣 XD</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/blog/">首頁</a>
+        
+          <a class="main-nav-link" href="/blog/archives">網誌存檔</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/blog/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://m80126colin.github.io/blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-筆記/hexo/hexo-read-code-01" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/articles/筆記/hexo/hexo-read-code-01/" class="article-date">
+  <time datetime="2015-01-15T08:53:37.000Z" itemprop="datePublished">1月 15 2015</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/筆記/">筆記</a>►<a class="article-category-link" href="/blog/categories/筆記/hexo/">hexo</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      [hexo 3.0.0-beta.1] hexo 原始碼閱讀 01
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+<div class="toc-table">
+  <h2>目錄</h2>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#檔案架構"><span class="toc-text">檔案架構</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo_主程式_-/bin/hexo"><span class="toc-text">hexo 主程式 ./bin/hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo_本體_-/lib/hexo"><span class="toc-text">hexo 本體 ./lib/hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#-/lib/hexo/index-js"><span class="toc-text">./lib/hexo/index.js</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo_本身擁有的_plugins"><span class="toc-text">hexo 本身擁有的 plugins</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#內建_plugin_架構"><span class="toc-text">內建 plugin 架構</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#console"><span class="toc-text">console</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#filter"><span class="toc-text">filter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#generator"><span class="toc-text">generator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#helper"><span class="toc-text">helper</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#processor"><span class="toc-text">processor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#renderer"><span class="toc-text">renderer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tag"><span class="toc-text">tag</span></a></li></ol></li></ol>
+  <hr>
+</div>
+
+        <p>最近 Tommy 大發佈了 <a href="https://github.com/hexojs/hexo" target="_blank" rel="external">hexo</a> 3.0.0 的 beta1 版本，那麼就藉機來讀一下新版本 hexo 的架構，之後也好開發新東西。</p>
+<a id="more"></a>
+
+<h2 id="檔案架構">檔案架構</h2>
+<pre><code>./
+├── assets/
+├── bin/
+│    └── hexo
+├── lib/
+│    ├── box/
+│    ├── cli/
+│    ├── <span class="built_in">extend</span>/
+│    ├── hexo/
+│    ├── models/
+│    ├── plugins/
+│    └── theme/
+├── test/
+│    ├── fixtures/
+│    ├── scripts/
+│    ├── util/
+│    └── <span class="built_in">index</span>.js
+├── .gitignore
+├── .gitmodules
+├── .jshintrc
+├── .npmignore
+├── .travis.yml
+├── LICENSE
+├── README.md
+├── appveyor.yml
+├── gulpfile.js
+└── package.json
+</code></pre><h2 id="hexo_主程式_-/bin/hexo">hexo 主程式 ./bin/hexo</h2>
+<p>可以看到主程式如下：</p>
+<figure class="highlight js"><figcaption><span>./bin/hexo</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#!<span class="regexp">/usr/</span>bin/env node</div><div class="line"><span class="keyword">var</span> args = <span class="built_in">require</span>(<span class="string">'minimist'</span>)(process.argv.slice(<span class="number">2</span>));</div><div class="line"><span class="built_in">require</span>(<span class="string">'../lib/cli/init'</span>)(args);</div></pre></td></tr></table></figure>
+
+<p>估計是解析參數後，由 <code>./lib/cli/init</code> 來初始化。在 <code>./lib/cli/init.js</code> 前幾行宣告：</p>
+<figure class="highlight js"><figcaption><span>./lib/cli/init.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> Hexo = <span class="built_in">require</span>(<span class="string">'../hexo'</span>);</div><div class="line"><span class="keyword">var</span> pathFn = <span class="built_in">require</span>(<span class="string">'path'</span>);</div><div class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'hexo-fs'</span>);</div><div class="line"><span class="keyword">var</span> chalk = <span class="built_in">require</span>(<span class="string">'chalk'</span>);</div></pre></td></tr></table></figure>
+
+<p>可能 hexo 的主體已經打包成 <code>./lib/hexo</code>。</p>
+<h2 id="hexo_本體_-/lib/hexo">hexo 本體 ./lib/hexo</h2>
+<h3 id="-/lib/hexo/index-js">./lib/hexo/index.js</h3>
+<p><code>./lib/hexo/index.js</code> 定義的是 Hexo 物件，前面的宣告：</p>
+<figure class="highlight js"><figcaption><span>./lib/hexo/index.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> util = <span class="built_in">require</span>(<span class="string">'hexo-util'</span>);</div><div class="line"><span class="keyword">var</span> Promise = <span class="built_in">require</span>(<span class="string">'bluebird'</span>);</div><div class="line"><span class="keyword">var</span> pathFn = <span class="built_in">require</span>(<span class="string">'path'</span>);</div><div class="line"><span class="keyword">var</span> tildify = <span class="built_in">require</span>(<span class="string">'tildify'</span>);</div><div class="line"><span class="keyword">var</span> Database = <span class="built_in">require</span>(<span class="string">'warehouse'</span>);</div><div class="line"><span class="keyword">var</span> _ = <span class="built_in">require</span>(<span class="string">'lodash'</span>);</div><div class="line"><span class="keyword">var</span> chalk = <span class="built_in">require</span>(<span class="string">'chalk'</span>);</div><div class="line"><span class="keyword">var</span> EventEmitter = <span class="built_in">require</span>(<span class="string">'events'</span>).EventEmitter;</div><div class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'hexo-fs'</span>);</div><div class="line"><span class="keyword">var</span> Module = <span class="built_in">require</span>(<span class="string">'module'</span>);</div><div class="line"><span class="keyword">var</span> vm = <span class="built_in">require</span>(<span class="string">'vm'</span>);</div><div class="line"><span class="keyword">var</span> pkg = <span class="built_in">require</span>(<span class="string">'../../package.json'</span>);</div><div class="line"><span class="keyword">var</span> createLogger = <span class="built_in">require</span>(<span class="string">'./create_logger'</span>);</div><div class="line"><span class="keyword">var</span> extend = <span class="built_in">require</span>(<span class="string">'../extend'</span>);</div><div class="line"><span class="keyword">var</span> Render = <span class="built_in">require</span>(<span class="string">'./render'</span>);</div><div class="line"><span class="keyword">var</span> registerModels = <span class="built_in">require</span>(<span class="string">'./register_models'</span>);</div><div class="line"><span class="keyword">var</span> Post = <span class="built_in">require</span>(<span class="string">'./post'</span>);</div><div class="line"><span class="keyword">var</span> Scaffold = <span class="built_in">require</span>(<span class="string">'./scaffold'</span>);</div><div class="line"><span class="keyword">var</span> Source = <span class="built_in">require</span>(<span class="string">'./source'</span>);</div><div class="line"><span class="keyword">var</span> Router = <span class="built_in">require</span>(<span class="string">'./router'</span>);</div><div class="line"><span class="keyword">var</span> defaultConfig = <span class="built_in">require</span>(<span class="string">'./default_config'</span>);</div></pre></td></tr></table></figure>
+
+<p>在第 54 行到 64 行初始化 hexo.extend：</p>
+<figure class="highlight js"><figcaption><span>./lib/hexo/index.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">this</span>.extend = {</div><div class="line">  <span class="built_in">console</span>: <span class="keyword">new</span> extend.Console(),</div><div class="line">  deployer: <span class="keyword">new</span> extend.Deployer(),</div><div class="line">  filter: <span class="keyword">new</span> extend.Filter(),</div><div class="line">  generator: <span class="keyword">new</span> extend.Generator(),</div><div class="line">  helper: <span class="keyword">new</span> extend.Helper(),</div><div class="line">  migrator: <span class="keyword">new</span> extend.Migrator(),</div><div class="line">  processor: <span class="keyword">new</span> extend.Processor(),</div><div class="line">  renderer: <span class="keyword">new</span> extend.Renderer(),</div><div class="line">  tag: <span class="keyword">new</span> extend.Tag()</div><div class="line">};</div></pre></td></tr></table></figure>
+
+<p>我們可以知道 hexo 的 plugins 有 9 種 (配合<a href="http://hexo.io/docs/plugins.html" target="_blank" rel="external">文件</a>)：</p>
+<ul>
+<li>console：用來操控 hexo 的介面</li>
+<li>depolyer：將 blog 佈署在各種系統上</li>
+<li>filter：用來修蓋特定內容的工具 (ex. excerpt 等)</li>
+<li>generator：用來生成靜態文件 (ex. RSS, sitemap 等)</li>
+<li>helper：寫 theme 時，用來快速插入特定內容的工具</li>
+<li>migrator：從別的 blog 系統搬來 hexo 的工具</li>
+<li>processor：處理 <code>source</code> 資料夾的原始檔案</li>
+<li>render：用來處理特定文件 (ex. ejs, stylus, jade 等)</li>
+<li>tag：用作快速插入特定內容的工具 (ex. bootstrap, multimedia 等)</li>
+</ul>
+<p>而在 <code>Hexo.prototype.init</code> 中，第 116 行到 122 行：</p>
+<figure class="highlight js"><figcaption><span>./lib/hexo/index.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Load internal plugins</span></div><div class="line"><span class="built_in">require</span>(<span class="string">'../plugins/console'</span>)(<span class="keyword">this</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'../plugins/filter'</span>)(<span class="keyword">this</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'../plugins/generator'</span>)(<span class="keyword">this</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'../plugins/helper'</span>)(<span class="keyword">this</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'../plugins/processor'</span>)(<span class="keyword">this</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'../plugins/renderer'</span>)(<span class="keyword">this</span>);</div><div class="line"><span class="built_in">require</span>(<span class="string">'../plugins/tag'</span>)(<span class="keyword">this</span>);</div></pre></td></tr></table></figure>
+
+<p>載入 hexo 本身擁有的 plugin。</p>
+<h2 id="hexo_本身擁有的_plugins">hexo 本身擁有的 plugins</h2>
+<h3 id="內建_plugin_架構">內建 plugin 架構</h3>
+<pre><code>./lib/plugins/
+├── console/
+│    ├── clean.js
+│    ├── config.js
+│    ├── deploy.js
+│    ├── generate.js
+│    ├── <span class="keyword">help</span>.js
+│    ├── <span class="built_in">index</span>.js
+│    ├── init.js
+│    ├── migrate.js
+│    ├── <span class="keyword">new</span>.js
+│    ├── publish.js
+│    ├── render.js
+│    └── <span class="keyword">version</span>.js
+├── <span class="built_in">filter</span>/
+│    ├── after_post_render/
+│    │    ├── excerpt.js
+│    │    ├── external_link.js
+│    │    └── <span class="built_in">index</span>.js
+│    ├── before_post_render/
+│    │    ├── backtick_code_block.js
+│    │    ├── <span class="built_in">index</span>.js
+│    │    └── titlecase.js
+│    ├── <span class="built_in">index</span>.js
+│    ├── new_post_path.js
+│    └── post_permalink.js
+├── generator/
+│    ├── asset.js
+│    ├── <span class="built_in">index</span>.js
+│    ├── page.js
+│    └── post.js
+├── helper/
+│    ├── css.js
+│    ├── date.js
+│    ├── favicon_tag.js
+│    ├── feed_tag.js
+│    ├── format.js
+│    ├── fragment_cache.js
+│    ├── gravatar.js
+│    ├── image_tag.js
+│    ├── <span class="built_in">index</span>.js
+│    ├── <span class="keyword">is</span>.js
+│    ├── js.js
+│    ├── link_to.js
+│    ├── list_archives.js
+│    ├── list_categories.js
+│    ├── list_posts.js
+│    ├── list_tags.js
+│    ├── mail_to.js
+│    ├── markdown.js
+│    ├── number_format.js
+│    ├── open_graph.js
+│    ├── paginator.js
+│    ├── partial.js
+│    ├── render.js
+│    ├── search_form.js
+│    ├── tagcloud.js
+│    ├── toc.js
+│    └── url.js
+├── processor/
+│    ├── asset.js
+│    ├── common.js
+│    ├── <span class="built_in">index</span>.js
+│    └── post.js
+├── renderer/
+│    ├── html.js
+│    ├── <span class="built_in">index</span>.js
+│    ├── json.js
+│    ├── swig.js
+│    └── yaml.js
+└── <span class="keyword">tag</span>/
+    ├── asset_img.js
+    ├── asset_link.js
+    ├── asset_path.js
+    ├── blockquote.js
+    ├── code.js
+    ├── gist.js
+    ├── iframe.js
+    ├── img.js
+    ├── include_code.js
+    ├── <span class="built_in">index</span>.js
+    ├── jsfiddle.js
+    ├── link.js
+    ├── post_link.js
+    ├── post_path.js
+    ├── pullquote.js
+    ├── raw.js
+    ├── vimeo.js
+    └── youtube.js
+</code></pre><h3 id="console">console</h3>
+<p>也就是 hexo 的指令，在 <code>./lib/plugins/console/index.js</code> 中逐一註冊各指令，其中第 2 行：</p>
+<figure class="highlight js"><figcaption><span>./lib/plugins/console/index.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> <span class="built_in">console</span> = ctx.extend.console;</div></pre></td></tr></table></figure>
+
+<p><code>ctx</code> 從 <code>./lib/hexo/index.js</code> 的 <code>require(&#39;../plugins/console&#39;)(this);</code> 進來時是 <code>Hexo</code> 本身，我們可以從 <code>./lib/plugins/console/index.js</code> 看到內建的指令有：</p>
+<ul>
+<li>clean</li>
+<li>config</li>
+<li>deploy</li>
+<li>generate</li>
+<li>help</li>
+<li>init</li>
+<li>list</li>
+<li>migrate</li>
+<li>new</li>
+<li>publish</li>
+<li>render</li>
+<li>version</li>
+</ul>
+<p>從<a href="http://hexo.io/docs/plugins.html#Console" target="_blank" rel="external">文件</a>雖然可以知道大概的註冊方法，但是設定 <code>option</code> 還是得從 <code>./lib/hexo/index.js</code> 第 55 行 <code>console: new extend.Console(),</code> 開始找起。</p>
+<h3 id="filter">filter</h3>
+<p>在 <code>./lib/plugins/filter/index.js</code> 有：</p>
+<figure class="highlight js"><figcaption><span>./lib/plugins/filter/index.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>(<span class="string">'./after_post_render'</span>)(ctx);</div><div class="line"><span class="built_in">require</span>(<span class="string">'./before_post_render'</span>)(ctx);</div></pre></td></tr></table></figure>
+
+<p>遞迴註冊 filter。內建的 filter：</p>
+<ul>
+<li>new_post_path</li>
+<li>post_permalink</li>
+<li>after_post_render：在 md 檔被 render 後執行<ul>
+<li>excerpt</li>
+<li>external_link</li>
+</ul>
+</li>
+<li>before_post_render：在 md 檔被 render 前執行<ul>
+<li>backtick_code_block</li>
+<li>titlecase</li>
+</ul>
+</li>
+</ul>
+<h3 id="generator">generator</h3>
+<ul>
+<li>asset</li>
+<li>page</li>
+<li>post</li>
+</ul>
+<h3 id="helper">helper</h3>
+<p>在 <code>./date.js</code> 內：</p>
+<ul>
+<li>date</li>
+<li>date_xml</li>
+<li>time</li>
+<li>full_date</li>
+<li>time_tag</li>
+<li>moment</li>
+</ul>
+<p>在 <code>./format.js</code> 內：</p>
+<ul>
+<li>strip_html</li>
+<li>trim</li>
+<li>titlecase</li>
+<li>word_wrap</li>
+<li>truncate</li>
+</ul>
+<p>在 <code>./is.js</code> 內：</p>
+<ul>
+<li>is_current</li>
+<li>is_home</li>
+<li>is_post</li>
+<li>is_archive</li>
+<li>is_year</li>
+<li>is_month</li>
+<li>is_category</li>
+<li>is_tag</li>
+</ul>
+<p>在 <code>./tagcloud.js</code> 內：</p>
+<ul>
+<li>tagcloud</li>
+<li>tag_cloud (同上)</li>
+</ul>
+<p>在 <code>./url.js</code> 內：</p>
+<ul>
+<li>relative_url</li>
+<li>url_for</li>
+</ul>
+<p>連結工具：</p>
+<ul>
+<li>css</li>
+<li>js</li>
+<li>link_to</li>
+<li>mail_to</li>
+<li>image_tag</li>
+<li>favicon_tag</li>
+<li>feed_tag</li>
+</ul>
+<p>list 系列：</p>
+<ul>
+<li>list_archives</li>
+<li>list_categories</li>
+<li>list_tags</li>
+<li>list_posts</li>
+</ul>
+<p>其他：</p>
+<ul>
+<li>search_form</li>
+<li>fragment_cache (傳入參數 ctx)</li>
+<li>gravatar</li>
+<li>open_graph</li>
+<li>number_format</li>
+<li>paginator</li>
+<li>partial (傳入參數 ctx)</li>
+<li>markdown</li>
+<li>render (傳入參數 ctx)</li>
+<li>toc</li>
+</ul>
+<h3 id="processor">processor</h3>
+<ul>
+<li>asset</li>
+<li>post</li>
+</ul>
+<h3 id="renderer">renderer</h3>
+<p>根據<a href="http://hexo.io/docs/plugins.html#Renderer" target="_blank" rel="external">文件</a>，註冊方式有四個參數：</p>
+<ol>
+<li>輸入檔案格式</li>
+<li>輸出檔案格式</li>
+<li>render 函數</li>
+<li>是否同步</li>
+</ol>
+<p>直接貼出 <code>./lib/plugins/renderer/index.js</code>：</p>
+<figure class="highlight js"><figcaption><span>./lib/plugins/renderer/index.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> renderer = ctx.extend.renderer;</div><div class="line"><span class="keyword">var</span> html = <span class="built_in">require</span>(<span class="string">'./html'</span>);</div><div class="line">renderer.register(<span class="string">'htm'</span>, <span class="string">'html'</span>, html, <span class="literal">true</span>);</div><div class="line">renderer.register(<span class="string">'html'</span>, <span class="string">'html'</span>, html, <span class="literal">true</span>);</div><div class="line">renderer.register(<span class="string">'json'</span>, <span class="string">'json'</span>, <span class="built_in">require</span>(<span class="string">'./json'</span>), <span class="literal">true</span>);</div><div class="line">renderer.register(<span class="string">'swig'</span>, <span class="string">'html'</span>, <span class="built_in">require</span>(<span class="string">'./swig'</span>), <span class="literal">true</span>);</div><div class="line"><span class="keyword">var</span> yml = <span class="built_in">require</span>(<span class="string">'./yaml'</span>);</div><div class="line">renderer.register(<span class="string">'yml'</span>, <span class="string">'json'</span>, yml, <span class="literal">true</span>);</div><div class="line">renderer.register(<span class="string">'yaml'</span>, <span class="string">'json'</span>, yml, <span class="literal">true</span>);</div></pre></td></tr></table></figure>
+
+<h3 id="tag">tag</h3>
+<p>類似就不整理了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://m80126colin.github.io/blog/articles/筆記/hexo/hexo-read-code-01/" data-id="gg3gprno63tw59ra" class="article-share-link">分享</a>
+      
+  <a href="http://m80126colin.github.io/blog/articles/筆記/hexo/hexo-read-code-01/#disqus_thread" class="article-comment-link">文章留言</a>
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/hxojs/">hxojs</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/blog/articles/語言/中文/triple-chinese/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">[轉載] 一堆三個字在一起，你會念嗎?</div>
+    </a>
+  
+</nav>
+
+  
+  
+<div id="comments">
+  
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  <script>
+    var disqus_shortname = 'm80126colin';
+    
+    var disqus_url = 'http://m80126colin.github.io/blog/articles/筆記/hexo/hexo-read-code-01/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//go.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  
+</div>
+
+</article></section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分類</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/公告/">公告</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/">分享</a><span class="category-list-count">44</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/Vocaloid-系列/">Vocaloid 系列</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/中文歌/">中文歌</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/惡趣味/">惡趣味</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/日文歌/">日文歌</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/東方系列/">東方系列</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/轉載小說/">轉載小說</a><span class="category-list-count">15</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/轉載小說/好人筆記本/">好人筆記本</a><span class="category-list-count">15</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/分享/轉錄文章/">轉錄文章</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/">創作</a><span class="category-list-count">27</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/中長篇小說/">中長篇小說</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/中長篇小說/日常篇/">日常篇</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/微小說/">微小說</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/心得/">心得</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/散文/">散文</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/極短篇小說/">極短篇小說</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/設定/">設定</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/創作/詩/">詩</a><span class="category-list-count">14</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/程式碼/">程式碼</a><span class="category-list-count">28</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/程式碼/UVa/">UVa</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/程式碼/ZeroJudge/">ZeroJudge</a><span class="category-list-count">24</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/程式碼/codebook/">codebook</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/筆記/">筆記</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/筆記/hexo/">hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/筆記/使用說明/">使用說明</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/筆記/備份/">備份</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/筆記/文章/">文章</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/筆記/線性代數/">線性代數</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/翻譯/">翻譯</a><span class="category-list-count">34</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/翻譯/Project-Euler/">Project Euler</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/翻譯/USACO/">USACO</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/翻譯/UVa-ACM/">UVa/ACM</a><span class="category-list-count">25</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/語言/">語言</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/語言/中文/">中文</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/語言/德文/">德文</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/遊戲/">遊戲</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/雜記/">雜記</a><span class="category-list-count">63</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/雜記/國中時代/">國中時代</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/雜記/後日談/">後日談</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/雜記/椰林杜鵑啼/">椰林杜鵑啼</a><span class="category-list-count">28</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/雜記/蔚衣俠客/">蔚衣俠客</a><span class="category-list-count">31</span></li></ul></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">標籤雲</h3>
+    <div class="widget tagcloud">
+      <a href="/blog/tags/18-歲的野比大雄/" style="font-size: 10.00px;">18 歲的野比大雄</a><a href="/blog/tags/311-東日本大震災/" style="font-size: 10.00px;">311 東日本大震災</a><a href="/blog/tags/921/" style="font-size: 10.00px;">921</a><a href="/blog/tags/ACGN/" style="font-size: 10.00px;">ACGN</a><a href="/blog/tags/American-SHENGDIYAGE/" style="font-size: 10.00px;">American SHENGDIYAGE</a><a href="/blog/tags/Bad-Apple/" style="font-size: 10.00px;">Bad Apple</a><a href="/blog/tags/Bump-of-Chicken/" style="font-size: 11.67px;">Bump of Chicken</a><a href="/blog/tags/C/" style="font-size: 20.00px;">C++</a><a href="/blog/tags/CPE/" style="font-size: 15.00px;">CPE</a><a href="/blog/tags/Cosplay/" style="font-size: 10.00px;">Cosplay</a><a href="/blog/tags/Dancing-Link/" style="font-size: 10.00px;">Dancing Link</a><a href="/blog/tags/Dream-Machine/" style="font-size: 10.00px;">Dream Machine</a><a href="/blog/tags/Dynamic-Programming/" style="font-size: 11.67px;">Dynamic Programming</a><a href="/blog/tags/El-Shaddai/" style="font-size: 10.00px;">El Shaddai</a><a href="/blog/tags/Emma-的信/" style="font-size: 10.00px;">Emma 的信</a><a href="/blog/tags/GUMI/" style="font-size: 10.00px;">GUMI</a><a href="/blog/tags/Good-Guy-Note/" style="font-size: 18.33px;">Good Guy Note</a><a href="/blog/tags/Greedy/" style="font-size: 10.00px;">Greedy</a><a href="/blog/tags/H-G-威爾斯/" style="font-size: 10.00px;">H.G.威爾斯</a><a href="/blog/tags/HEY-APPLE/" style="font-size: 11.67px;">HEY APPLE</a><a href="/blog/tags/HEY-ORANGE/" style="font-size: 10.00px;">HEY ORANGE</a><a href="/blog/tags/Hatsune-Miku/" style="font-size: 16.67px;">Hatsune Miku</a><a href="/blog/tags/John-Titor/" style="font-size: 10.00px;">John Titor</a><a href="/blog/tags/Josephus-Problem/" style="font-size: 10.00px;">Josephus Problem</a><a href="/blog/tags/K-ON/" style="font-size: 10.00px;">K-ON</a><a href="/blog/tags/KAITO/" style="font-size: 10.00px;">KAITO</a><a href="/blog/tags/Kagamine-Ren/" style="font-size: 10.00px;">Kagamine Ren</a><a href="/blog/tags/Kagamine-Rin/" style="font-size: 10.00px;">Kagamine Rin</a><a href="/blog/tags/Kaito/" style="font-size: 10.00px;">Kaito</a><a href="/blog/tags/MRT/" style="font-size: 10.00px;">MRT</a><a href="/blog/tags/Math/" style="font-size: 10.00px;">Math</a><a href="/blog/tags/Megpoid/" style="font-size: 10.00px;">Megpoid</a><a href="/blog/tags/Megurine-Luka/" style="font-size: 13.33px;">Megurine Luka</a><a href="/blog/tags/Meiko/" style="font-size: 10.00px;">Meiko</a><a href="/blog/tags/Min-Max-Problem/" style="font-size: 10.00px;">Min Max Problem</a><a href="/blog/tags/Project-Euler/" style="font-size: 10.00px;">Project Euler</a><a href="/blog/tags/Q-matrix/" style="font-size: 10.00px;">Q-matrix</a><a href="/blog/tags/SCC/" style="font-size: 11.67px;">SCC</a><a href="/blog/tags/Stack/" style="font-size: 10.00px;">Stack</a><a href="/blog/tags/Strong-Connected-Component/" style="font-size: 11.67px;">Strong Connected Component</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">網誌存檔</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2015/01/">January 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2014/10/">October 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2014/08/">August 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2014/07/">July 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2014/05/">May 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2012/06/">June 2012</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2012/05/">May 2012</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2012/03/">March 2012</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2012/02/">February 2012</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/11/">November 2011</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/10/">October 2011</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/09/">September 2011</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/08/">August 2011</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/07/">July 2011</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/06/">June 2011</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/05/">May 2011</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/03/">March 2011</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2011/01/">January 2011</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/12/">December 2010</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/11/">November 2010</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/09/">September 2010</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/07/">July 2010</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/06/">June 2010</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/05/">May 2010</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/03/">March 2010</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2010/02/">February 2010</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/12/">December 2009</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/11/">November 2009</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/10/">October 2009</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/09/">September 2009</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/08/">August 2009</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/07/">July 2009</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/06/">June 2009</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/05/">May 2009</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/03/">March 2009</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/02/">February 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2009/01/">January 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/11/">November 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/10/">October 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/09/">September 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/08/">August 2008</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/07/">July 2008</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/06/">June 2008</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/05/">May 2008</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2008/03/">March 2008</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2007/04/">April 2007</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2006/05/">May 2006</a><span class="archive-list-count">15</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2005/12/">December 2005</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2005/11/">November 2005</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/blog/articles/筆記/hexo/hexo-read-code-01/">[hexo 3.0.0-beta.1] hexo 原始碼閱讀 01</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/語言/中文/triple-chinese/">[轉載] 一堆三個字在一起，你會念嗎?</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/翻譯/uva/uva599/">[翻譯][UVa][599] The Forrest for the Trees</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/翻譯/uva/uva10685/">[翻譯][UVa][10685] Nature</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/翻譯/uva/uva11525/">[翻譯][UVa][11525] Permutation</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/翻譯/uva/uva12086/">[翻譯][UVa][12086] Potentiometers</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/筆記/linear algebra/20141021-span/">Span 的性質</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/metatron/">梅塔特隆立方體 (Metatron)</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/雜記/graduate/20140730-024300/">20140730 近況</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/acgn-list/">推薦 ACGN 列表</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/history/">「天然呆」部落史</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/創作/心得/review-2/">[心得] 穿梭時空旅</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/遊戲/kohctpyktop-engineer-of-the-people/">Kohctpyktop: Engineer of the People 記錄</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/筆記/usage/md-file-format/">Markdown 檔格式</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/筆記/article/數與大數/">數與大數</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/20120602-011600/">120601 CPE 夏番</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/程式碼/uva/uva-10718-code/">[解題報告][UVa][10718] Bit Mask</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/20120521-013400/">120521 只是朋友</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/20120514-052900/">120514 2012 年 CPE 春番</a>
+          </li>
+        
+          <li>
+            <a href="/blog/articles/20120514-051400/">120514 清雜草</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新留言</h3>
+    <div class="widget">
+      <script type="text/javascript" src="http://m80126colin.disqus.com/recent_comments_widget.js?num_items=20&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=10&amp;hide_mods=0"></script>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">相關連結</h3>
+    <div class="widget">
+      
+      <p><a href="http://mypaper.pchome.com.tw/zerojudge" title="神 morris">Morris' Blog</a></p>
+      
+      <p><a href="http://morris821028.github.io">Morris' Blog (on Github)</a></p>
+      
+      <p><a href="http://sd12582000.blogspot.tw" title="神妮可">OldNick's Blog</a></p>
+      
+      <p><a href="http://lovetabris.pixnet.net/blog">腐宅日常生活。</a></p>
+      
+      <p><a href="http://xuanwo.org">旋渦</a></p>
+      
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      Powered by <a href="http://hexo.io" target="_blank">Hexo</a> and Theme by <a href="https://github.com/m80126colin/hexo-theme-giraffe" target="_blank">Giraffe</a> &copy; 2015 許胖<br>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">首頁</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">網誌存檔</a>
+  
+</nav>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css" type="text/css">
+
+  <script src="/blog/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+<script src="/blog/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
