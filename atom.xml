@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的呆毛可以覆蓋全台灣 XD]]></subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://m80126colin.github.io/blog/"/>
-  <updated>2015-01-15T11:35:16.508Z</updated>
+  <updated>2015-04-27T18:11:21.089Z</updated>
   <id>http://m80126colin.github.io/blog/</id>
   
   <author>
@@ -717,8 +717,8 @@
   
   <entry>
     <title><![CDATA[梅塔特隆立方體 (Metatron)]]></title>
-    <link href="http://m80126colin.github.io/blog/articles/metatron/"/>
-    <id>http://m80126colin.github.io/blog/articles/metatron/</id>
+    <link href="http://m80126colin.github.io/blog/articles/%E5%89%B5%E4%BD%9C/%E8%A8%AD%E5%AE%9A/metatron/"/>
+    <id>http://m80126colin.github.io/blog/articles/創作/設定/metatron/</id>
     <published>2014-08-02T06:27:15.000Z</published>
     <updated>2014-08-02T08:01:34.000Z</updated>
     <content type="html"><![CDATA[<ul>
@@ -774,8 +774,8 @@
   
   <entry>
     <title><![CDATA[推薦 ACGN 列表]]></title>
-    <link href="http://m80126colin.github.io/blog/articles/acgn-list/"/>
-    <id>http://m80126colin.github.io/blog/articles/acgn-list/</id>
+    <link href="http://m80126colin.github.io/blog/articles/%E5%85%AC%E5%91%8A/acgn-list/"/>
+    <id>http://m80126colin.github.io/blog/articles/公告/acgn-list/</id>
     <published>2014-07-21T14:08:10.000Z</published>
     <updated>2014-07-29T18:55:10.000Z</updated>
     <content type="html"><![CDATA[<h1 id="小說">小說</h1>
@@ -797,8 +797,8 @@
   
   <entry>
     <title><![CDATA[「天然呆」部落史]]></title>
-    <link href="http://m80126colin.github.io/blog/articles/history/"/>
-    <id>http://m80126colin.github.io/blog/articles/history/</id>
+    <link href="http://m80126colin.github.io/blog/articles/%E5%85%AC%E5%91%8A/history/"/>
+    <id>http://m80126colin.github.io/blog/articles/公告/history/</id>
     <published>2014-07-12T19:25:39.000Z</published>
     <updated>2014-07-16T13:12:08.000Z</updated>
     <content type="html"><![CDATA[<h1 id="yahoo,_pchome_(2005-11-21_-_2008-03-09)">yahoo, pchome (2005.11.21 - 2008.03.09)</h1>
@@ -1189,10 +1189,10 @@
   
   <entry>
     <title><![CDATA[120601 CPE 夏番]]></title>
-    <link href="http://m80126colin.github.io/blog/articles/20120602-011600/"/>
-    <id>http://m80126colin.github.io/blog/articles/20120602-011600/</id>
+    <link href="http://m80126colin.github.io/blog/articles/%E9%9B%9C%E8%A8%98/undergraduate/20120602-011600/"/>
+    <id>http://m80126colin.github.io/blog/articles/雜記/undergraduate/20120602-011600/</id>
     <published>2012-06-01T17:16:00.000Z</published>
-    <updated>2014-07-21T09:39:47.000Z</updated>
+    <updated>2015-04-27T18:04:55.000Z</updated>
     <content type="html"><![CDATA[<p>下雷</p>
 <a id="more"></a>
 
@@ -1215,7 +1215,7 @@
     
       <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
     
-      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
+      <category term="(C)椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/-C-%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
     
   </entry>
   
@@ -1254,8 +1254,8 @@
   
   <entry>
     <title><![CDATA[120521 只是朋友]]></title>
-    <link href="http://m80126colin.github.io/blog/articles/20120521-013400/"/>
-    <id>http://m80126colin.github.io/blog/articles/20120521-013400/</id>
+    <link href="http://m80126colin.github.io/blog/articles/%E5%88%86%E4%BA%AB/%E4%B8%AD%E6%96%87%E6%AD%8C/20120521-013400/"/>
+    <id>http://m80126colin.github.io/blog/articles/分享/中文歌/20120521-013400/</id>
     <published>2012-05-20T17:34:00.000Z</published>
     <updated>2014-07-28T07:46:31.000Z</updated>
     <content type="html"><![CDATA[<p>半夜無事來Po首歌<br>最近都沒啥在聽音樂<br>Youtube 在這</p>
@@ -1292,10 +1292,10 @@
   
   <entry>
     <title><![CDATA[120514 2012 年 CPE 春番]]></title>
-    <link href="http://m80126colin.github.io/blog/articles/20120514-052900/"/>
-    <id>http://m80126colin.github.io/blog/articles/20120514-052900/</id>
+    <link href="http://m80126colin.github.io/blog/articles/%E9%9B%9C%E8%A8%98/undergraduate/20120514-052900/"/>
+    <id>http://m80126colin.github.io/blog/articles/雜記/undergraduate/20120514-052900/</id>
     <published>2012-05-13T21:29:00.000Z</published>
-    <updated>2014-07-21T09:39:50.000Z</updated>
+    <updated>2015-04-27T18:04:56.000Z</updated>
     <content type="html"><![CDATA[<p>又是一篇遲到文 ….</p>
 <a id="more"></a>
 
@@ -1313,16 +1313,16 @@
     
       <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
     
-      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
+      <category term="(C)椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/-C-%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[120514 清雜草]]></title>
-    <link href="http://m80126colin.github.io/blog/articles/20120514-051400/"/>
-    <id>http://m80126colin.github.io/blog/articles/20120514-051400/</id>
+    <link href="http://m80126colin.github.io/blog/articles/%E9%9B%9C%E8%A8%98/undergraduate/20120514-051400/"/>
+    <id>http://m80126colin.github.io/blog/articles/雜記/undergraduate/20120514-051400/</id>
     <published>2012-05-13T21:14:00.000Z</published>
-    <updated>2014-07-21T09:39:35.000Z</updated>
+    <updated>2015-04-27T18:04:57.000Z</updated>
     <content type="html"><![CDATA[<p>來清個雜草</p>
 <p>之後有時間在更新</p>
 ]]></content>
@@ -1334,7 +1334,7 @@
     
       <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
     
-      <category term="椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
+      <category term="(C)椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/-C-%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
     
   </entry>
   
