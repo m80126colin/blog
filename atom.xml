@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我的呆毛可以覆蓋全台灣 XD]]></subtitle>
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://m80126colin.github.io/blog/"/>
-  <updated>2015-04-27T18:11:21.089Z</updated>
+  <updated>2015-05-31T15:34:29.306Z</updated>
   <id>http://m80126colin.github.io/blog/</id>
   
   <author>
@@ -13,6 +13,1338 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[[初級韓文][01] 韓文活用變化、不規則變化]]></title>
+    <link href="http://m80126colin.github.io/blog/articles/%E8%AA%9E%E8%A8%80/%E9%9F%93%E6%96%87/%E5%88%9D%E7%B4%9A%E9%9F%93%E6%96%87/korean-01/"/>
+    <id>http://m80126colin.github.io/blog/articles/語言/韓文/初級韓文/korean-01/</id>
+    <published>2015-05-31T11:23:02.000Z</published>
+    <updated>2015-05-31T15:28:39.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="活用變化">活用變化</h1>
+<p>「活用」是日文中單字接續文法的特有現象，日文中依據詞彙是否活用與否，分為「用言」、「體言」兩大類。韓文中也有類似的情形，若依據這種分法，韓文的用言大致為動詞和形容詞兩種，並且有些詞彙會有不規則變化。</p>
+<h2 id="符號介紹">符號介紹</h2>
+<ul>
+<li>V = 動詞</li>
+<li>A = 形容詞</li>
+<li>N = 名詞<ul>
+<li>名詞不屬於用言，但是名詞會和「이다」(是)、「아니다」(不是) 做變化</li>
+<li>注意이다是「指示詞」，아니다是「形容詞」</li>
+</ul>
+</li>
+<li>S = 謂詞<ul>
+<li>V</li>
+<li>A</li>
+<li>N + 이다</li>
+<li>N + 가 아니다</li>
+</ul>
+</li>
+</ul>
+<p>韓文用言分三種變化，直接稱為「第一語基」、「第二語基」、「第三語基」，以下是符號寫法，後面會從規則變化來介紹。</p>
+<ul>
+<li>第一語基：V<sub>Ⅰ</sub>、A<sub>Ⅰ</sub>、S<sub>Ⅰ</sub></li>
+<li>第二語基：V<sub>Ⅱ</sub>、A<sub>Ⅱ</sub>、S<sub>Ⅱ</sub></li>
+<li>第三語基：V<sub>Ⅲ</sub>、A<sub>Ⅲ</sub>、S<sub>Ⅲ</sub></li>
+</ul>
+<a id="more"></a>
+
+<h1 id="規則變化">規則變化</h1>
+<h2 id="V/A_活用變化">V/A 活用變化</h2>
+<ul>
+<li>第一語基：即是語幹，例如：<ul>
+<li>주다 -&gt; 주</li>
+<li>어렵다 -&gt; 어렵</li>
+</ul>
+</li>
+<li>第二語基：有收尾音加「으」，沒有則不加，例如：<ul>
+<li>無收尾音：빠르다 -&gt; 빠르</li>
+<li>有收尾音：읽다   -&gt; 읽으 /일그/</li>
+</ul>
+</li>
+<li>第三語基：非格式，요形 (아,어,해)<ul>
+<li>오、아、요、야 規則變化：加「아」<ul>
+<li>無收尾音：가다 -&gt; 가 + 아 -&gt; 가</li>
+<li>無收尾音：오다 -&gt; 오 + 아 -&gt; 와</li>
+<li>有收尾音：좋다 -&gt; 졸 + 아 -&gt; 좋아</li>
+</ul>
+</li>
+<li>우、어、유、여 規則變化：加「어」<ul>
+<li>無收尾音：배우다 -&gt; 배우 + 어 -&gt; 배워</li>
+<li>有收尾音：읽다 -&gt; 읽 + 어 -&gt; 읽어 /일거/</li>
+</ul>
+</li>
+<li>이 規則變化：이 母音結尾加上「어」，可變成「여」<ul>
+<li>마시다 -&gt; 마시 + 어 -&gt; 마셔</li>
+</ul>
+</li>
+<li>으 規則變化：으 母音結尾，「으」變為「아/어」<ul>
+<li>쓰다 -&gt; 쓰 + 어 -&gt; 써</li>
+<li>예쁘다 -&gt; 예쁘 + 어 -&gt; 예뻐</li>
+<li>아프다 -&gt; 아프 + 아 -&gt; 아파</li>
+</ul>
+</li>
+<li>變 해：하다 規則變化，變「하여」或是「해」<ul>
+<li>하다 -&gt; 하 + 여 -&gt; 해</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="이다/아니다_活用變化">이다/아니다 活用變化</h2>
+<ul>
+<li>이다 變化<ul>
+<li>第一語基：語幹「이」<ul>
+<li>의사 + 이다 -&gt; 의사 + 이 -&gt; 의사이</li>
+<li>문 + 이다 -&gt; 문 + 이 -&gt; 문이</li>
+</ul>
+</li>
+<li>第二語基：語幹「이」</li>
+<li>第三語基：<ul>
+<li>一般為「이어」：의사 + 이다 -&gt; 의사 + 이 + 어 -&gt; 의사이어</li>
+<li>過去式 ㅆ 的場合，變成「여」：학생 + 이다 + ㅆ -&gt; 학생였</li>
+<li>非格式體敬語下，有收尾音為「이에요」，沒有則為「예요」</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>아니다 變化<ul>
+<li>第一語基：語幹「아니」</li>
+<li>第二語基：語幹「아니」</li>
+<li>第三語基：<ul>
+<li>一般為「아니어」</li>
+<li>非格式體敬語下，變成「아니에」</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="ㄹ_脫落活用">ㄹ 脫落活用</h2>
+<ul>
+<li>原則：碰到 ㅅ、ㄴ、ㅂ、(ㄹ) 時，ㄹ 會脫落。</li>
+<li>不規則變化<ul>
+<li>第一語基：語幹，有時碰到 ㅅ、ㄴ、ㅂ，ㄹ 脫落</li>
+<li>第二語基：「으」消失。碰到 ㅅ、ㄴ、ㅂ、ㄹ 時 ㄹ 脫落；碰到非單獨 ㄹ 時不脫落<ul>
+<li>살다 + 면 -&gt; 살면</li>
+<li>살다 + 니 -&gt; 사니</li>
+<li>살다 + ㄹ -&gt; 살</li>
+<li>살다 + 려 -&gt; 살려</li>
+</ul>
+</li>
+<li>第三語基：直接加「아/어」<ul>
+<li>살다 -&gt; 살아</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>辭彙：所有以 ㄹ 結尾的語幹。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ㄹ脫落活用</th>
+<th>解釋</th>
+<th>詞性</th>
+<th>ㄹ脫落活用</th>
+<th>解釋</th>
+<th>詞性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>걸다 ★</td>
+<td>掛、吊，打(電話)，寄託，發動(引擎)</td>
+<td>動</td>
+<td>걸다 ★</td>
+<td></td>
+<td>形</td>
+</tr>
+<tr>
+<td>알다</td>
+<td>知道</td>
+<td>動</td>
+<td>길다</td>
+<td>長</td>
+<td>形</td>
+</tr>
+<tr>
+<td>놀다</td>
+<td>玩耍、休息</td>
+<td>動</td>
+<td>달다</td>
+<td>甜</td>
+<td>形</td>
+</tr>
+<tr>
+<td>만들다</td>
+<td>製造，成為(朋友)</td>
+<td>動</td>
+<td>멀다</td>
+<td>遠</td>
+<td>形</td>
+</tr>
+<tr>
+<td>빌다</td>
+<td>祝福，乞討</td>
+<td>動</td>
+<td>가늘다</td>
+<td>細</td>
+<td>形</td>
+</tr>
+<tr>
+<td>팔다</td>
+<td>賣、出賣</td>
+<td>動</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>들다</td>
+<td>進入，加入</td>
+<td>動</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>살다</td>
+<td>生活、居住</td>
+<td>動</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>열다</td>
+<td>打開</td>
+<td>動</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>울다</td>
+<td>哭泣</td>
+<td>動</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>쓸다</td>
+<td>打掃</td>
+<td>動</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="不規則變化">不規則變化</h1>
+<p>不規則變化有七種變化，通常是依據收尾音或變化方式來取名：ㅂ、ㄷ、ㅅ、르、러、ㅎ、우 不規則變化。這七種可以分為三大類：</p>
+<ul>
+<li>遇母音就變化：ㅂ、ㄷ、ㅅ 不規則變化</li>
+<li>第三語基 (요形) 變化：르、러 不規則變化</li>
+<li>其他：ㅎ、우 不規則變化</li>
+</ul>
+<h2 id="ㅂ_不規則變化">ㅂ 不規則變化</h2>
+<ul>
+<li>原則：遇到母音就會出現，規則是去掉 ㅂ，加上「우」。第三語基只有「돕다」和「곱다」加「와」。</li>
+<li>不規則變化<ul>
+<li>第一語基：語幹</li>
+<li>第二語基：去掉 ㅂ，加上「우」(으 消失)<ul>
+<li>춥다 -&gt; 추우</li>
+<li>돕다 -&gt; 도우</li>
+</ul>
+</li>
+<li>第三語基：去掉 ㅂ，加上「워/와」<ul>
+<li>덥다 -&gt; 더우 + 어 -&gt; 더워</li>
+<li>쉽다 -&gt; 쉬우 + 어 -&gt; 쉬워</li>
+<li>곱다 -&gt; 고오 + 아 -&gt; 고와</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>特殊變化：뵙다<ul>
+<li>第一語基：뵙</li>
+<li>第二語基：뵈</li>
+<li>第三語基：뵈어</li>
+</ul>
+</li>
+<li>辭彙：少數動詞、多數形容詞。有些詞同時有規則變化與不規則變化</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ㅂ不規則變化</th>
+<th>解釋</th>
+<th>詞性</th>
+<th>規則變化</th>
+<th>解釋</th>
+<th>詞性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>가렵다</td>
+<td>癢</td>
+<td>動</td>
+<td>뽑다</td>
+<td>拔、錄取</td>
+<td>動</td>
+</tr>
+<tr>
+<td>깁다</td>
+<td>縫、補</td>
+<td>動</td>
+<td>입다</td>
+<td>穿</td>
+<td>動</td>
+</tr>
+<tr>
+<td>돕다 ☆</td>
+<td>幫忙、救助</td>
+<td>動</td>
+<td>씹다</td>
+<td>咬、嚼</td>
+<td>動</td>
+</tr>
+<tr>
+<td>눕다 ☆</td>
+<td>躺、臥</td>
+<td>動</td>
+<td>업다</td>
+<td>背負</td>
+<td>動</td>
+</tr>
+<tr>
+<td>줍다</td>
+<td>撿</td>
+<td>動</td>
+<td>집다</td>
+<td>夾</td>
+<td>動</td>
+</tr>
+<tr>
+<td>접다</td>
+<td>折</td>
+<td>動</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>잡다</td>
+<td>抓、捕捉</td>
+<td>動</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>꼽다</td>
+<td>扳(指頭)</td>
+<td>動</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>굽다 ★</td>
+<td>燒、烤</td>
+<td>動</td>
+<td>굽다 ★</td>
+<td>彎、曲折</td>
+<td>形</td>
+</tr>
+<tr>
+<td>곱다 ★</td>
+<td>美麗、善良</td>
+<td>形</td>
+<td>곱다 ★</td>
+<td>凍僵</td>
+<td>形</td>
+</tr>
+<tr>
+<td>아름답다</td>
+<td>美</td>
+<td>形</td>
+<td>좁다 ☆</td>
+<td>窄</td>
+<td>形</td>
+</tr>
+<tr>
+<td>귀엽다</td>
+<td>可愛</td>
+<td>形</td>
+<td>넓다</td>
+<td>寬、廣大</td>
+<td>形</td>
+</tr>
+<tr>
+<td>밉다</td>
+<td>醜、可恨</td>
+<td>形</td>
+<td>수줍다</td>
+<td>害羞</td>
+<td>形</td>
+</tr>
+<tr>
+<td>가깝다</td>
+<td>近</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>덥다</td>
+<td>(天氣) 熱</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>춥다</td>
+<td>(天氣) 冷</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>뜨겁다</td>
+<td>(溫度) 熱</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>쉽다</td>
+<td>簡單</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>어렵다</td>
+<td>困難</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>가볍다</td>
+<td>輕</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>무겁다</td>
+<td>重</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>맵다</td>
+<td>辣</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>부끄럽다</td>
+<td>害羞、內疚</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>시끄럽다</td>
+<td>吵鬧</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>부드럽다</td>
+<td>柔軟、溫和</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>새롭다</td>
+<td>新</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>어둡다</td>
+<td>暗、陰沉</td>
+<td>形</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ㄷ_不規則變化">ㄷ 不規則變化</h2>
+<ul>
+<li>原則：遇到母音就會出現，規則是去掉 ㄷ，加上「ㄹ」。</li>
+<li>不規則變化<ul>
+<li>第一語基：語幹</li>
+<li>第二語基：去掉 ㄷ，加上「ㄹ으」<ul>
+<li>듣다 -&gt; 들으 /드르/</li>
+</ul>
+</li>
+<li>第三語基：去掉 ㄷ，加上「ㄹ아 / ㄹ어」<ul>
+<li>듣다 -&gt; 들 + 어 -&gt; 들어 /드러/</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>有些 ㄷ 不規則的第三語基會和 ㄹ 脫落活用一樣</li>
+<li>辭彙：都是動詞，部分規則變化，部分不規則。部分 ㄷ 不規則第三語基會和 ㄹ 脫落活用雷同。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ㄷ不規則變化</th>
+<th>解釋</th>
+<th>規則變化</th>
+<th>解釋</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>걷다 ★</td>
+<td>走(路)</td>
+<td>걷다 ★</td>
+<td>捲、疊，收取</td>
+</tr>
+<tr>
+<td>묻다 ★</td>
+<td>問</td>
+<td>묻다 ★</td>
+<td>沾染，埋</td>
+</tr>
+<tr>
+<td>믿다</td>
+<td>相信</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>닫다 ★</td>
+<td>跑</td>
+<td>닫다 ★</td>
+<td>關(門)</td>
+</tr>
+<tr>
+<td>듣다</td>
+<td>聽</td>
+<td>돋다</td>
+<td>(太陽)升起，萌(芽)</td>
+</tr>
+<tr>
+<td>붇다</td>
+<td>膨脹、增長</td>
+<td>얻다</td>
+<td>得到</td>
+</tr>
+<tr>
+<td>싣다</td>
+<td>裝載，刊登，積水</td>
+<td>쏟다</td>
+<td>倒(茶、垃圾、水)、傾倒</td>
+</tr>
+<tr>
+<td>눋다</td>
+<td>焦</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ㅅ_不規則變化">ㅅ 不規則變化</h2>
+<ul>
+<li>原則：遇到母音就會出現，規則是去掉ㅅ。</li>
+<li>不規則變化<ul>
+<li>第一語基：語幹</li>
+<li>第二語基：去掉ㅅ，加上「으」(若語幹最後是으則省略)<ul>
+<li>긋다 -&gt; 긋 + 으 -&gt; 그</li>
+<li>잇다 -&gt; 잇 + 으 -&gt; 이으</li>
+</ul>
+</li>
+<li>第三語基：去掉ㅅ，加上「아/어」(若前面母音是 아/어/이，則不可合併為 아/어/여)<ul>
+<li>짓다 -&gt; 짓 + 어 -&gt; 지어 (不可為져)</li>
+<li>붓다 &gt; 붓 + 어 -&gt; 부어 (不可為붜)</li>
+<li>낫다 -&gt; 낫 + 아 -&gt; 나아 (不可為나)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>辭彙：除了形容詞只有「낫다 (勝於)」之外，都是動詞，部分規則變化，部分不規則</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ㅅ不規則變化</th>
+<th>解釋</th>
+<th>詞性</th>
+<th>規則變化</th>
+<th>解釋</th>
+<th>詞性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>낫다 ★</td>
+<td>勝於</td>
+<td>形</td>
+<td>나다 ★</td>
+<td>出生、產生、度過</td>
+<td>動</td>
+</tr>
+<tr>
+<td>낫다 ★</td>
+<td>治好</td>
+<td>動</td>
+<td>웃다</td>
+<td>笑</td>
+<td>動</td>
+</tr>
+<tr>
+<td>긋다</td>
+<td>畫(線)</td>
+<td>動</td>
+<td>씻다</td>
+<td>洗</td>
+<td>動</td>
+</tr>
+<tr>
+<td>잇다</td>
+<td>接續、繼續、維持、繼承</td>
+<td>動</td>
+<td>벗다</td>
+<td>脫</td>
+<td>動</td>
+</tr>
+<tr>
+<td>붓다</td>
+<td>倒(水)、澆灌，發腫</td>
+<td>動</td>
+<td>빗다</td>
+<td>梳</td>
+<td>動</td>
+</tr>
+<tr>
+<td>젓다</td>
+<td>攪拌、搖、划(船)</td>
+<td>動</td>
+<td>빼앗다</td>
+<td>搶奪、剝奪</td>
+<td>動</td>
+</tr>
+<tr>
+<td>잣다</td>
+<td>紡織、抽水</td>
+<td>動</td>
+<td>솟다 ☆</td>
+<td>冒(煙)、(月亮)升起、(泉水)噴湧、聳立</td>
+<td>動</td>
+</tr>
+<tr>
+<td>짓다 ☆</td>
+<td>做(衣服、飯)，建造(房屋)，種植(作物)，下結論，命名</td>
+<td>動</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>줏다</td>
+<td>撿(非標準語)</td>
+<td>動</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="르_不規則變化">르 不規則變化</h2>
+<ul>
+<li>原則：遇到「아/어」時，「르」變成「ㄹ+ㄹ」，再加上「아/어」</li>
+<li>不規則變化<ul>
+<li>第一語基：語幹</li>
+<li>第二語基：語幹</li>
+<li>第三語基：「르」變成「ㄹ+ㄹ」，再加上「아/어」<ul>
+<li>빠르다 -&gt; 빠 + ㄹ + ㄹ + 아 -&gt; 빨라</li>
+<li>끄르다 -&gt; 끄 + ㄹ + ㄹ + 어 -&gt; 끌러</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>辭彙：形容詞和動詞皆有，有些是規則變化，少數同時是 러 不規則</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>르不規則變化</th>
+<th>解釋</th>
+<th>詞性</th>
+<th>르 不規則變化</th>
+<th>解釋</th>
+<th>詞性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>고르다 ★</td>
+<td>選擇</td>
+<td>動</td>
+<td>고르다 ★</td>
+<td>均勻</td>
+<td>形</td>
+</tr>
+<tr>
+<td>부르다 ★</td>
+<td>叫，唱(歌)</td>
+<td>動</td>
+<td>부르다 ★</td>
+<td>飽，懷孕</td>
+<td>形</td>
+</tr>
+<tr>
+<td>바르다 ★</td>
+<td>塗抹，剝開</td>
+<td>動</td>
+<td>바르다 ★</td>
+<td>正直、正確</td>
+<td>形</td>
+</tr>
+<tr>
+<td>가르다</td>
+<td>分割、區別</td>
+<td>動</td>
+<td>그르다</td>
+<td>錯、不對</td>
+<td>形</td>
+</tr>
+<tr>
+<td>거르다</td>
+<td>濾、瀝、淋，間隔</td>
+<td>動</td>
+<td>가파르다</td>
+<td>陡峭</td>
+<td>形</td>
+</tr>
+<tr>
+<td>거스르다</td>
+<td>找(零)，抗(命)、逆(流)</td>
+<td>動</td>
+<td>게으르다</td>
+<td>懶惰</td>
+<td>形</td>
+</tr>
+<tr>
+<td>기르다</td>
+<td>養育、飼養、培育</td>
+<td>動</td>
+<td>다르다</td>
+<td>不同、別的，普通</td>
+<td>形</td>
+</tr>
+<tr>
+<td>끄르다</td>
+<td>解開</td>
+<td>動</td>
+<td>빠르다</td>
+<td>快、早</td>
+<td>形</td>
+</tr>
+<tr>
+<td>나르다</td>
+<td>運送</td>
+<td>動</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>도르다</td>
+<td>分送(物品)，反胃</td>
+<td>動</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>두르다</td>
+<td>圍(圍巾)、纏繞</td>
+<td>動</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>마르다</td>
+<td>乾燥、用盡，剪裁(衣服)</td>
+<td>動</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>모르다</td>
+<td>不知道、不認識</td>
+<td>動</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>오르다 ☆</td>
+<td>上(車)、上漲，登(高)，記載，長(胖)</td>
+<td>動</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>지르다</td>
+<td>捅、刺，叫</td>
+<td>動</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>자르다</td>
+<td>裁(不)、剪(紙)，拒絕(要求)</td>
+<td>動</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>서두르다</td>
+<td>趕緊</td>
+<td>動</td>
+<td>서투르다</td>
+<td>生疏、笨拙</td>
+<td>形</td>
+</tr>
+<tr>
+<td>흐르다</td>
+<td>流動、流逝</td>
+<td>動</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>러 不規則變化</th>
+<th>解釋</th>
+<th>詞性</th>
+<th>規則變化</th>
+<th>解釋</th>
+<th>詞性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>이르다</td>
+<td>到達、等到(晚上)、</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>達到(產量)</td>
+<td>動</td>
+<td>치르다 ☆</td>
+<td>支付</td>
+<td>動</td>
+<td></td>
+</tr>
+<tr>
+<td>누르다</td>
+<td>黃</td>
+<td>形</td>
+<td>들르다 ☆</td>
+<td>停步，順便去</td>
+<td>動</td>
+</tr>
+<tr>
+<td>노르다</td>
+<td>黃</td>
+<td>形</td>
+<td>다다르다 ☆</td>
+<td>抵達</td>
+<td>動</td>
+</tr>
+<tr>
+<td>푸르다</td>
+<td>青</td>
+<td>形</td>
+<td>따르다 ☆</td>
+<td>跟隨</td>
+<td>動</td>
+</tr>
+</tbody>
+</table>
+<h2 id="러_不規則變化">러 不規則變化</h2>
+<ul>
+<li>原則：遇到「아/어」時加上「러」</li>
+<li>不規則變化<ul>
+<li>第一語基：語幹</li>
+<li>第二語基：語幹</li>
+<li>第三語基：加上「러」<ul>
+<li>푸르다 -&gt; 푸르 + 러 -&gt; 푸르러</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>辭彙：只有以下幾個單字是 러 不規則 (大概吧)，有些單字同時是 르 不規則</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>러 不規則變化</th>
+<th>解釋</th>
+<th>詞性</th>
+<th>르 不規則變化</th>
+<th>解釋</th>
+<th>詞性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>이르다 ★</td>
+<td>到達、等到(晚上)、</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>達到(產量)</td>
+<td>動</td>
+<td>이르다 ★</td>
+<td>告訴、稱為</td>
+<td>動</td>
+<td></td>
+</tr>
+<tr>
+<td>이르다 ★</td>
+<td>早</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>누르다 ★</td>
+<td>黃</td>
+<td>形</td>
+<td>누르다 ★</td>
+<td>按、壓</td>
+<td>動</td>
+</tr>
+<tr>
+<td>노르다 ☆</td>
+<td>黃</td>
+<td>形</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>푸르다 ☆</td>
+<td>青</td>
+<td>形</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ㅎ_不規則變化">ㅎ 不規則變化</h2>
+<ul>
+<li>原則：見不規則變化</li>
+<li>不規則變化<ul>
+<li>第一語基：語幹</li>
+<li>第二語基：去掉「ㅎ」<ul>
+<li>그렇다 -&gt; 그러</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>第三語基：去掉「ㅎ」，語幹最後母音<ul>
+<li>「아/어」變成「애」</li>
+<li>「야」變成「얘」</li>
+<li>「여」變成「예」<ul>
+<li>그렇다 -&gt; 그래</li>
+<li>어떻다 -&gt; 어때</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>辭彙：除了「좋다」之外所有語幹以 ㅎ 結尾的形容詞。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>색깔</th>
+<th>一般形</th>
+<th>鬆音形</th>
+<th>強調形</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>紅</td>
+<td>빨갛다 (深紅)</td>
+<td>발갛다 (鮮紅)</td>
+<td>새빨갛다</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>뻘겋다</td>
+<td>벌겋다 (淡紅)</td>
+<td>시뻘겋다</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>青</td>
+<td>파랗다 (青)</td>
+<td>새파랗다</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>퍼렇다 (青)</td>
+<td>시퍼렇다</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>黃</td>
+<td>노랗다 (黃)</td>
+<td>샛노랗다</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>누렇다 (黃)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>黑</td>
+<td>까맣다 (深黑)</td>
+<td>가맣다</td>
+<td>새까맣다</td>
+<td>새카맣다</td>
+</tr>
+<tr>
+<td></td>
+<td>꺼멓다 (黑)</td>
+<td>거멓다 (黑)</td>
+<td>시꺼멓다</td>
+<td>시커멓다</td>
+<td></td>
+</tr>
+<tr>
+<td>白</td>
+<td>하얗다 (白)</td>
+<td>새하얗다</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>허옇다</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>ㅎ不規則變化</th>
+<th>解釋</th>
+<th>ㅎ不規則變化</th>
+<th>解釋</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>이렇다</td>
+<td>這樣</td>
+<td>그렇다</td>
+<td>那樣</td>
+</tr>
+<tr>
+<td>저렇다</td>
+<td>那樣</td>
+<td>어떻다</td>
+<td>怎麼樣</td>
+</tr>
+</tbody>
+</table>
+<h2 id="우_不規則變化">우 不規則變化</h2>
+<ul>
+<li>不規則變化<ul>
+<li>第一語基：푸</li>
+<li>第二語基：푸</li>
+<li>第三語基：퍼</li>
+</ul>
+</li>
+<li>辭彙：只有「푸다」。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>우不規則變化</th>
+<th>解釋</th>
+<th>詞性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>푸다</td>
+<td>盛(飯)</td>
+<td>動</td>
+</tr>
+</tbody>
+</table>
+<h1 id="綜合整理">綜合整理</h1>
+<h2 id="變化類型">變化類型</h2>
+<ul>
+<li>碰到母音改變：ㅂ、ㄷ、ㅅ 不規則 (pts)</li>
+<li>요 形改變：르、러 不規則</li>
+<li>特殊改變：ㄹ 脫落、ㅎ 不規則、푸다</li>
+</ul>
+<h2 id="改變語基">改變語基</h2>
+<ul>
+<li>第一語基<ul>
+<li>ㄹ 脫落：碰到 ㅅ、ㄴ、ㅂ</li>
+</ul>
+</li>
+<li>第二語基<ul>
+<li>ㄹ 脫落：碰到 ㅅ、ㄴ、ㅂ</li>
+<li>碰到「ㄹ」時 ㄹ 不脫落，으 消失</li>
+<li>ㅎ 不規則</li>
+<li>ㅂ、ㄷ、ㅅ 不規則<ul>
+<li>ㅂ 不規則的 으 消失</li>
+<li>ㅅ 不規則的 으 不可縮約</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>第三語基：除了 ㄹ 脫落之外都會<ul>
+<li>ㅅ 不規則的「아/어」不可縮約</li>
+<li>ㅎ 不規則變化特別</li>
+<li>푸다</li>
+</ul>
+</li>
+</ul>
+<h2 id="詞性分布">詞性分布</h2>
+<ul>
+<li>只有動詞<ul>
+<li>ㄷ 不規則</li>
+<li>ㅅ 不規則 (形容詞只有 낫다)</li>
+<li>푸다</li>
+</ul>
+</li>
+<li>只有形容詞<ul>
+<li>ㅎ 不規則 (좋다 除外)</li>
+</ul>
+</li>
+<li>動詞、形容詞皆有<ul>
+<li>ㄹ 脫落</li>
+<li>ㅂ 不規則：少部分動詞，大部分形容詞</li>
+<li>르、러 不規則：大多數語幹 르 結尾 (有些 르 結尾是 러 不規則)</li>
+</ul>
+</li>
+</ul>
+<h2 id="活用表">活用表</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>例字</th>
+<th>解釋</th>
+<th>第一語基</th>
+<th>第二語基</th>
+<th>第三語基</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ㄹ 脫落活用</td>
+<td>살다</td>
+<td>住</td>
+<td>살<br>사</td>
+<td>살<br>사</td>
+<td>살아</td>
+</tr>
+<tr>
+<td></td>
+<td>멀다</td>
+<td>遠</td>
+<td>멀<br>머</td>
+<td>멀<br>머</td>
+<td>멀어</td>
+</tr>
+<tr>
+<td>ㅂ 不規則變化</td>
+<td>덥다</td>
+<td>熱</td>
+<td>덥</td>
+<td>더우</td>
+<td>더워</td>
+</tr>
+<tr>
+<td></td>
+<td>곱다</td>
+<td>美</td>
+<td>곱</td>
+<td>고우</td>
+<td>고와</td>
+</tr>
+<tr>
+<td>ㄷ 不規則變化</td>
+<td>듣다</td>
+<td>聽</td>
+<td>듣</td>
+<td>들으</td>
+<td>들어</td>
+</tr>
+<tr>
+<td>ㅅ 不規則變化</td>
+<td>낫다</td>
+<td>治好</td>
+<td>낫</td>
+<td>나으</td>
+<td>나아</td>
+</tr>
+<tr>
+<td>르 不規則變化</td>
+<td>빠르다</td>
+<td>快</td>
+<td>빠르</td>
+<td>빠르</td>
+<td>빨라</td>
+</tr>
+<tr>
+<td></td>
+<td>지르다</td>
+<td>捅、刺，叫</td>
+<td>지르</td>
+<td>지르</td>
+<td>질러</td>
+</tr>
+<tr>
+<td>러 不規則變化</td>
+<td>이르다</td>
+<td>抵達</td>
+<td>이르</td>
+<td>이르</td>
+<td>이르러</td>
+</tr>
+<tr>
+<td>ㅎ 不規則變化</td>
+<td>어떻다</td>
+<td>怎麼樣</td>
+<td>어떻</td>
+<td>어떠</td>
+<td>어때</td>
+</tr>
+<tr>
+<td>우 不規則變化</td>
+<td>푸다</td>
+<td>盛(飯)</td>
+<td>푸</td>
+<td>푸</td>
+<td>퍼</td>
+</tr>
+</tbody>
+</table>
+<h1 id="參考資料">參考資料</h1>
+<ul>
+<li><a href="http://kajiritate-no-hangul.com/katsuyou.html" target="_blank" rel="external">用言活用表 - かじりたてのハングル</a></li>
+<li><a href="http://korean.nomaki.jp/site_j/yougen.html" target="_blank" rel="external">用言活用表 - nomaki</a></li>
+<li><a href="http://m.hujiang.com/kr/app_topiknews/c127/" target="_blank" rel="external">TOPIK 備考資訊</a></li>
+<li><a href="http://vn504688.pixnet.net/blog/category/3263360" target="_blank" rel="external">TOPIK 韓語檢定 @ 闊ma與美人瑀的幸福世界</a></li>
+<li><a href="http://blog.xuite.net/ban.ryu/tureduregusa/62980306" target="_blank" rel="external">「러」與「르」的不規則活用 @ 徒然草</a></li>
+<li><a href="http://blog.xuite.net/ban.ryu/tureduregusa/62907532" target="_blank" rel="external">韓語顏色詞的陰陽 @ 徒然草</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="活用變化">活用變化</h1>
+<p>「活用」是日文中單字接續文法的特有現象，日文中依據詞彙是否活用與否，分為「用言」、「體言」兩大類。韓文中也有類似的情形，若依據這種分法，韓文的用言大致為動詞和形容詞兩種，並且有些詞彙會有不規則變化。</p>
+<h2 id="符號介紹">符號介紹</h2>
+<ul>
+<li>V = 動詞</li>
+<li>A = 形容詞</li>
+<li>N = 名詞<ul>
+<li>名詞不屬於用言，但是名詞會和「이다」(是)、「아니다」(不是) 做變化</li>
+<li>注意이다是「指示詞」，아니다是「形容詞」</li>
+</ul>
+</li>
+<li>S = 謂詞<ul>
+<li>V</li>
+<li>A</li>
+<li>N + 이다</li>
+<li>N + 가 아니다</li>
+</ul>
+</li>
+</ul>
+<p>韓文用言分三種變化，直接稱為「第一語基」、「第二語基」、「第三語基」，以下是符號寫法，後面會從規則變化來介紹。</p>
+<ul>
+<li>第一語基：V<sub>Ⅰ</sub>、A<sub>Ⅰ</sub>、S<sub>Ⅰ</sub></li>
+<li>第二語基：V<sub>Ⅱ</sub>、A<sub>Ⅱ</sub>、S<sub>Ⅱ</sub></li>
+<li>第三語基：V<sub>Ⅲ</sub>、A<sub>Ⅲ</sub>、S<sub>Ⅲ</sub></li>
+</ul>
+]]>
+    
+    </summary>
+    
+      <category term="不規則變化" scheme="http://m80126colin.github.io/blog/tags/%E4%B8%8D%E8%A6%8F%E5%89%87%E8%AE%8A%E5%8C%96/"/>
+    
+      <category term="韓語" scheme="http://m80126colin.github.io/blog/tags/%E9%9F%93%E8%AA%9E/"/>
+    
+      <category term="韓文" scheme="http://m80126colin.github.io/blog/tags/%E9%9F%93%E6%96%87/"/>
+    
+      <category term="한국어" scheme="http://m80126colin.github.io/blog/tags/%ED%95%9C%EA%B5%AD%EC%96%B4/"/>
+    
+      <category term="語言" scheme="http://m80126colin.github.io/blog/categories/%E8%AA%9E%E8%A8%80/"/>
+    
+      <category term="韓文" scheme="http://m80126colin.github.io/blog/categories/%E8%AA%9E%E8%A8%80/%E9%9F%93%E6%96%87/"/>
+    
+      <category term="初級韓文" scheme="http://m80126colin.github.io/blog/categories/%E8%AA%9E%E8%A8%80/%E9%9F%93%E6%96%87/%E5%88%9D%E7%B4%9A%E9%9F%93%E6%96%87/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[[hexo 3.0.0-beta.1] hexo 原始碼閱讀 01]]></title>
@@ -1310,27 +2642,6 @@
     </summary>
     
       <category term="CPE" scheme="http://m80126colin.github.io/blog/tags/CPE/"/>
-    
-      <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
-    
-      <category term="(C)椰林杜鵑啼" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/-C-%E6%A4%B0%E6%9E%97%E6%9D%9C%E9%B5%91%E5%95%BC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[120514 清雜草]]></title>
-    <link href="http://m80126colin.github.io/blog/articles/%E9%9B%9C%E8%A8%98/undergraduate/20120514-051400/"/>
-    <id>http://m80126colin.github.io/blog/articles/雜記/undergraduate/20120514-051400/</id>
-    <published>2012-05-13T21:14:00.000Z</published>
-    <updated>2015-04-27T18:04:57.000Z</updated>
-    <content type="html"><![CDATA[<p>來清個雜草</p>
-<p>之後有時間在更新</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>來清個雜草</p>
-<p>之後有時間在更新</p>
-]]>
-    </summary>
     
       <category term="雜記" scheme="http://m80126colin.github.io/blog/categories/%E9%9B%9C%E8%A8%98/"/>
     
