@@ -73,7 +73,7 @@
     </header>
     <div class="entry">
       
-        <div class="owl-media owl-image owl-local"><img src="/blog/img/20100712-165351-1.jpg"></div>
+        <link rel="stylesheet" href="/blog/owl.css"><div class="owl-media owl-image owl-local"><img src="/blog/img/20100712-165351-1.jpg"></div>
 <a id="more"></a>
 <h1 id="最佳化版本"><a href="#最佳化版本" class="headerlink" title="最佳化版本"></a>最佳化版本</h1><p>最快秒數曾為 29ms。</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span><br><span class="line">Problem: d575(fast)</span><br><span class="line">Language: C++</span><br><span class="line">Result: AC (35ms, 645KB) on ZeroJudge</span><br><span class="line">Author: m80126colin at 2010-07-12 16:42:24</span><br><span class="line">Solution: Math</span><br><span class="line">*/</span></span><br><span class="line"><span class="meta">#import &lt;iostream&gt;</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> A long long</span></span><br><span class="line">A a,b,c,d,e,f,r;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">bool</span> <span class="title">z</span><span class="params">(A&amp; g)</span> </span>&#123;  <span class="comment">//input optimization</span></span><br><span class="line">	<span class="keyword">while</span> ((f=getchar())==<span class="number">32</span>||f==<span class="number">10</span>);</span><br><span class="line">	<span class="keyword">for</span> (g=(e=f-<span class="string">'-'</span>)?f<span class="number">-48</span>:<span class="number">0</span>;++f&amp;&amp;(f=getchar())<span class="number">-32</span>&amp;&amp;f<span class="number">-10</span>;g=g*<span class="number">10</span>+(e?f<span class="number">-48</span>:<span class="number">48</span>-f));</span><br><span class="line">	return f;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> A <span class="title">y</span><span class="params">(A x)</span> </span>&#123;return (x&gt;<span class="number">0</span>)?x:-x;&#125;  <span class="comment">//abs</span></span><br><span class="line">main() &#123;<span class="keyword">for</span> (;z(a)&amp;z(b)&amp;z(c)&amp;z(d)&amp;z(r);<span class="built_in">puts</span>((y(c-a)+y(d-b)&gt;r?<span class="string">"alive"</span>:<span class="string">"die"</span>)));&#125;</span><br></pre></td></tr></table></figure>
@@ -187,6 +187,8 @@
     <li><a href="/blog/categories/程式碼/">程式碼</a><small>28</small></li>
   
     <li><a href="/blog/categories/筆記/">筆記</a><small>8</small></li>
+  
+    <li><a href="/blog/categories/筆記/範疇論/">範疇論</a><small>0</small></li>
   
     <li><a href="/blog/categories/筆記/線性代數/">線性代數</a><small>1</small></li>
   
