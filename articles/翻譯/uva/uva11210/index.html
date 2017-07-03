@@ -102,12 +102,6 @@
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/archives">彙整</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/categories">分類</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/tags">標籤</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/about">關于</a> </li>
-                    
               </ul>
             </div>
           </nav>
@@ -154,7 +148,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <link rel="stylesheet" href="/blog/owl.css"><div class="owl-media owl-image owl-local"><img src="/blog/img/20100530-160211-1.jpg"></div>
+        <link rel="stylesheet" href="/blog/owl"><div class="owl-media owl-image owl-local"><img src="/blog/img/20100530-160211-1.jpg"></div>
 <p>麻將是起源於中國的一種牌戲，類似骨牌並且有許多花色。通常由四個人玩，輪番摸牌棄牌直到有人湊成四個面子 (三個一組的) 和一個雀頭 (兩張相同的)。在各地一副麻將的張數都不大相同，雖然來自美國和日本有許多種玩法，但通常為 136 張和 144 張牌。一副擁有 136 張牌的麻將包括：</p>
 <a id="more"></a>
 <p><strong> 筒子 (Dots) </strong>：以每張牌有圓圈而命名的，每個圓代表一個外圓內方的古銅幣 (Tong)。在這個問題中，一筒到九筒以 1T、2T、3T、4T、5T、6T、7T、8T、9T 代表。</p>
@@ -179,8 +173,8 @@
 <p>給知道麻將更多的人：不用考慮如「七對子」等特殊胡牌型。</p>
 <h1 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h1><p>輸入最多有 50 筆測資。每組測資只有單獨一行包含 13 張牌，所有測資皆為合法的 (沒有不合法的牌，並且恰好都是 13 張)。最後一筆測資以一個零作為結束，此筆輸入不需處理。</p>
 <h1 id="輸出"><a href="#輸出" class="headerlink" title="輸出"></a>輸出</h1><p>對於每組測資，印出處理的第幾筆資料和所聽的牌。聽牌需依照 1T ~ 9T、1S ~ 9S、1W ~ 9W、DONG、NAN、XI、BEI、ZHONG、FA、BAI 印出，每張聽牌只會出現一次。如果牌組尚未聽牌，則印出不帶引號的「Not ready」。</p>
-<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1S 1S 2S 2S 2S 3S 3S 3S 7S 8S 9S FA FA</span><br><span class="line">1S 2S 3S 4S 5S 6S 7S 8S 9S 1T 3T 5T 7T</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
-<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Case 1: 1S 4S FA</span><br><span class="line">Case 2: Not ready</span><br></pre></td></tr></table></figure>
+<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1S 1S 2S 2S 2S 3S 3S 3S 7S 8S 9S FA FA</div><div class="line">1S 2S 3S 4S 5S 6S 7S 8S 9S 1T 3T 5T 7T</div><div class="line">0</div></pre></td></tr></table></figure>
+<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Case 1: 1S 4S FA</div><div class="line">Case 2: Not ready</div></pre></td></tr></table></figure>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -201,7 +195,7 @@
 	</section>
 
 	<script type="text/javascript">
-	var disqus_shortname = 'iTimeTraveler';
+	var disqus_shortname = 'm80126colin';
 	(function(){
 	  var dsq = document.createElement('script');
 	  dsq.type = 'text/javascript';
@@ -268,12 +262,6 @@
     <a href="/blog/" class="mobile-nav-link">Home</a>
   
     <a href="/blog/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="/blog/about" class="mobile-nav-link">About</a>
   
 </nav> -->
     <footer id="footer" class="site-footer">

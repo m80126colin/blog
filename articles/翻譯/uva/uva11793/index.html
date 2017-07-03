@@ -88,12 +88,6 @@
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/archives">彙整</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/categories">分類</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/tags">標籤</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/about">關于</a> </li>
-                    
               </ul>
             </div>
           </nav>
@@ -140,7 +134,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <link rel="stylesheet" href="/blog/owl.css"><div class="owl-media owl-image owl-local"><img src="/blog/img/20100523-221857-1.jpg"></div>
+        <link rel="stylesheet" href="/blog/owl"><div class="owl-media owl-image owl-local"><img src="/blog/img/20100523-221857-1.jpg"></div>
 <p>在某些民主國家中，執政黨會重劃選區以便在下次選舉時對他們有利。每個選區選出一位代表，在兩黨制的政體中，每個地區選舉的票數只要高於對手即可。</p>
 <a id="more"></a>
 <p>某個國家被切割成 <span>$N\times{N}$</span><!-- Has MathJax --> 個正方形區域，這些區域將會被合併為 N 個選區，每個選區包含 N 個相連的區域，這代表著我們可以上、下、左、右，移動至選區內所有的區域。</p>
@@ -148,8 +142,8 @@
 <p>現在政黨 A 僱用你去計算出，在重劃選區的情況下，最大可能的代表數差。</p>
 <h1 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h1><p>輸入開始於一個整數 T，代表接下來的測試組數，每組測資間不以空白行隔開。對於每組測資第一行為一整數 N，代表一個國家的規模 (N 最大為 5，而此國家有 <span>$N\times{N}$</span><!-- Has MathJax --> 個區域)，接著有 2N 行，每行有 N 個以空白格開介於 1 到 1000 的整數，前 N 行代表政黨 A 的票數，另外 N 行代表政黨 B 的票數。</p>
 <h1 id="輸出"><a href="#輸出" class="headerlink" title="輸出"></a>輸出</h1><p>輸出有 T 行，每組測資輸出一行，對於每組測資，請輸出可達到最大的代表總數的差值。</p>
-<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">2</span><br><span class="line">2 3</span><br><span class="line">2 4</span><br><span class="line">3 1</span><br><span class="line">2 3</span><br><span class="line">3</span><br><span class="line">2 3 4</span><br><span class="line">1 3 2</span><br><span class="line">2 3 5</span><br><span class="line">3 4 1</span><br><span class="line">3 2 1</span><br><span class="line">2 1 3</span><br><span class="line">3</span><br><span class="line">1 2 1</span><br><span class="line">2 1 2</span><br><span class="line">1 2 1</span><br><span class="line">2 1 2</span><br><span class="line">1 2 1</span><br><span class="line">2 1 2</span><br><span class="line">3</span><br><span class="line">1 1 1</span><br><span class="line">1 1 1</span><br><span class="line">1 1 1</span><br><span class="line">2 2 2</span><br><span class="line">2 2 2</span><br><span class="line">2 2 2</span><br></pre></td></tr></table></figure>
-<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">2</span><br><span class="line">1</span><br><span class="line">-3</span><br></pre></td></tr></table></figure>
+<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">4</div><div class="line">2</div><div class="line">2 3</div><div class="line">2 4</div><div class="line">3 1</div><div class="line">2 3</div><div class="line">3</div><div class="line">2 3 4</div><div class="line">1 3 2</div><div class="line">2 3 5</div><div class="line">3 4 1</div><div class="line">3 2 1</div><div class="line">2 1 3</div><div class="line">3</div><div class="line">1 2 1</div><div class="line">2 1 2</div><div class="line">1 2 1</div><div class="line">2 1 2</div><div class="line">1 2 1</div><div class="line">2 1 2</div><div class="line">3</div><div class="line">1 1 1</div><div class="line">1 1 1</div><div class="line">1 1 1</div><div class="line">2 2 2</div><div class="line">2 2 2</div><div class="line">2 2 2</div></pre></td></tr></table></figure>
+<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">2</div><div class="line">2</div><div class="line">1</div><div class="line">-3</div></pre></td></tr></table></figure>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -170,7 +164,7 @@
 	</section>
 
 	<script type="text/javascript">
-	var disqus_shortname = 'iTimeTraveler';
+	var disqus_shortname = 'm80126colin';
 	(function(){
 	  var dsq = document.createElement('script');
 	  dsq.type = 'text/javascript';
@@ -237,12 +231,6 @@
     <a href="/blog/" class="mobile-nav-link">Home</a>
   
     <a href="/blog/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="/blog/about" class="mobile-nav-link">About</a>
   
 </nav> -->
     <footer id="footer" class="site-footer">

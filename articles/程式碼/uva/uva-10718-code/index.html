@@ -86,12 +86,6 @@
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/archives">彙整</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/categories">分類</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/tags">標籤</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/about">關于</a> </li>
-                    
               </ul>
             </div>
           </nav>
@@ -138,13 +132,13 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <link rel="stylesheet" href="/blog/owl.css"><p>題目大意：給你一個 N，再給下限 L，上限 U，問從 [L, U] 區間中取得最小一個數 M，使得 N or M 最大。</p>
+        <link rel="stylesheet" href="/blog/owl"><p>題目大意：給你一個 N，再給下限 L，上限 U，問從 [L, U] 區間中取得最小一個數 M，使得 N or M 最大。</p>
 <p>下有雷 ………..</p>
 <a id="more"></a>
 <p>解法：Greedy</p>
 <p>儘量讓 N 中為 0 的位元，M 為 1；N 為 1 的位元， M 為 0。<br>因此從高位往低位檢查，<br>如果 N 為 1（M 儘量為 0），若 M 不能為 0，則必是因為 M 為 1 仍小於 L；<br>如果 N 為 0（M 儘量為 1），若 M 不能為 1，則必是因為 M 為 0 仍大於 U（此時不可能），<br>換句話說，M 為 1 時，M 需不大於 U。</p>
 <p>Code：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#define BIT(i) (1LL &lt;&lt; i)</span><br><span class="line">#define OR(x,i) (x | BIT(i))</span><br><span class="line">#define AND(x,i) (x &amp; BIT(i))</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	long long n, L, U, ans, i;</span><br><span class="line">	while (scanf(&quot;%lld%lld%lld&quot;, &amp;n, &amp;L, &amp;U) != EOF)</span><br><span class="line">	&#123;</span><br><span class="line">		ans = 0;</span><br><span class="line">		for (i = 31; i &gt;= 0; i--)</span><br><span class="line">			if ( OR(ans, i) &lt;= (AND(n, i) ? L: U) ) ans |= BIT(i);</span><br><span class="line">		printf(&quot;%lld\n&quot;, ans);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">#include &lt;stdio.h&gt;</div><div class="line">#include &lt;iostream&gt;</div><div class="line">#define BIT(i) (1LL &lt;&lt; i)</div><div class="line">#define OR(x,i) (x | BIT(i))</div><div class="line">#define AND(x,i) (x &amp; BIT(i))</div><div class="line">using namespace std;</div><div class="line"></div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">	long long n, L, U, ans, i;</div><div class="line">	while (scanf(&quot;%lld%lld%lld&quot;, &amp;n, &amp;L, &amp;U) != EOF)</div><div class="line">	&#123;</div><div class="line">		ans = 0;</div><div class="line">		for (i = 31; i &gt;= 0; i--)</div><div class="line">			if ( OR(ans, i) &lt;= (AND(n, i) ? L: U) ) ans |= BIT(i);</div><div class="line">		printf(&quot;%lld\n&quot;, ans);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -165,7 +159,7 @@
 	</section>
 
 	<script type="text/javascript">
-	var disqus_shortname = 'iTimeTraveler';
+	var disqus_shortname = 'm80126colin';
 	(function(){
 	  var dsq = document.createElement('script');
 	  dsq.type = 'text/javascript';
@@ -232,12 +226,6 @@
     <a href="/blog/" class="mobile-nav-link">Home</a>
   
     <a href="/blog/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="/blog/about" class="mobile-nav-link">About</a>
   
 </nav> -->
     <footer id="footer" class="site-footer">

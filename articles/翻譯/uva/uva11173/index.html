@@ -86,12 +86,6 @@
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/archives">彙整</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/categories">分類</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/tags">標籤</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/about">關于</a> </li>
-                    
               </ul>
             </div>
           </nav>
@@ -138,19 +132,19 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <link rel="stylesheet" href="/blog/owl.css"><p>我們將用一種二分法的方式去產生一個數列，先從如下的數列開始：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">0</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+        <link rel="stylesheet" href="/blog/owl"><p>我們將用一種二分法的方式去產生一個數列，先從如下的數列開始：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">0</div><div class="line">1</div></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>將此數列依照水平線做鏡射，接著上半部的數列前面加 0，下半部前面加 1，你將會得到如下數列：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">00</span><br><span class="line">01</span><br><span class="line">11</span><br><span class="line">10</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">00</div><div class="line">01</div><div class="line">11</div><div class="line">10</div></pre></td></tr></table></figure>
 <p>重覆此步驟，會再一次得到下面 8 個數字所構成的數列：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">000 0</span><br><span class="line">001 1</span><br><span class="line">011 3</span><br><span class="line">010 2</span><br><span class="line">110 6</span><br><span class="line">111 7</span><br><span class="line">101 5</span><br><span class="line">100 4</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">000 0</div><div class="line">001 1</div><div class="line">011 3</div><div class="line">010 2</div><div class="line">110 6</div><div class="line">111 7</div><div class="line">101 5</div><div class="line">100 4</div></pre></td></tr></table></figure>
 <p>這些 2 進位的數字的右側是其對應的數字。</p>
 <p>而這些數列分別被稱為 1 位元、2 位元及 3 位元的格雷碼 (Reflected Gray Code，或稱為 Gray Code)，一個 n 位元的格雷碼由 <span>$2^n$</span><!-- Has MathJax --> 個不同的數字所組成，而此數列上的數字，和其所相鄰的數字都差一個位元。</p>
 <h1 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h1><p>第一行為一整數 N (不超過 250000)，代表接下來有 N 行測資。接下來的 N 行每行有兩個整數 n (<span>$1\leq{n}\leq{30}$</span><!-- Has MathJax -->) 及 k (<span>$0\leq{k}\leq{2^n}$</span><!-- Has MathJax -->）。</p>
 <h1 id="輸出"><a href="#輸出" class="headerlink" title="輸出"></a>輸出</h1><p>對於每個測資，請輸出在 n 位元上第 k 個位置的格雷碼。</p>
-<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">14</span><br><span class="line">1 0</span><br><span class="line">1 1</span><br><span class="line">2 0</span><br><span class="line">2 1</span><br><span class="line">2 2</span><br><span class="line">2 3</span><br><span class="line">3 0</span><br><span class="line">3 1</span><br><span class="line">3 2</span><br><span class="line">3 3</span><br><span class="line">3 4</span><br><span class="line">3 5</span><br><span class="line">3 6</span><br><span class="line">3 7</span><br></pre></td></tr></table></figure>
-<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">0</span><br><span class="line">1</span><br><span class="line">0</span><br><span class="line">1</span><br><span class="line">3</span><br><span class="line">2</span><br><span class="line">0</span><br><span class="line">1</span><br><span class="line">3</span><br><span class="line">2</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">5</span><br><span class="line">4</span><br></pre></td></tr></table></figure>
+<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">14</div><div class="line">1 0</div><div class="line">1 1</div><div class="line">2 0</div><div class="line">2 1</div><div class="line">2 2</div><div class="line">2 3</div><div class="line">3 0</div><div class="line">3 1</div><div class="line">3 2</div><div class="line">3 3</div><div class="line">3 4</div><div class="line">3 5</div><div class="line">3 6</div><div class="line">3 7</div></pre></td></tr></table></figure>
+<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">0</div><div class="line">1</div><div class="line">0</div><div class="line">1</div><div class="line">3</div><div class="line">2</div><div class="line">0</div><div class="line">1</div><div class="line">3</div><div class="line">2</div><div class="line">6</div><div class="line">7</div><div class="line">5</div><div class="line">4</div></pre></td></tr></table></figure>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -171,7 +165,7 @@
 	</section>
 
 	<script type="text/javascript">
-	var disqus_shortname = 'iTimeTraveler';
+	var disqus_shortname = 'm80126colin';
 	(function(){
 	  var dsq = document.createElement('script');
 	  dsq.type = 'text/javascript';
@@ -238,12 +232,6 @@
     <a href="/blog/" class="mobile-nav-link">Home</a>
   
     <a href="/blog/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="/blog/about" class="mobile-nav-link">About</a>
   
 </nav> -->
     <footer id="footer" class="site-footer">

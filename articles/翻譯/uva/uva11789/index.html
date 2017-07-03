@@ -88,12 +88,6 @@
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/archives">彙整</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/categories">分類</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/tags">標籤</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/about">關于</a> </li>
-                    
               </ul>
             </div>
           </nav>
@@ -140,7 +134,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <link rel="stylesheet" href="/blog/owl.css"><div class="owl-media owl-image owl-local"><img src="/blog/img/20100527-222705-1.jpg"></div>
+        <link rel="stylesheet" href="/blog/owl"><div class="owl-media owl-image owl-local"><img src="/blog/img/20100527-222705-1.jpg"></div>
 <p>John Anthony Good 常常與他的好友在星期五的晚上通霄打牌，他們玩的是現今最熱門的撲克牌遊戲 Texas Hold’em，在 Texas Hold’em 的遊戲中，每位玩家運用 2 張蓋著的牌來跟 5 張攤開的牌做組合，以組成一副最大的 5 張牌牌組，當然玩家們可以用蓋牌的兩張、其中一張或是都不用來組成。</p>
 <a id="more"></a>
 <p>一副撲克牌有 52 張牌，由四樣花色 (黑桃、紅心、磚塊和棉花) 以及每樣花色 13 支牌 (由小到大依序為 2、3、4、5、6、7、8、9、T、J、Q、K 和 A) 所組成。玩家可出的牌型只能依照下面其中一種：</p>
@@ -155,12 +149,12 @@
 <p><strong> 散牌 (High Cards) </strong>：與上述皆不成立的手牌。例：3H、7D、JD、QD、AC。若有兩者以上則先比較最大的牌，再比較第二大，以此類推。</p>
 <p>John Anthony 每次和他的朋友打賭 5 歐元，但他總是賭輸，有時是因為他所認為自己的手牌比實際上來的低所導致，特別是當他拿到順子的時候。</p>
 <p>為了讓他自己的牌技進步，John Anthony 創造了一個單人玩的牌戲，他先將牌洗均勻，然後拿出其中的 49 張牌攤開排成 7×7 的矩形。以下例來說明：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">2C KC 3D 7S 7H 5D 6D</span><br><span class="line">2H 7D 4H 4S TS 3H 8S</span><br><span class="line">3S 5H AD 5S 6S 3C 9C</span><br><span class="line">9S JC QC KD JH KS QS</span><br><span class="line">6C 8H AC 2S 6H AH KH</span><br><span class="line">TC AS 9H QD 7C 4C 8C</span><br><span class="line">TH 2D JS 9D 8D 5C JD</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">2C KC 3D 7S 7H 5D 6D</div><div class="line">2H 7D 4H 4S TS 3H 8S</div><div class="line">3S 5H AD 5S 6S 3C 9C</div><div class="line">9S JC QC KD JH KS QS</div><div class="line">6C 8H AC 2S 6H AH KH</div><div class="line">TC AS 9H QD 7C 4C 8C</div><div class="line">TH 2D JS 9D 8D 5C JD</div></pre></td></tr></table></figure>
 <p>這時，他檢查每一橫列 (從上到下)、每一直行 (由左至右) 以及兩條對角線 (先檢查從左上至右下，再檢查從左下至右上) ，這 16 組牌組中，John 試著挑出其中 5 張讓這 5 張變成最大的牌組 (在Texas Hold’em中)。現在，他正央求你寫一個程式來確認他所選出的牌是不是最大的。</p>
 <h1 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h1><p>輸入的第一行包含一個整數代表有幾筆測試資料。每組測資間被一行空白行分開，測資共有七行，每行有七張被空白隔開的牌，每張卡代表它的大小以及花色 (大小在前花色在後)。</p>
 <h1 id="輸出"><a href="#輸出" class="headerlink" title="輸出"></a>輸出</h1><p>對於每組測資，你必須輸出一行訊息。首先，輸出包括最好牌組的該七張牌 (若是橫列和對角線從左至右輸出，若是直行則由上往下輸出)，之後空白兩格，再輸出最好的牌組 (相同順序下)。最後，兩格空白，輸出牌型名稱 (<code>High Cards</code>、<code>One Pair</code>、<code>Two Pair</code>、<code>Three of a Kind</code>、<code>Straight</code>、<code>Flush</code>、<code>Full House</code>、<code>Four of a Kind</code> 或者 <code>Straight Flush</code>)。為了避免兩個相同的答案，應先印出在 John Anthony 的檢查順序中首先出現的牌組。</p>
-<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line"></span><br><span class="line">9H 4H TD 5H QC 7H KC</span><br><span class="line">7S TS JS 8S 6D 2C 5C</span><br><span class="line">QD 5S 7D KH 4S 8D 2H</span><br><span class="line">TH AD QH 3D KD 9C 4D</span><br><span class="line">5D 9S 8H JH AH 3S 6C</span><br><span class="line">JC 7C AS 6H TC KS 8C</span><br><span class="line">6S QS 2S 4C 9D AC JD</span><br><span class="line"></span><br><span class="line">2C KC 3D 7S 7H 5D 6D</span><br><span class="line">2H 7D 4H 4S TS 3H 8S</span><br><span class="line">3S 5H AD 5S 6S 3C 9C</span><br><span class="line">9S JC QC KD JH KS QS</span><br><span class="line">6C 8H AC 2S 6H AH KH</span><br><span class="line">TC AS 9H QD 7C 4C 8C</span><br><span class="line">TH 2D JS 9D 8D 5C JD</span><br><span class="line"></span><br><span class="line">9D AS KS KD AC 8D TH</span><br><span class="line">AH JS 9H TC 2C QH 5S</span><br><span class="line">7D JH 8C 3H 7C 5H 6H</span><br><span class="line">5C 8S TS 2D QC KH 2H</span><br><span class="line">JC 4H 4D 8H 2S 4C 3S</span><br><span class="line">9C TD 9S 3C 7H 3D QS</span><br><span class="line">KC 4S AD JD 6S 7S QD</span><br><span class="line"></span><br><span class="line">6H JH 4H AC 5H TS 7D</span><br><span class="line">AH 6S 5S 6C 4C 5D 8S</span><br><span class="line">JC 8H AD 9S TC 9D 4D</span><br><span class="line">8D 7C 6D 3D 8C KC 7H</span><br><span class="line">4S TD 5C JD QD KD QS</span><br><span class="line">9C TH 3C 2S AS QC 3H</span><br><span class="line">2C 9H 3S 2D JS 7S KS</span><br></pre></td></tr></table></figure>
-<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">TH AD QH 3D KD 9C 4D  TH AD QH KD 9C  High Cards</span><br><span class="line">6C 8H AC 2S 6H AH KH  6C AC 6H AH KH  Two Pair</span><br><span class="line">JC 4H 4D 8H 2S 4C 3S  JC 4H 4D 8H 4C  Three of a Kind</span><br><span class="line">JH 6S 8H 7C TD TH 9H  JH 8H 7C TD 9H  Straight</span><br></pre></td></tr></table></figure>
+<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">4</div><div class="line"></div><div class="line">9H 4H TD 5H QC 7H KC</div><div class="line">7S TS JS 8S 6D 2C 5C</div><div class="line">QD 5S 7D KH 4S 8D 2H</div><div class="line">TH AD QH 3D KD 9C 4D</div><div class="line">5D 9S 8H JH AH 3S 6C</div><div class="line">JC 7C AS 6H TC KS 8C</div><div class="line">6S QS 2S 4C 9D AC JD</div><div class="line"></div><div class="line">2C KC 3D 7S 7H 5D 6D</div><div class="line">2H 7D 4H 4S TS 3H 8S</div><div class="line">3S 5H AD 5S 6S 3C 9C</div><div class="line">9S JC QC KD JH KS QS</div><div class="line">6C 8H AC 2S 6H AH KH</div><div class="line">TC AS 9H QD 7C 4C 8C</div><div class="line">TH 2D JS 9D 8D 5C JD</div><div class="line"></div><div class="line">9D AS KS KD AC 8D TH</div><div class="line">AH JS 9H TC 2C QH 5S</div><div class="line">7D JH 8C 3H 7C 5H 6H</div><div class="line">5C 8S TS 2D QC KH 2H</div><div class="line">JC 4H 4D 8H 2S 4C 3S</div><div class="line">9C TD 9S 3C 7H 3D QS</div><div class="line">KC 4S AD JD 6S 7S QD</div><div class="line"></div><div class="line">6H JH 4H AC 5H TS 7D</div><div class="line">AH 6S 5S 6C 4C 5D 8S</div><div class="line">JC 8H AD 9S TC 9D 4D</div><div class="line">8D 7C 6D 3D 8C KC 7H</div><div class="line">4S TD 5C JD QD KD QS</div><div class="line">9C TH 3C 2S AS QC 3H</div><div class="line">2C 9H 3S 2D JS 7S KS</div></pre></td></tr></table></figure>
+<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">TH AD QH 3D KD 9C 4D  TH AD QH KD 9C  High Cards</div><div class="line">6C 8H AC 2S 6H AH KH  6C AC 6H AH KH  Two Pair</div><div class="line">JC 4H 4D 8H 2S 4C 3S  JC 4H 4D 8H 4C  Three of a Kind</div><div class="line">JH 6S 8H 7C TD TH 9H  JH 8H 7C TD 9H  Straight</div></pre></td></tr></table></figure>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -181,7 +175,7 @@
 	</section>
 
 	<script type="text/javascript">
-	var disqus_shortname = 'iTimeTraveler';
+	var disqus_shortname = 'm80126colin';
 	(function(){
 	  var dsq = document.createElement('script');
 	  dsq.type = 'text/javascript';
@@ -248,12 +242,6 @@
     <a href="/blog/" class="mobile-nav-link">Home</a>
   
     <a href="/blog/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="/blog/about" class="mobile-nav-link">About</a>
   
 </nav> -->
     <footer id="footer" class="site-footer">

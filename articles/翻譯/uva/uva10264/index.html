@@ -86,12 +86,6 @@
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/archives">彙整</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/categories">分類</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/tags">標籤</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/about">關于</a> </li>
-                    
               </ul>
             </div>
           </nav>
@@ -138,12 +132,12 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <link rel="stylesheet" href="/blog/owl.css"><h1 id="問題"><a href="#問題" class="headerlink" title="問題"></a>問題</h1><p>對於一個 N 維 (<span>$1 &lt; N &lt; 15$</span><!-- Has MathJax -->) 的單位正方體中，每個角落都有他的重量 (小於 256)。如果兩個角落有相同的邊，我們稱這兩個角相鄰 (neighbouring)。一個角落的效力 (Potency) 是其所有相鄰角之和。現在給你所有角落的重量，請求出二個相鄰角效力和的最大值。</p>
+        <link rel="stylesheet" href="/blog/owl"><h1 id="問題"><a href="#問題" class="headerlink" title="問題"></a>問題</h1><p>對於一個 N 維 (<span>$1 &lt; N &lt; 15$</span><!-- Has MathJax -->) 的單位正方體中，每個角落都有他的重量 (小於 256)。如果兩個角落有相同的邊，我們稱這兩個角相鄰 (neighbouring)。一個角落的效力 (Potency) 是其所有相鄰角之和。現在給你所有角落的重量，請求出二個相鄰角效力和的最大值。</p>
 <a id="more"></a>
 <h1 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h1><p>輸入檔有數組測資，每組測資第一行為一整數 N，代表方塊的維度。接下來的 <span>$2^N$</span><!-- Has MathJax --> 行數字代表每個角落的重量：第一行數字代表座標（0,…,0,0,0）的重量，接著第二行代表（0,…,0,0,1）的重量，第三行代表（0,…,0,1,0）的重量，以此類推第四行為（0,…,0,1,1）的重量，第五行為（0,…,1,0,0）的重量，直到第 <span>$2^N$</span><!-- Has MathJax --> 行代表（1,…,1,1,1）的重量。<br>輸入檔以 EOF 作為結束。</p>
 <h1 id="輸出"><a href="#輸出" class="headerlink" title="輸出"></a>輸出</h1><p>對於每組測資請輸出最大效力和的值。</p>
-<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">82</span><br><span class="line">73</span><br><span class="line">8</span><br><span class="line">49</span><br><span class="line">120</span><br><span class="line">44</span><br><span class="line">242</span><br><span class="line">58</span><br><span class="line">2</span><br><span class="line">1</span><br><span class="line">1</span><br><span class="line">1</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
-<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">619</span><br><span class="line">4</span><br></pre></td></tr></table></figure>
+<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">3</div><div class="line">82</div><div class="line">73</div><div class="line">8</div><div class="line">49</div><div class="line">120</div><div class="line">44</div><div class="line">242</div><div class="line">58</div><div class="line">2</div><div class="line">1</div><div class="line">1</div><div class="line">1</div><div class="line">1</div></pre></td></tr></table></figure>
+<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">619</div><div class="line">4</div></pre></td></tr></table></figure>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -164,7 +158,7 @@
 	</section>
 
 	<script type="text/javascript">
-	var disqus_shortname = 'iTimeTraveler';
+	var disqus_shortname = 'm80126colin';
 	(function(){
 	  var dsq = document.createElement('script');
 	  dsq.type = 'text/javascript';
@@ -231,12 +225,6 @@
     <a href="/blog/" class="mobile-nav-link">Home</a>
   
     <a href="/blog/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="/blog/about" class="mobile-nav-link">About</a>
   
 </nav> -->
     <footer id="footer" class="site-footer">

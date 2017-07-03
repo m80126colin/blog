@@ -86,12 +86,6 @@
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/archives">彙整</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/categories">分類</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/tags">標籤</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/about">關于</a> </li>
-                    
               </ul>
             </div>
           </nav>
@@ -138,17 +132,17 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <link rel="stylesheet" href="/blog/owl.css"><p>編碼 (encoding) 技術通常用在需要加密或者是節省儲存或傳輸空間的時候。所以現在，我們使用較簡單的編碼技術，來將不多於五個字母的合法字做編碼。</p>
+        <link rel="stylesheet" href="/blog/owl"><p>編碼 (encoding) 技術通常用在需要加密或者是節省儲存或傳輸空間的時候。所以現在，我們使用較簡單的編碼技術，來將不多於五個字母的合法字做編碼。</p>
 <p>所謂的合法 (valid) 字，是說一個合法字裡面，下一個字元一定比上一個來的大，例如：abc、aep、gwz 為合法字，而 aab、are、cat 為不合法的。</p>
 <a id="more"></a>
 <p>現在我們將合法字依字典順序編碼如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">a -&gt; 1</span><br><span class="line">b -&gt; 2</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">z -&gt; 26</span><br><span class="line">ab -&gt; 27</span><br><span class="line">ac -&gt; 28</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">az -&gt; 51</span><br><span class="line">bc -&gt; 52</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">vwxyz -&gt; 83681</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">a -&gt; 1</div><div class="line">b -&gt; 2</div><div class="line">.</div><div class="line">.</div><div class="line">z -&gt; 26</div><div class="line">ab -&gt; 27</div><div class="line">ac -&gt; 28</div><div class="line">.</div><div class="line">.</div><div class="line">az -&gt; 51</div><div class="line">bc -&gt; 52</div><div class="line">.</div><div class="line">.</div><div class="line">vwxyz -&gt; 83681</div></pre></td></tr></table></figure>
 <p>你的任務就是要讀入一個字，然後輸出它的編號。如果該字不合法，請輸出 0。</p>
 <h1 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h1><p>輸入測資每組共有一行，每行有一個字 (1 至 5 個小寫字母)。</p>
 <p>輸入檔以 eof 作為結束。</p>
 <h1 id="輸出"><a href="#輸出" class="headerlink" title="輸出"></a>輸出</h1><p>輸出是一個整數。若該字為合法的，請輸出該字的編號，否則請輸出 0。</p>
-<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">z</span><br><span class="line">a</span><br><span class="line">cat</span><br><span class="line">vwxyz</span><br></pre></td></tr></table></figure>
-<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">26</span><br><span class="line">1</span><br><span class="line">0</span><br><span class="line">83681</span><br></pre></td></tr></table></figure>
+<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">z</div><div class="line">a</div><div class="line">cat</div><div class="line">vwxyz</div></pre></td></tr></table></figure>
+<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">26</div><div class="line">1</div><div class="line">0</div><div class="line">83681</div></pre></td></tr></table></figure>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -169,7 +163,7 @@
 	</section>
 
 	<script type="text/javascript">
-	var disqus_shortname = 'iTimeTraveler';
+	var disqus_shortname = 'm80126colin';
 	(function(){
 	  var dsq = document.createElement('script');
 	  dsq.type = 'text/javascript';
@@ -236,12 +230,6 @@
     <a href="/blog/" class="mobile-nav-link">Home</a>
   
     <a href="/blog/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="/blog/about" class="mobile-nav-link">About</a>
   
 </nav> -->
     <footer id="footer" class="site-footer">

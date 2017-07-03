@@ -86,12 +86,6 @@
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/archives">彙整</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/categories">分類</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/tags">標籤</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/about">關于</a> </li>
-                    
               </ul>
             </div>
           </nav>
@@ -138,16 +132,16 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <link rel="stylesheet" href="/blog/owl.css"><p>你喜歡薩克斯風嗎？我有一個降 E 中音薩克斯風 (Eb Alto Saxophone)，如下圖 (圖略)。</p>
+        <link rel="stylesheet" href="/blog/owl"><p>你喜歡薩克斯風嗎？我有一個降 E 中音薩克斯風 (Eb Alto Saxophone)，如下圖 (圖略)。</p>
 <a id="more"></a>
 <p>當我在演奏某些手指必須動很快的曲子時，我忽然想到：到底我的手指頭按了幾下按鍵？假設每首曲子由某一個八度的 C、D、E、F、G、A、B 和高一個八度的 C、D、E、F、G、A、B 的音調 (note) 所組成，我們使用 c、d、e、f、g、a、b、C、D、E、F、G、A、B 來代表他們。每個音調的指法如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">c: finger 2~4, 7~10</span><br><span class="line">d: finger 2~4, 7~9</span><br><span class="line">e: finger 2~4, 7, 8</span><br><span class="line">f: finger 2~4, 7</span><br><span class="line">g: finger 2~4</span><br><span class="line">a: finger 2, 3</span><br><span class="line">b: finger 2</span><br><span class="line">C: finger 3</span><br><span class="line">D: finger 1~4, 7~9</span><br><span class="line">E: finger 1~4, 7, 8</span><br><span class="line">F: finger 1~4, 7</span><br><span class="line">G: finger 1~4</span><br><span class="line">A: finger 1~3</span><br><span class="line">B: finger 1~2</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">c: finger 2~4, 7~10</div><div class="line">d: finger 2~4, 7~9</div><div class="line">e: finger 2~4, 7, 8</div><div class="line">f: finger 2~4, 7</div><div class="line">g: finger 2~4</div><div class="line">a: finger 2, 3</div><div class="line">b: finger 2</div><div class="line">C: finger 3</div><div class="line">D: finger 1~4, 7~9</div><div class="line">E: finger 1~4, 7, 8</div><div class="line">F: finger 1~4, 7</div><div class="line">G: finger 1~4</div><div class="line">A: finger 1~3</div><div class="line">B: finger 1~2</div></pre></td></tr></table></figure>
 <p>(假設每種不同的指法控制一種音調，而且一個手指頭按特定一個按鍵)</p>
 <p>所以請寫出一支程式去計算每一根手指頭按了多少次按鍵。如果某一按鍵在下一音符時不會用到，那麼就會放開，否則就是維持按著的情況。</p>
 <h1 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h1><p>第一行有一個正整數 t (<span>$1\leq{t}\leq{1000}$</span><!-- Has MathJax -->) ，代表有多少組測資。每組測資有一行包含許多音調，音調最多不超過 200 個。</p>
 <h1 id="輸出"><a href="#輸出" class="headerlink" title="輸出"></a>輸出</h1><p>對於每個測資，請輸出 10 根手指頭所按鍵的次數，數字間請空一格。</p>
-<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">cdefgab</span><br><span class="line">BAGFEDC</span><br><span class="line">CbCaDCbCbCCbCbabCCbCbabae</span><br></pre></td></tr></table></figure>
-<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">0 1 1 1 0 0 1 1 1 1</span><br><span class="line">1 1 1 1 0 0 1 1 1 0</span><br><span class="line">1 8 10 2 0 0 2 2 1 0</span><br></pre></td></tr></table></figure>
+<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">3</div><div class="line">cdefgab</div><div class="line">BAGFEDC</div><div class="line">CbCaDCbCbCCbCbabCCbCbabae</div></pre></td></tr></table></figure>
+<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">0 1 1 1 0 0 1 1 1 1</div><div class="line">1 1 1 1 0 0 1 1 1 0</div><div class="line">1 8 10 2 0 0 2 2 1 0</div></pre></td></tr></table></figure>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -168,7 +162,7 @@
 	</section>
 
 	<script type="text/javascript">
-	var disqus_shortname = 'iTimeTraveler';
+	var disqus_shortname = 'm80126colin';
 	(function(){
 	  var dsq = document.createElement('script');
 	  dsq.type = 'text/javascript';
@@ -235,12 +229,6 @@
     <a href="/blog/" class="mobile-nav-link">Home</a>
   
     <a href="/blog/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="/blog/about" class="mobile-nav-link">About</a>
   
 </nav> -->
     <footer id="footer" class="site-footer">

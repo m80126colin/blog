@@ -86,12 +86,6 @@
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/archives">彙整</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/categories">分類</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/tags">標籤</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/about">關于</a> </li>
-                    
               </ul>
             </div>
           </nav>
@@ -138,7 +132,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <link rel="stylesheet" href="/blog/owl.css"><h1 id="貪心的送禮者"><a href="#貪心的送禮者" class="headerlink" title="貪心的送禮者"></a>貪心的送禮者</h1><p>翻譯 by 羔羊 許胖</p>
+        <link rel="stylesheet" href="/blog/owl"><h1 id="貪心的送禮者"><a href="#貪心的送禮者" class="headerlink" title="貪心的送禮者"></a>貪心的送禮者</h1><p>翻譯 by 羔羊 許胖</p>
 <a id="more"></a>
 <p>對於各自擁有獨特人名的一群人 (人數有 NP 個，<span>$2\leq{NP}\leq{10}$</span><!-- Has MathJax -->)，他們決定以錢當交換的禮物。每個人可能送給其他幾個人禮物 (也可能不送)，同樣地每個人也有可能收到數個禮物 (也有可能沒收到)。你的目標是要找出每個人送出的錢比收到的多多少。</p>
 <p>在這個問題中，每個人都準備一些錢來送禮物，他們會盡可能平分這些錢給受禮者。這些錢不會被分割為小數點，而多出來的錢將會留在送禮者身上。</p>
@@ -147,10 +141,10 @@
 <h3 id="重要訊息"><a href="#重要訊息" class="headerlink" title="重要訊息"></a>重要訊息</h3><p>測試系統規格符合 Linux 標準 Unix 協定：對於每一行以字元 <code>&#39;\n&#39;</code> 做為結束。與 Windows 系統不同的是，Windows 系統以 <code>&#39;\n&#39;</code> 和 <code>&#39;\r&#39;</code> 做為結束，請不要被這困擾著！ </p>
 <h2 id="名稱：gift1"><a href="#名稱：gift1" class="headerlink" title="名稱：gift1"></a>名稱：gift1</h2><h2 id="輸入格式"><a href="#輸入格式" class="headerlink" title="輸入格式"></a>輸入格式</h2><table><tr><td>第 1 行</td><td>一個簡單的整數 NP 做為人數</td></tr><tr><td>第 2 至 NP + 1 行</td><td>每行包括一個名字</td></tr><td>第 NP + 2 行至最後</td><td>有 NP 組內容：<br>每組第 1 行為送禮人的名字。<br>第 2 行包含兩個數字：第一個整數代表錢 (值介於 0 ~ 2000)，第二個整數 NGi 代表受禮人的個數 (0 &lt;= NGi &lt;= NP - 1)，如果 NGi 的值非零，則接下來 NGi 行將列出受禮者的名字。</td></table>
 
-<h2 id="範例輸入-檔案-gift1-in"><a href="#範例輸入-檔案-gift1-in" class="headerlink" title="範例輸入 (檔案 gift1.in)"></a>範例輸入 (檔案 gift1.in)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">5</span><br><span class="line">dave</span><br><span class="line">laura</span><br><span class="line">owen</span><br><span class="line">vick</span><br><span class="line">amr</span><br><span class="line">dave</span><br><span class="line">200 3</span><br><span class="line">laura</span><br><span class="line">owen</span><br><span class="line">vick</span><br><span class="line">owen</span><br><span class="line">500 1</span><br><span class="line">dave</span><br><span class="line">amr</span><br><span class="line">150 2</span><br><span class="line">vick</span><br><span class="line">owen</span><br><span class="line">laura</span><br><span class="line">0 2</span><br><span class="line">amr</span><br><span class="line">vick</span><br><span class="line">vick</span><br><span class="line">0 0</span><br></pre></td></tr></table></figure>
+<h2 id="範例輸入-檔案-gift1-in"><a href="#範例輸入-檔案-gift1-in" class="headerlink" title="範例輸入 (檔案 gift1.in)"></a>範例輸入 (檔案 gift1.in)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">5</div><div class="line">dave</div><div class="line">laura</div><div class="line">owen</div><div class="line">vick</div><div class="line">amr</div><div class="line">dave</div><div class="line">200 3</div><div class="line">laura</div><div class="line">owen</div><div class="line">vick</div><div class="line">owen</div><div class="line">500 1</div><div class="line">dave</div><div class="line">amr</div><div class="line">150 2</div><div class="line">vick</div><div class="line">owen</div><div class="line">laura</div><div class="line">0 2</div><div class="line">amr</div><div class="line">vick</div><div class="line">vick</div><div class="line">0 0</div></pre></td></tr></table></figure>
 <h2 id="輸出格式"><a href="#輸出格式" class="headerlink" title="輸出格式"></a>輸出格式</h2><p>輸出有 NP 行，對於每行輸出一個人名以及收到的錢減掉送出錢的差值，中間以一個空格隔開。輸出人名的順序與輸入的順序相同。</p>
 <p>所有禮物內的錢皆為整數。對於每個受禮者將收到相同的錢，而多餘的錢將會被送禮者保留。</p>
-<h2 id="範例輸出-檔案-gift1-out"><a href="#範例輸出-檔案-gift1-out" class="headerlink" title="範例輸出 (檔案 gift1.out)"></a>範例輸出 (檔案 gift1.out)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">dave 302</span><br><span class="line">laura 66</span><br><span class="line">owen -359</span><br><span class="line">vick 141</span><br><span class="line">amr -150</span><br></pre></td></tr></table></figure>
+<h2 id="範例輸出-檔案-gift1-out"><a href="#範例輸出-檔案-gift1-out" class="headerlink" title="範例輸出 (檔案 gift1.out)"></a>範例輸出 (檔案 gift1.out)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">dave 302</div><div class="line">laura 66</div><div class="line">owen -359</div><div class="line">vick 141</div><div class="line">amr -150</div></pre></td></tr></table></figure>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -171,7 +165,7 @@
 	</section>
 
 	<script type="text/javascript">
-	var disqus_shortname = 'iTimeTraveler';
+	var disqus_shortname = 'm80126colin';
 	(function(){
 	  var dsq = document.createElement('script');
 	  dsq.type = 'text/javascript';
@@ -238,12 +232,6 @@
     <a href="/blog/" class="mobile-nav-link">Home</a>
   
     <a href="/blog/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="/blog/about" class="mobile-nav-link">About</a>
   
 </nav> -->
     <footer id="footer" class="site-footer">

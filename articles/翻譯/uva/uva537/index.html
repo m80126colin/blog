@@ -86,12 +86,6 @@
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/archives">彙整</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/categories">分類</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/tags">標籤</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/about">關于</a> </li>
-                    
               </ul>
             </div>
           </nav>
@@ -138,7 +132,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <link rel="stylesheet" href="/blog/owl.css"><p>高中物理老師通常認為問題當中的文字敘述比純計算還要難，畢竟，身為學生必須得先讀懂題目才行！</p>
+        <link rel="stylesheet" href="/blog/owl"><p>高中物理老師通常認為問題當中的文字敘述比純計算還要難，畢竟，身為學生必須得先讀懂題目才行！</p>
 <a id="more"></a>
 <p>所以老師們不會把題目寫成這樣：「電壓為 10 伏特、電流 5 安培、求電功率？」 (<span>$U=10V$</span><!-- Has MathJax -->, <span>$I=5A$</span><!-- Has MathJax -->, <span>$P=?$</span><!-- Has MathJax -->) 而是喜歡把題目弄這樣：「你有一組電路，電路裡包含了一顆 10 伏特的電池和一枚燈泡，若現在有一 5 安培的電流通過此燈泡，那麼燈泡的電功率為何？」 (You have an electrical circuit that contains a battery with a voltage of <span>$U=10V$</span><!-- Has MathJax --> and a light-bulb. There’s an electrical current of <span>$I=5A$</span><!-- Has MathJax --> through the bulb. Which power is generated in the bulb?)</p>
 <p>然而，半數的學生不會去鳥題目到底寫了什麼，只會設法從題目中找出已知條件：電壓 10 伏特、電流 5 安培，然後思考：「我該用什麼公式？噢，對了！<span>$P = I\times{V}$</span><!-- Has MathJax -->，因此我可以得到電功率為 <span>$10 \times{5} = 500$</span><!-- Has MathJax --> 瓦特，完成。」</p>
@@ -148,7 +142,7 @@
 <h1 id="輸入"><a href="#輸入" class="headerlink" title="輸入"></a>輸入</h1><p>輸入的第一行為一個正整數，代表有多少行測資。</p>
 <p>接著每行測資包含兩個已知條件和一些額外的文字，已知條件的格式為 <span>$I=xA$</span><!-- Has MathJax -->、<span>$U=xV$</span><!-- Has MathJax --> 或 <span>$P=xW$</span><!-- Has MathJax --> (<span>$x$</span><!-- Has MathJax --> 為實數)。</p>
 <p>而在單位 (<span>$A$</span><!-- Has MathJax -->、<span>$V$</span><!-- Has MathJax --> 或 <span>$W$</span><!-- Has MathJax -->) 前面會有一個數量級單位：m (milli，千分之一，<span>$10^{-3}$</span><!-- Has MathJax --> 倍)、k (kilo，千，<span>$10^3$</span><!-- Has MathJax --> 倍) 和 M (Mega，百萬，<span>$10^6$</span><!-- Has MathJax --> 倍)。而已知條件 (data field) 會依下面規則出現：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">DataField ::= Concept &apos;=&apos; RealNumber [Prefix] Unit</span><br><span class="line">Concept   ::= &apos;P&apos; | &apos;U&apos; | &apos;I&apos;</span><br><span class="line">Prefix    ::= &apos;m&apos; | &apos;k&apos; | &apos;M&apos;</span><br><span class="line">Unit      ::= &apos;W&apos; | &apos;V&apos; | &apos;A&apos;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">DataField ::= Concept &apos;=&apos; RealNumber [Prefix] Unit</div><div class="line">Concept   ::= &apos;P&apos; | &apos;U&apos; | &apos;I&apos;</div><div class="line">Prefix    ::= &apos;m&apos; | &apos;k&apos; | &apos;M&apos;</div><div class="line">Unit      ::= &apos;W&apos; | &apos;V&apos; | &apos;A&apos;</div></pre></td></tr></table></figure>
 <h2 id="額外補充："><a href="#額外補充：" class="headerlink" title="額外補充："></a>額外補充：</h2><ul>
 <li>等號 (=) 不會出現在已知條件以外的地方。</li>
 <li>已知條件內不會出現空白字元。</li>
@@ -158,8 +152,8 @@
 <p>第一行輸出「Problem #k」，k 代表第 k 個測資。</p>
 <p>第二行輸出答案 (依據他所給的條件，請輸出電壓、電功率或電流)，並將數量級轉換為基本單位及輸出至小數點後兩位。</p>
 <p>最後一行請空一行。</p>
-<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">If the voltage is U=200V and the current is I=4.5A, which power is generated?</span><br><span class="line">A light-bulb yields P=100W and the voltage is U=220V. Compute the current, please.</span><br><span class="line">bla bla bla lightning strike I=2A bla bla bla P=2.5MW bla bla voltage?</span><br></pre></td></tr></table></figure>
-<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Problem #1</span><br><span class="line">P=900.00W</span><br><span class="line"></span><br><span class="line">Problem #2</span><br><span class="line">I=0.45A</span><br><span class="line"></span><br><span class="line">Problem #3</span><br><span class="line">U=1250000.00V</span><br></pre></td></tr></table></figure>
+<h1 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">3</div><div class="line">If the voltage is U=200V and the current is I=4.5A, which power is generated?</div><div class="line">A light-bulb yields P=100W and the voltage is U=220V. Compute the current, please.</div><div class="line">bla bla bla lightning strike I=2A bla bla bla P=2.5MW bla bla voltage?</div></pre></td></tr></table></figure>
+<h1 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Problem #1</div><div class="line">P=900.00W</div><div class="line"></div><div class="line">Problem #2</div><div class="line">I=0.45A</div><div class="line"></div><div class="line">Problem #3</div><div class="line">U=1250000.00V</div></pre></td></tr></table></figure>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -180,7 +174,7 @@
 	</section>
 
 	<script type="text/javascript">
-	var disqus_shortname = 'iTimeTraveler';
+	var disqus_shortname = 'm80126colin';
 	(function(){
 	  var dsq = document.createElement('script');
 	  dsq.type = 'text/javascript';
@@ -247,12 +241,6 @@
     <a href="/blog/" class="mobile-nav-link">Home</a>
   
     <a href="/blog/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="/blog/about" class="mobile-nav-link">About</a>
   
 </nav> -->
     <footer id="footer" class="site-footer">

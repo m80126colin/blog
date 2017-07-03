@@ -90,12 +90,6 @@
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/archives">彙整</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/categories">分類</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/tags">標籤</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/about">關于</a> </li>
-                    
               </ul>
             </div>
           </nav>
@@ -142,7 +136,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <link rel="stylesheet" href="/blog/owl.css"><p>一張圖 (graph) <span>$G$</span><!-- Has MathJax --> 有一個點集 <span>$V(G)$</span><!-- Has MathJax --> 和一個邊集 <span>$E(G)$</span><!-- Has MathJax -->，其中邊集 <span>$E(G)$</span><!-- Has MathJax --> 內的元素是 <span>$V(G)$</span><!-- Has MathJax --> 中相異兩個無序點對。</p>
+        <link rel="stylesheet" href="/blog/owl"><p>一張圖 (graph) <span>$G$</span><!-- Has MathJax --> 有一個點集 <span>$V(G)$</span><!-- Has MathJax --> 和一個邊集 <span>$E(G)$</span><!-- Has MathJax -->，其中邊集 <span>$E(G)$</span><!-- Has MathJax --> 內的元素是 <span>$V(G)$</span><!-- Has MathJax --> 中相異兩個無序點對。</p>
 <p><strong>範例一</strong>：令 <span>$G$</span><!-- Has MathJax --> 是一張圖，<span>$V(G) = \{a, b, c, d\}$</span><!-- Has MathJax --> 且 <span>$E(G) = \{(a, b), (b, c), (c, d), (d, b)\}$</span><!-- Has MathJax -->，下圖給出整個圖 <span>$G$</span><!-- Has MathJax -->：</p>
 <div class="owl-media owl-image owl-local"><img src="/blog/img/uva/q599/p599a.gif"></div>
 <p>注意圖 G 包含一個「環」<span>$\{(b, c), (c, d), (d, b)\}$</span><!-- Has MathJax -->。一張缺乏環的圖我們稱為樹 (tree)。圖 G 的一條路徑 (path) 是點和邊的交替序列 (序列是由點開始和結束) 且路徑上所有點皆相異。在範例一的圖中，<span>$\{a, (a, b), b, (b, c), c, (c, d)\}$</span><!-- Has MathJax --> 是一條路徑。</p>
@@ -163,8 +157,8 @@
 <p><strong>範例二</strong>：令 <span>$G$</span><!-- Has MathJax --> 是一張圖，而這張圖是第一筆範例輸入，這張圖就會長得如下圖：</p>
 <div class="owl-media owl-image owl-local"><img src="/blog/img/uva/q599/p599c.gif"></div>
 <p><strong>注意</strong>：一座森林可能全都是橡實、全都是樹、或者在這之間的所有可能，因此請多注意不要漏掉森林裡的任何一棵樹！</p>
-<h2 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">(A,B)</span><br><span class="line">(B,C)</span><br><span class="line">(B,D)</span><br><span class="line">(D,E)</span><br><span class="line">(E,F)</span><br><span class="line">(B,G)</span><br><span class="line">(G,H)</span><br><span class="line">(G,I)</span><br><span class="line">(J,K)</span><br><span class="line">(K,L)</span><br><span class="line">(K,M)</span><br><span class="line">****</span><br><span class="line">A,B,C,D,E,F,G,H,I,J,K,L,M,N</span><br><span class="line">(A,B)</span><br><span class="line">(A,C)</span><br><span class="line">(C,F)</span><br><span class="line">**</span><br><span class="line">A,B,C,D,F</span><br></pre></td></tr></table></figure>
-<h2 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">There are 2 tree(s) and 1 acorn(s).</span><br><span class="line">There are 1 tree(s) and 1 acorn(s).</span><br></pre></td></tr></table></figure>
+<h2 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">2</div><div class="line">(A,B)</div><div class="line">(B,C)</div><div class="line">(B,D)</div><div class="line">(D,E)</div><div class="line">(E,F)</div><div class="line">(B,G)</div><div class="line">(G,H)</div><div class="line">(G,I)</div><div class="line">(J,K)</div><div class="line">(K,L)</div><div class="line">(K,M)</div><div class="line">****</div><div class="line">A,B,C,D,E,F,G,H,I,J,K,L,M,N</div><div class="line">(A,B)</div><div class="line">(A,C)</div><div class="line">(C,F)</div><div class="line">**</div><div class="line">A,B,C,D,F</div></pre></td></tr></table></figure>
+<h2 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">There are 2 tree(s) and 1 acorn(s).</div><div class="line">There are 1 tree(s) and 1 acorn(s).</div></pre></td></tr></table></figure>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -185,7 +179,7 @@
 	</section>
 
 	<script type="text/javascript">
-	var disqus_shortname = 'iTimeTraveler';
+	var disqus_shortname = 'm80126colin';
 	(function(){
 	  var dsq = document.createElement('script');
 	  dsq.type = 'text/javascript';
@@ -252,12 +246,6 @@
     <a href="/blog/" class="mobile-nav-link">Home</a>
   
     <a href="/blog/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="/blog/about" class="mobile-nav-link">About</a>
   
 </nav> -->
     <footer id="footer" class="site-footer">

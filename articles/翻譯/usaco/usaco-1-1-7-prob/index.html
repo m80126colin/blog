@@ -86,12 +86,6 @@
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/archives">彙整</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/categories">分類</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/tags">標籤</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/blog/about">關于</a> </li>
-                    
               </ul>
             </div>
           </nav>
@@ -138,18 +132,18 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <link rel="stylesheet" href="/blog/owl.css"><p>現在你有一條有N個小珠子的項鍊 (3 &lt;= N &lt;= 350)，這些珠子有可能是紅色、藍色或者是白色。以下是兩條 N = 29 的例子：</p>
+        <link rel="stylesheet" href="/blog/owl"><p>現在你有一條有N個小珠子的項鍊 (3 &lt;= N &lt;= 350)，這些珠子有可能是紅色、藍色或者是白色。以下是兩條 N = 29 的例子：</p>
 <a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">          1 2                               1 2</span><br><span class="line">      r b b r                           b r r b</span><br><span class="line">    r         b                       b         b</span><br><span class="line">   r           r                     b           r</span><br><span class="line">  r             r                   w             r</span><br><span class="line"> b               r                 w               w</span><br><span class="line">b                 b               r                 r</span><br><span class="line">b                 b               b                 b</span><br><span class="line">b                 b               r                 b</span><br><span class="line"> r               r                 b               r</span><br><span class="line">  b             r                   r             r</span><br><span class="line">   b           r                     r           r</span><br><span class="line">     r       r                         r       b</span><br><span class="line">       r b r                             r r w</span><br><span class="line">      Figure A                         Figure B</span><br><span class="line">                  r red bead</span><br><span class="line">                  b blue bead</span><br><span class="line">                  w white bead</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">          1 2                               1 2</div><div class="line">      r b b r                           b r r b</div><div class="line">    r         b                       b         b</div><div class="line">   r           r                     b           r</div><div class="line">  r             r                   w             r</div><div class="line"> b               r                 w               w</div><div class="line">b                 b               r                 r</div><div class="line">b                 b               b                 b</div><div class="line">b                 b               r                 b</div><div class="line"> r               r                 b               r</div><div class="line">  b             r                   r             r</div><div class="line">   b           r                     r           r</div><div class="line">     r       r                         r       b</div><div class="line">       r b r                             r r w</div><div class="line">      Figure A                         Figure B</div><div class="line">                  r red bead</div><div class="line">                  b blue bead</div><div class="line">                  w white bead</div></pre></td></tr></table></figure>
 <p>在圖中已經標明第一顆珠子和第二顆珠子的位置，而我們為了以字串表示項鍊，將藍色珠子表示為 b、紅色珠子為 r，以下是圖 A 的表示法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brbrrrbbbrrrrrbrrbbrbbbbrrrrb</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brbrrrbbbrrrrrbrrbbrbbbbrrrrb</div></pre></td></tr></table></figure>
 <p>假設你從項鍊的某處切斷，然後從斷裂處兩邊開始收集相同顏色的珠子，直到遇到不同顏色的為止 (兩邊所收集的顏色可能不一樣)。請求出從哪邊切斷可以收集到最多的小珠子。</p>
 <h3 id="範例"><a href="#範例" class="headerlink" title="範例"></a>範例</h3><p>舉例來說，如果從圖 A 的第 9 顆和第 10 顆之間、或者是第 24 顆和第 25 顆之間斷開，最多可以收集到 8 個珠子。但是某些項鍊會像圖 B 有白色珠子，而白色珠子可以被當作紅色或藍色其中一種顏色來收集，而白色珠子以字元 w 代表。</p>
 <h2 id="名稱：beads"><a href="#名稱：beads" class="headerlink" title="名稱：beads"></a>名稱：beads</h2><h2 id="輸入格式"><a href="#輸入格式" class="headerlink" title="輸入格式"></a>輸入格式</h2><table><tr><td>第一行</td><td>一個整數 N 代表珠子數</td></tr><tr><td>第二行</td><td>一行有 N 個字元的字串</td></tr></table>
 
-<h2 id="範例輸入-檔案-beads-in"><a href="#範例輸入-檔案-beads-in" class="headerlink" title="範例輸入 (檔案 beads.in)"></a>範例輸入 (檔案 beads.in)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">29</span><br><span class="line">wwwbbrwrbrbrrbrbrwrwwrbwrwrrb</span><br></pre></td></tr></table></figure>
+<h2 id="範例輸入-檔案-beads-in"><a href="#範例輸入-檔案-beads-in" class="headerlink" title="範例輸入 (檔案 beads.in)"></a>範例輸入 (檔案 beads.in)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">29</div><div class="line">wwwbbrwrbrbrrbrbrwrwwrbwrwrrb</div></pre></td></tr></table></figure>
 <h2 id="輸出格式"><a href="#輸出格式" class="headerlink" title="輸出格式"></a>輸出格式</h2><p>所收集的珠子的最大值。</p>
-<h2 id="範例輸出（檔案beads-out）"><a href="#範例輸出（檔案beads-out）" class="headerlink" title="範例輸出（檔案beads.out）"></a>範例輸出（檔案beads.out）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">11</span><br></pre></td></tr></table></figure>
+<h2 id="範例輸出（檔案beads-out）"><a href="#範例輸出（檔案beads-out）" class="headerlink" title="範例輸出（檔案beads.out）"></a>範例輸出（檔案beads.out）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">11</div></pre></td></tr></table></figure>
 <h3 id="輸出解說"><a href="#輸出解說" class="headerlink" title="輸出解說"></a>輸出解說</h3><p>當做是把兩條相同的鍊子串在一起 (類似頭接尾的效果)，以下標出取出的 11 個珠子。</p>
 <pre>
                 複製的兩條項鍊從這斷開
@@ -180,7 +174,7 @@ wwwbbrwrbrbrrbrbrwrwwrbwrwrrb|wwwbbrwrbrbrrbrbrwrwwrbwrwrrb
 	</section>
 
 	<script type="text/javascript">
-	var disqus_shortname = 'iTimeTraveler';
+	var disqus_shortname = 'm80126colin';
 	(function(){
 	  var dsq = document.createElement('script');
 	  dsq.type = 'text/javascript';
@@ -247,12 +241,6 @@ wwwbbrwrbrbrrbrbrwrwwrbwrwrrb|wwwbbrwrbrbrrbrbrwrwwrbwrwrrb
     <a href="/blog/" class="mobile-nav-link">Home</a>
   
     <a href="/blog/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="/blog/about" class="mobile-nav-link">About</a>
   
 </nav> -->
     <footer id="footer" class="site-footer">
