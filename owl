@@ -1,3 +1,6 @@
+/**
+ * Default stylesheet
+**/
 .owl-image {
   position: relative;
   margin-top: 1rem;
